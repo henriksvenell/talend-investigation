@@ -1,0 +1,6 @@
+{
+    "flowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+    "previewVersion": "4fdbb406-f243-418f-ba26-490a5ad84897",
+    "portId": "6464f8cb28a24dc66e6ee032",
+    "message": "org.apache.avro.AvroRuntimeException: Can't overwrite property: dqNativeType"
+}

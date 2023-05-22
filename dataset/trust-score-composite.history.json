@@ -1,0 +1,44 @@
+{
+    "records": [
+        {
+            "trustScore": {
+                "score": 2.54,
+                "axes": {
+                    "validity": 87.27,
+                    "usage": 19.05,
+                    "completeness": 87.78,
+                    "discoverability": 0.0,
+                    "social-curation": 21.43
+                }
+            },
+            "date": "2023-05-17"
+        },
+        {
+            "trustScore": {
+                "score": 2.54,
+                "axes": {
+                    "validity": 87.27,
+                    "usage": 19.05,
+                    "completeness": 87.78,
+                    "discoverability": 0.0,
+                    "social-curation": 21.43
+                }
+            },
+            "date": "2023-05-18"
+        },
+        {
+            "trustScore": {
+                "score": 2.54,
+                "axes": {
+                    "validity": 87.27,
+                    "usage": 19.05,
+                    "completeness": 87.78,
+                    "discoverability": 0.0,
+                    "social-curation": 21.43
+                }
+            },
+            "date": "2023-05-19"
+        }
+    ],
+    "nbDatasets": 7
+}

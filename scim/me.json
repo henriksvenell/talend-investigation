@@ -1,0 +1,1979 @@
+{
+    "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46",
+    "meta": {
+        "created": "2023-05-17T10:39:58.460Z",
+        "lastModified": "2023-05-17T10:39:58.460Z",
+        "location": "/Users/8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46",
+        "resourceType": "User"
+    },
+    "schemas": [
+        "urn:ietf:params:scim:schemas:core:2.0:User"
+    ],
+    "userName": "henrik.svenell@trial23952.eu.talend.com",
+    "name": {
+        "formatted": "Henrik Svenell",
+        "familyName": "Svenell",
+        "givenName": "Henrik"
+    },
+    "preferredLanguage": "en",
+    "timezone": "Europe/Stockholm",
+    "active": true,
+    "applications": [
+        "TDP",
+        "TDS",
+        "TDC",
+        "IAM",
+        "DSS",
+        "TRR",
+        "TMC",
+        "DATASETS",
+        "STUDIO"
+    ],
+    "emails": [
+        {
+            "value": "",
+            "display": "",
+            "type": "work",
+            "primary": true
+        }
+    ],
+    "roles": [
+        {
+            "value": "1182b11d-b754-44e1-9ed4-bf3f1539f0bf",
+            "entitlements": [
+                {
+                    "value": "DATASET_SAMPLE_UPDATE",
+                    "display": "Datasets - Refresh sample",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "DATASET_DELETE",
+                    "display": "Datasets - Delete",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CRAWLING_DELETE",
+                    "display": "Crawling - Delete",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "CONNECTION_UPDATE",
+                    "display": "Connections - Edit",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CRAWLING_UPDATE",
+                    "display": "Crawling - Update",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "CONNECTION_READ",
+                    "display": "Connections - View",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CONNECTION_CREATE",
+                    "display": "Connections - Add",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CUSTOM_ATTRIBUTE_READ",
+                    "display": "Custom attributes - View",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "DATASET_API_MANAGE",
+                    "display": "Datasets - Manage API",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "CUSTOM_ATTRIBUTE_DELETE",
+                    "display": "Custom attributes - Delete",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "CONNECTION_SHARE",
+                    "display": "Connections - Share",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "DATASET_DOWNLOAD",
+                    "display": "Datasets - Download",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CRAWLING_CREATE",
+                    "display": "Crawling - Add",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "CUSTOM_ATTRIBUTE_UPDATE",
+                    "display": "Custom attributes - Edit",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "DATASET_UPDATE",
+                    "display": "Datasets - Edit",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CONNECTION_DELETE",
+                    "display": "Connections - Delete",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "TMC_ENGINE_USE",
+                    "display": "Engines - Use",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "DATASET_CERTIFY",
+                    "display": "Datasets - Certify",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "DATASET_TAGS_MANAGE",
+                    "display": "Datasets - Manage tags",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "DATASET_SHARE",
+                    "display": "Datasets - Share",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "DATASET_ADVANCED_SEARCH",
+                    "display": "Datasets - Advanced search",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "DATASET_SCHEMA_UPDATE",
+                    "display": "Datasets - Set semantic type",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CUSTOM_ATTRIBUTE_CREATE",
+                    "display": "Custom attributes - Add",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "DATASET_CREATE",
+                    "display": "Datasets - Add",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "DATASET_ATTRIBUTES_MANAGE",
+                    "display": "Datasets - Manage custom attributes, tags and description",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "CRAWLING_READ",
+                    "display": "Crawling - Read",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "DATASET_API_VIEW",
+                    "display": "Datasets - View API",
+                    "primary": false,
+                    "applications": [
+                        "TDC"
+                    ]
+                },
+                {
+                    "value": "DATASET_READ",
+                    "display": "Datasets - View",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                }
+            ],
+            "display": "Dataset Administrator",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/1182b11d-b754-44e1-9ed4-bf3f1539f0bf"
+        },
+        {
+            "value": "fb448e48-4b07-41e5-8bbe-bf8cba5df9c5",
+            "entitlements": [
+                {
+                    "value": "TDS_TASK_HISTORY_READ",
+                    "display": "Tasks - View history",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_SCHEMA_DELETE",
+                    "display": "Data models - Delete",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_SCHEMA_UPDATE",
+                    "display": "Data models - Edit",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_READ",
+                    "display": "Tasks - View",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_CAMPAIGN_LIST",
+                    "display": "Campaigns - List",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_CAMPAIGN_CREATE",
+                    "display": "Campaigns - Add",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_CREATE",
+                    "display": "Tasks - Add",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_UPDATE",
+                    "display": "Tasks - Edit",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_SCHEMA_CREATE",
+                    "display": "Data models - Add",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_CAMPAIGN_DELETE",
+                    "display": "Campaigns - Delete",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_ASSIGN",
+                    "display": "Tasks - Assign",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_SCHEMA_LIST",
+                    "display": "Data models - List",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_READ_BY_EXTERNAL_ID",
+                    "display": "Tasks  - View via external ID",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_USERS_READ",
+                    "display": "Users - View",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_CAMPAIGN_UPDATE",
+                    "display": "Campaigns - Edit",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_DELETE",
+                    "display": "Tasks - Delete",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_HISTORY_DELETE",
+                    "display": "Tasks - Delete history",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_SCHEMA_READ",
+                    "display": "Data models - View",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_METADATA_UPDATE",
+                    "display": "Tasks - Edit metadata",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                }
+            ],
+            "display": "Campaign Owner",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/fb448e48-4b07-41e5-8bbe-bf8cba5df9c5"
+        },
+        {
+            "value": "07bb76c6-306c-490c-9e64-5d3d335fa430",
+            "entitlements": [
+                {
+                    "value": "RULE_CREATE",
+                    "display": "Rule - Create",
+                    "primary": false,
+                    "applications": [
+                        "TRR"
+                    ]
+                },
+                {
+                    "value": "RULE_DELETE",
+                    "display": "Rule - Delete",
+                    "primary": false,
+                    "applications": [
+                        "TRR"
+                    ]
+                },
+                {
+                    "value": "RULE_VIEW",
+                    "display": "Rule - View",
+                    "primary": false,
+                    "applications": [
+                        "TRR"
+                    ]
+                },
+                {
+                    "value": "RULE_EDIT",
+                    "display": "Rule - Edit",
+                    "primary": false,
+                    "applications": [
+                        "TRR"
+                    ]
+                }
+            ],
+            "display": "Rules Manager",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/07bb76c6-306c-490c-9e64-5d3d335fa430"
+        },
+        {
+            "value": "a438fa48-1499-4358-9543-4ca5c8e92417",
+            "entitlements": [
+                {
+                    "value": "TDS_TASK_READ",
+                    "display": "Tasks - View",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_CAMPAIGN_LIST",
+                    "display": "Campaigns - List",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_CREATE",
+                    "display": "Tasks - Add",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_DELETE",
+                    "display": "Tasks - Delete",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_SCHEMA_READ",
+                    "display": "Data models - View",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_UPDATE",
+                    "display": "Tasks - Edit",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                }
+            ],
+            "display": "Campaign Operator",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/a438fa48-1499-4358-9543-4ca5c8e92417"
+        },
+        {
+            "value": "ee90c2d5-c9d7-4675-8dbd-df9f6b9dcf91",
+            "entitlements": [
+                {
+                    "value": "TMC_ENGINE_USE",
+                    "display": "Engines - Use",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "STREAM_READ",
+                    "display": "Pipeline - Read",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_METRICS_VIEW",
+                    "display": "Pipeline execution metrics - View",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_LOGS_VIEW",
+                    "display": "Pipeline execution logs - View",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                }
+            ],
+            "display": "Pipelines Viewer",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/ee90c2d5-c9d7-4675-8dbd-df9f6b9dcf91"
+        },
+        {
+            "value": "dbf18834-9c58-4ac1-9f11-e391f973c065",
+            "entitlements": [
+                {
+                    "value": "TMC_RUN_PROFILE_MANAGEMENT",
+                    "display": "Run Profiles - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_OPERATOR",
+                    "display": "Operations - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                }
+            ],
+            "display": "Operator",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/dbf18834-9c58-4ac1-9f11-e391f973c065"
+        },
+        {
+            "value": "3e4c91a2-e051-4bbe-9b42-5f2b96f46f9f",
+            "entitlements": [
+                {
+                    "value": "TMC_SSO_MANAGEMENT",
+                    "display": "SSO - Manage",
+                    "primary": false,
+                    "applications": [
+                        "IAM",
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_GROUP_MANAGEMENT",
+                    "display": "Groups - Manage",
+                    "primary": false,
+                    "applications": [
+                        "IAM",
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "AUDIT_LOGS_VIEW",
+                    "display": "Audit logs - View",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_ROLE_MANAGEMENT",
+                    "display": "Roles - Manage",
+                    "primary": false,
+                    "applications": [
+                        "IAM",
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_SUBSCRIPTION_MANAGEMENT",
+                    "display": "Subscription - Manage",
+                    "primary": false,
+                    "applications": [
+                        "IAM",
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_USER_MANAGEMENT",
+                    "display": "Users - Manage",
+                    "primary": false,
+                    "applications": [
+                        "IAM",
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_POLICY_PASSWORD",
+                    "display": "Password policy - Manage",
+                    "primary": false,
+                    "applications": [
+                        "IAM",
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_SERVICE_ACCOUNT_MANAGEMENT",
+                    "display": "Service Account - Manage",
+                    "primary": false,
+                    "applications": [
+                        "IAM",
+                        "TMC"
+                    ]
+                }
+            ],
+            "display": "Security Administrator",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/3e4c91a2-e051-4bbe-9b42-5f2b96f46f9f"
+        },
+        {
+            "value": "382f1117-daa7-4f53-bc1d-14398bbbca7c",
+            "entitlements": [
+                {
+                    "value": "TMC_ENGINE_USE",
+                    "display": "Engines - Use",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "STREAM_READ",
+                    "display": "Pipeline - Read",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_SHARE",
+                    "display": "Pipeline - Share",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_UPDATE",
+                    "display": "Pipeline - Update",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_EXPORT",
+                    "display": "Pipeline - Export",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_METRICS_VIEW",
+                    "display": "Pipeline execution metrics - View",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_LOGS_VIEW",
+                    "display": "Pipeline execution logs - View",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_CREATE",
+                    "display": "Pipeline - Create",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_IMPORT",
+                    "display": "Pipeline - Import",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_STOP",
+                    "display": "Pipeline execution - Stop",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_PREVIEW",
+                    "display": "Pipeline - Preview",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_START",
+                    "display": "Pipeline execution - Start",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                },
+                {
+                    "value": "STREAM_DELETE",
+                    "display": "Pipeline - Delete",
+                    "primary": false,
+                    "applications": [
+                        "DSS"
+                    ]
+                }
+            ],
+            "display": "Pipelines Administrator",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/382f1117-daa7-4f53-bc1d-14398bbbca7c"
+        },
+        {
+            "value": "45319e22-d2c2-4688-94dc-fe06d54e3ef8",
+            "entitlements": [
+                {
+                    "value": "TMC_ENGINE_USE",
+                    "display": "Engines - Use",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TDP_DATASET_CERTIFY",
+                    "display": "Datasets - Certify",
+                    "primary": false,
+                    "applications": [
+                        "TDP"
+                    ]
+                },
+                {
+                    "value": "DATASET_CERTIFY",
+                    "display": "Datasets - Certify",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "DATASET_SHARE",
+                    "display": "Datasets - Share",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "TDP_TCOMP_USE",
+                    "display": "Remote datasets - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TDP"
+                    ]
+                },
+                {
+                    "value": "DATASET_DELETE",
+                    "display": "Datasets - Delete",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CONNECTION_UPDATE",
+                    "display": "Connections - Edit",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "TDP_PREP_VERSION_CREATE",
+                    "display": "Preparation versions - Create",
+                    "primary": false,
+                    "applications": [
+                        "TDP"
+                    ]
+                },
+                {
+                    "value": "CONNECTION_READ",
+                    "display": "Connections - View",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CONNECTION_CREATE",
+                    "display": "Connections - Add",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CONNECTION_SHARE",
+                    "display": "Connections - Share",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "DATASET_CREATE",
+                    "display": "Datasets - Add",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "TDP_HYBRID_MANAGEMENT",
+                    "display": "Data Preparation Hybrid - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TDP"
+                    ]
+                },
+                {
+                    "value": "TDP_BASIC",
+                    "display": "Preparations and local datasets - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TDP"
+                    ]
+                },
+                {
+                    "value": "TDP_DATASET_PERFORM_LIVE",
+                    "display": "Live datasets - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TDP"
+                    ]
+                },
+                {
+                    "value": "TDP_FULL_RUN_PERFORM",
+                    "display": "Preparations - Export all data",
+                    "primary": false,
+                    "applications": [
+                        "TDP"
+                    ]
+                },
+                {
+                    "value": "DATASET_READ",
+                    "display": "Datasets - View",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "DATASET_UPDATE",
+                    "display": "Datasets - Edit",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                },
+                {
+                    "value": "CONNECTION_DELETE",
+                    "display": "Connections - Delete",
+                    "primary": false,
+                    "applications": [
+                        "DATASETS"
+                    ]
+                }
+            ],
+            "display": "Data Preparation Administrator",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/45319e22-d2c2-4688-94dc-fe06d54e3ef8"
+        },
+        {
+            "value": "e854b84c-b48c-4a35-a8b6-e91846e15dbf",
+            "entitlements": [
+                {
+                    "value": "TMC_ENVIRONMENT_MANAGEMENT",
+                    "display": "Environments - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_PROMOTION_EXECUTION",
+                    "display": "Promotion - Start",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_PIPELINE_MANAGEMENT",
+                    "display": "Promotion - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                }
+            ],
+            "display": "Environment Administrator",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/e854b84c-b48c-4a35-a8b6-e91846e15dbf"
+        },
+        {
+            "value": "4c9780b0-07a6-491f-baf6-5553efb9ecf5",
+            "entitlements": [
+                {
+                    "value": "STUDIO_ENTITLEMENT_STUDIO_DEVELOPER",
+                    "display": "Studio - Develop",
+                    "primary": false,
+                    "applications": [
+                        "STUDIO"
+                    ]
+                }
+            ],
+            "display": "Integration Developer",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/4c9780b0-07a6-491f-baf6-5553efb9ecf5"
+        },
+        {
+            "value": "e4cb0368-b02d-44fe-818d-f8cc2de4088d",
+            "entitlements": [
+                {
+                    "value": "TMC_PROJECT_MANAGEMENT",
+                    "display": "Projects - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_CONFIGURATION_NEXUS_USERLIBS",
+                    "display": "Artifact repository - Configuration",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                }
+            ],
+            "display": "Project Administrator",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/e4cb0368-b02d-44fe-818d-f8cc2de4088d"
+        },
+        {
+            "value": "649b1b31-1598-4a40-ba36-193662b39d5c",
+            "entitlements": [
+                {
+                    "value": "TDS_TASK_HISTORY_READ",
+                    "display": "Tasks - View history",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_UNASSIGNED_TASK_ASSIGN",
+                    "display": "Tasks - Self assign unassigned tasks",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_UNASSIGNED_TASK_READ",
+                    "display": "Tasks - View unassigned tasks",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_ASSIGNED_TASK_DATA_UPDATE",
+                    "display": "Tasks - Edit assigned tasks",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_CAMPAIGN_READ",
+                    "display": "Campaigns - View",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_ASSIGNED_TASK_METADATA_UPDATE",
+                    "display": "Tasks - Edit assigned tasks metadata",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_ASSIGNED_TASK_READ",
+                    "display": "Tasks - View assigned tasks",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_TASK_READ_BY_EXTERNAL_ID",
+                    "display": "Tasks  - View via external ID",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_SCHEMA_READ",
+                    "display": "Data models - View",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                },
+                {
+                    "value": "TDS_ASSIGNED_TASK_ASSIGN",
+                    "display": "Tasks - Delegate",
+                    "primary": false,
+                    "applications": [
+                        "TDS"
+                    ]
+                }
+            ],
+            "display": "Data Steward",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/649b1b31-1598-4a40-ba36-193662b39d5c"
+        },
+        {
+            "value": "8ba1e2cb-fc81-4573-b4eb-9eab9bb49c17",
+            "entitlements": [
+                {
+                    "value": "TMC_STATIC_IP_MANAGEMENT",
+                    "display": "Static IP - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_EXPORT_LOGS_MANAGEMENT",
+                    "display": "Export Logs - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_CLOUD_CONFIGURATION_MANAGEMENT",
+                    "display": "Manage Cloud Configurations",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_RUN_PROFILE_MANAGEMENT",
+                    "display": "Run Profiles - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                },
+                {
+                    "value": "TMC_CLUSTER_MANAGEMENT",
+                    "display": "Engines - Manage",
+                    "primary": false,
+                    "applications": [
+                        "TMC"
+                    ]
+                }
+            ],
+            "display": "Infrastructure Administrator",
+            "type": "direct",
+            "primary": false,
+            "optional": false,
+            "$ref": "/Roles/8ba1e2cb-fc81-4573-b4eb-9eab9bb49c17"
+        }
+    ],
+    "lastSetPasswordDate": 1684320044240,
+    "lastLoginAttempt": 1684486066062,
+    "failedLoginAttempts": 0,
+    "tenantId": "7b9e9297-6bb5-45e8-b8b4-16d918940032",
+    "pendoUserId": "henrik.svenell@trial23952.eu.talend.com",
+    "pendoCompanyName": "trial23952.eu.talend.com",
+    "pendoDataCenter": "eu",
+    "subscriptionType": "Talend Cloud Data Management Platform",
+    "subscriptionStatus": "Evaluation",
+    "supportLevel": "Community",
+    "ipcEnabled": true,
+    "intercomUserId": "henrik.svenell@trial23952.eu.talend.com",
+    "intercomHash": "131ff5258ea4e6296600496bf072f2a9fc6b84434e3b91e545897dd858f3da5c",
+    "entitlements": [
+        {
+            "value": "TMC_ROLE_MANAGEMENT",
+            "display": "Roles - Manage",
+            "primary": false,
+            "applications": [
+                "IAM",
+                "TMC"
+            ]
+        },
+        {
+            "value": "TDS_ASSIGNED_TASK_DATA_UPDATE",
+            "display": "Tasks - Edit assigned tasks",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "RULE_EDIT",
+            "display": "Rule - Edit",
+            "primary": false,
+            "applications": [
+                "TRR"
+            ]
+        },
+        {
+            "value": "TDS_TASK_DELETE",
+            "display": "Tasks - Delete",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TDS_ASSIGNED_TASK_METADATA_UPDATE",
+            "display": "Tasks - Edit assigned tasks metadata",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TMC_CLOUD_CONFIGURATION_MANAGEMENT",
+            "display": "Manage Cloud Configurations",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "TDS_CAMPAIGN_CREATE",
+            "display": "Campaigns - Add",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "STREAM_STOP",
+            "display": "Pipeline execution - Stop",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "STREAM_PREVIEW",
+            "display": "Pipeline - Preview",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "TMC_EXPORT_LOGS_MANAGEMENT",
+            "display": "Export Logs - Manage",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "TMC_SERVICE_ACCOUNT_MANAGEMENT",
+            "display": "Service Account - Manage",
+            "primary": false,
+            "applications": [
+                "IAM",
+                "TMC"
+            ]
+        },
+        {
+            "value": "CRAWLING_READ",
+            "display": "Crawling - Read",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "TDS_TASK_METADATA_UPDATE",
+            "display": "Tasks - Edit metadata",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TDS_TASK_READ",
+            "display": "Tasks - View",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TDP_HYBRID_MANAGEMENT",
+            "display": "Data Preparation Hybrid - Manage",
+            "primary": false,
+            "applications": [
+                "TDP"
+            ]
+        },
+        {
+            "value": "TDS_CAMPAIGN_LIST",
+            "display": "Campaigns - List",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TDP_DATASET_CERTIFY",
+            "display": "Datasets - Certify",
+            "primary": false,
+            "applications": [
+                "TDP"
+            ]
+        },
+        {
+            "value": "STREAM_START",
+            "display": "Pipeline execution - Start",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "TDS_SCHEMA_READ",
+            "display": "Data models - View",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "RULE_CREATE",
+            "display": "Rule - Create",
+            "primary": false,
+            "applications": [
+                "TRR"
+            ]
+        },
+        {
+            "value": "TMC_PROJECT_MANAGEMENT",
+            "display": "Projects - Manage",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "DATASET_SCHEMA_UPDATE",
+            "display": "Datasets - Set semantic type",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "TDS_TASK_CREATE",
+            "display": "Tasks - Add",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TMC_STATIC_IP_MANAGEMENT",
+            "display": "Static IP - Manage",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "STUDIO_ENTITLEMENT_STUDIO_DEVELOPER",
+            "display": "Studio - Develop",
+            "primary": false,
+            "applications": [
+                "STUDIO"
+            ]
+        },
+        {
+            "value": "TMC_PIPELINE_MANAGEMENT",
+            "display": "Promotion - Manage",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "TDS_SCHEMA_DELETE",
+            "display": "Data models - Delete",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TMC_CLUSTER_MANAGEMENT",
+            "display": "Engines - Manage",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "STREAM_EXPORT",
+            "display": "Pipeline - Export",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "TDP_PREP_VERSION_CREATE",
+            "display": "Preparation versions - Create",
+            "primary": false,
+            "applications": [
+                "TDP"
+            ]
+        },
+        {
+            "value": "TMC_USER_MANAGEMENT",
+            "display": "Users - Manage",
+            "primary": false,
+            "applications": [
+                "IAM",
+                "TMC"
+            ]
+        },
+        {
+            "value": "TDS_SCHEMA_UPDATE",
+            "display": "Data models - Edit",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "STREAM_METRICS_VIEW",
+            "display": "Pipeline execution metrics - View",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "STREAM_UPDATE",
+            "display": "Pipeline - Update",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "CUSTOM_ATTRIBUTE_CREATE",
+            "display": "Custom attributes - Add",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "TMC_SUBSCRIPTION_MANAGEMENT",
+            "display": "Subscription - Manage",
+            "primary": false,
+            "applications": [
+                "IAM",
+                "TMC"
+            ]
+        },
+        {
+            "value": "TDP_TCOMP_USE",
+            "display": "Remote datasets - Manage",
+            "primary": false,
+            "applications": [
+                "TDP"
+            ]
+        },
+        {
+            "value": "STREAM_DELETE",
+            "display": "Pipeline - Delete",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "STREAM_IMPORT",
+            "display": "Pipeline - Import",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "TDP_FULL_RUN_PERFORM",
+            "display": "Preparations - Export all data",
+            "primary": false,
+            "applications": [
+                "TDP"
+            ]
+        },
+        {
+            "value": "DATASET_ATTRIBUTES_MANAGE",
+            "display": "Datasets - Manage custom attributes, tags and description",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "STREAM_LOGS_VIEW",
+            "display": "Pipeline execution logs - View",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "AUDIT_LOGS_VIEW",
+            "display": "Audit logs - View",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "CRAWLING_CREATE",
+            "display": "Crawling - Add",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "STREAM_CREATE",
+            "display": "Pipeline - Create",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "TDS_CAMPAIGN_UPDATE",
+            "display": "Campaigns - Edit",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TDP_DATASET_PERFORM_LIVE",
+            "display": "Live datasets - Manage",
+            "primary": false,
+            "applications": [
+                "TDP"
+            ]
+        },
+        {
+            "value": "DATASET_DOWNLOAD",
+            "display": "Datasets - Download",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "TDS_TASK_UPDATE",
+            "display": "Tasks - Edit",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TDS_ASSIGNED_TASK_READ",
+            "display": "Tasks - View assigned tasks",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "CUSTOM_ATTRIBUTE_DELETE",
+            "display": "Custom attributes - Delete",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "CONNECTION_CREATE",
+            "display": "Connections - Add",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "CRAWLING_DELETE",
+            "display": "Crawling - Delete",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "TMC_OPERATOR",
+            "display": "Operations - Manage",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "DATASET_DELETE",
+            "display": "Datasets - Delete",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "DATASET_READ",
+            "display": "Datasets - View",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "STREAM_READ",
+            "display": "Pipeline - Read",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "TDS_UNASSIGNED_TASK_ASSIGN",
+            "display": "Tasks - Self assign unassigned tasks",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TDS_TASK_HISTORY_READ",
+            "display": "Tasks - View history",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TMC_RUN_PROFILE_MANAGEMENT",
+            "display": "Run Profiles - Manage",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "CUSTOM_ATTRIBUTE_READ",
+            "display": "Custom attributes - View",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "STREAM_SHARE",
+            "display": "Pipeline - Share",
+            "primary": false,
+            "applications": [
+                "DSS"
+            ]
+        },
+        {
+            "value": "TMC_ENGINE_USE",
+            "display": "Engines - Use",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "CONNECTION_READ",
+            "display": "Connections - View",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "CRAWLING_UPDATE",
+            "display": "Crawling - Update",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "DATASET_ADVANCED_SEARCH",
+            "display": "Datasets - Advanced search",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "TDS_TASK_ASSIGN",
+            "display": "Tasks - Assign",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TDS_SCHEMA_CREATE",
+            "display": "Data models - Add",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "DATASET_API_MANAGE",
+            "display": "Datasets - Manage API",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "DATASET_API_VIEW",
+            "display": "Datasets - View API",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "CUSTOM_ATTRIBUTE_UPDATE",
+            "display": "Custom attributes - Edit",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "TDS_CAMPAIGN_READ",
+            "display": "Campaigns - View",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "CONNECTION_UPDATE",
+            "display": "Connections - Edit",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "TDS_SCHEMA_LIST",
+            "display": "Data models - List",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "RULE_DELETE",
+            "display": "Rule - Delete",
+            "primary": false,
+            "applications": [
+                "TRR"
+            ]
+        },
+        {
+            "value": "TMC_POLICY_PASSWORD",
+            "display": "Password policy - Manage",
+            "primary": false,
+            "applications": [
+                "IAM",
+                "TMC"
+            ]
+        },
+        {
+            "value": "DATASET_CERTIFY",
+            "display": "Datasets - Certify",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "TMC_CONFIGURATION_NEXUS_USERLIBS",
+            "display": "Artifact repository - Configuration",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "TDS_UNASSIGNED_TASK_READ",
+            "display": "Tasks - View unassigned tasks",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TMC_ENVIRONMENT_MANAGEMENT",
+            "display": "Environments - Manage",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "TMC_GROUP_MANAGEMENT",
+            "display": "Groups - Manage",
+            "primary": false,
+            "applications": [
+                "IAM",
+                "TMC"
+            ]
+        },
+        {
+            "value": "CONNECTION_DELETE",
+            "display": "Connections - Delete",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "DATASET_UPDATE",
+            "display": "Datasets - Edit",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "DATASET_TAGS_MANAGE",
+            "display": "Datasets - Manage tags",
+            "primary": false,
+            "applications": [
+                "TDC"
+            ]
+        },
+        {
+            "value": "TMC_SSO_MANAGEMENT",
+            "display": "SSO - Manage",
+            "primary": false,
+            "applications": [
+                "IAM",
+                "TMC"
+            ]
+        },
+        {
+            "value": "TDS_CAMPAIGN_DELETE",
+            "display": "Campaigns - Delete",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TDP_BASIC",
+            "display": "Preparations and local datasets - Manage",
+            "primary": false,
+            "applications": [
+                "TDP"
+            ]
+        },
+        {
+            "value": "RULE_VIEW",
+            "display": "Rule - View",
+            "primary": false,
+            "applications": [
+                "TRR"
+            ]
+        },
+        {
+            "value": "TDS_USERS_READ",
+            "display": "Users - View",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TMC_PROMOTION_EXECUTION",
+            "display": "Promotion - Start",
+            "primary": false,
+            "applications": [
+                "TMC"
+            ]
+        },
+        {
+            "value": "DATASET_SAMPLE_UPDATE",
+            "display": "Datasets - Refresh sample",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "CONNECTION_SHARE",
+            "display": "Connections - Share",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "DATASET_CREATE",
+            "display": "Datasets - Add",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "TDS_ASSIGNED_TASK_ASSIGN",
+            "display": "Tasks - Delegate",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "TDS_TASK_READ_BY_EXTERNAL_ID",
+            "display": "Tasks  - View via external ID",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        },
+        {
+            "value": "DATASET_SHARE",
+            "display": "Datasets - Share",
+            "primary": false,
+            "applications": [
+                "DATASETS"
+            ]
+        },
+        {
+            "value": "TDS_TASK_HISTORY_DELETE",
+            "display": "Tasks - Delete history",
+            "primary": false,
+            "applications": [
+                "TDS"
+            ]
+        }
+    ]
+}

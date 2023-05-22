@@ -1,0 +1,82 @@
+{
+    "id": "7b9e9297-6bb5-45e8-b8b4-16d918940032",
+    "name": "trial23952.eu.talend.com",
+    "displayName": "trial23952.eu.talend.com",
+    "email": "",
+    "subscription": {
+        "type": "Talend Cloud Data Management Platform",
+        "status": "Evaluation",
+        "startDate": 1684319998250,
+        "expiryDate": 1685529598250,
+        "supportLevel": "Community",
+        "options": {
+            "ipaas_static_ip": "false",
+            "apidt_max_users": "0",
+            "tmc_run_profile_bigdata": "false",
+            "dss_cloudengine_enabled": "true",
+            "multitenant_dataplane_enabled": "false",
+            "tmc_run_profile_standard": "true",
+            "ipaas_max_studio_users": "1",
+            "sso_enabled": "true",
+            "ipc_enabled": "true",
+            "trr_enabled": "true",
+            "tdataservice_enabled": "false",
+            "ipaas_workspace_shared": "true",
+            "auditlogs_retention_days": "31",
+            "tmc_engine_cluster": "true",
+            "hybrid_enabled": "true",
+            "ip_whitelist_enabled": "false",
+            "tdq_enabled": "true",
+            "ipaas_max_users": "2",
+            "ipaas_allow_actions": "false",
+            "tds_max_stewardship_users": "2",
+            "ipaas_flows_scheduledexecution": "true",
+            "tdp_dataset_provider": "catalog",
+            "tdp_max_data_prep_runs": "2",
+            "dss_max_users": "1",
+            "tdp_max_data_prep_users": "2",
+            "tdp_max_data_prep_storage": "40",
+            "minio_cloudstorage_enabled": "true",
+            "tdp_sharing_impl": "sharing-common",
+            "has_privatelink_subscription": "false",
+            "tds_tasks_max_storage": "20",
+            "tmc_engine_credits": "90000",
+            "tmc_run_profile_advanced": "false",
+            "tdc_max_users": "3",
+            "tmc_export_logs_s3": "false",
+            "tmc_max_service_accounts": "0",
+            "tmc_environments": "-1",
+            "ipaas_container_exclusive": "false"
+        },
+        "applications": [
+            "DSS",
+            "STUDIO",
+            "TDC",
+            "TDP",
+            "TDS",
+            "TIPAAS",
+            "TMC"
+        ],
+        "licenseData": {
+            "licenseType": "Evaluation",
+            "productKey": "TCP_DM"
+        },
+        "expiryDateNotNull": true
+    },
+    "active": true,
+    "creationDate": 1684319998273,
+    "userPolicySettings": {
+        "credentials": {
+            "enabled": false,
+            "passwordExpirationDelay": 30
+        },
+        "lock": {
+            "enabled": true,
+            "maxConsecutiveAttempts": 5,
+            "lockoutPeriod": 60
+        }
+    },
+    "ssoType": "INTERNAL",
+    "licenseProvisioned": true,
+    "tenantId": "7b9e9297-6bb5-45e8-b8b4-16d918940032"
+}

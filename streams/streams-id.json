@@ -1,0 +1,478 @@
+{
+    "id": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+    "created": 1684338517968,
+    "updated": 1684339628556,
+    "enabled": true,
+    "type": "batch",
+    "step": "finished",
+    "label": "Pipeline 1",
+    "description": "This is a newly created pipeline",
+    "input": "local-storage-connector",
+    "version": 13,
+    "datasetIds": [
+        "8857906b-554e-43ae-8fd3-e15b67710d5a",
+        "0f2c7b84-483d-4e7e-a914-b05d2b870473",
+        "32b186b1-f1c7-41ed-9b80-84f9d72cef09"
+    ],
+    "datastoreIds": [
+        "1129c4e8-85f8-48bb-b2f7-58f3f321f0f8",
+        "1db9951d-08b0-4e00-829f-2d35354e86d1"
+    ],
+    "pipelines": [
+        {
+            "components": [
+                {
+                    "id": "6464f75828a24dc66e6ee026",
+                    "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNMb2NhbFN0b3JhZ2VJbnB1dA",
+                    "graphicalAttributes": {
+                        "position": {
+                            "x": 80,
+                            "y": 120
+                        },
+                        "nodeSize": {
+                            "width": 160,
+                            "height": 80
+                        },
+                        "nodeType": "source",
+                        "label": "",
+                        "properties": {
+                            "icon": "local-storage-connector"
+                        }
+                    },
+                    "data": {
+                        "properties": {
+                            "configuration": {},
+                            "$componentMetadata": {
+                                "name": "Airplane_Crashes_and_Fatalities_Since_1908",
+                                "type": "Local storage input",
+                                "version": 1,
+                                "description": ""
+                            },
+                            "$datasetDefinition": {
+                                "datasetId": "8857906b-554e-43ae-8fd3-e15b67710d5a",
+                                "datasetPath": "configuration.dataset",
+                                "datastorePath": "configuration.dataset.datastore"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "6464f8c328a24dc66e6ee02b",
+                    "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNMb2NhbFN0b3JhZ2VPdXRwdXQ",
+                    "graphicalAttributes": {
+                        "position": {
+                            "x": 720,
+                            "y": 120
+                        },
+                        "nodeSize": {
+                            "width": 160,
+                            "height": 80
+                        },
+                        "nodeType": "sink",
+                        "label": "",
+                        "description": "",
+                        "properties": {
+                            "icon": "local-storage-connector"
+                        }
+                    },
+                    "data": {
+                        "properties": {
+                            "configuration": {
+                                "overwrite": true
+                            },
+                            "$componentMetadata": {
+                                "name": "Test",
+                                "type": "Local storage output",
+                                "version": 1,
+                                "description": ""
+                            },
+                            "$datasetDefinition": {
+                                "datasetId": "0f2c7b84-483d-4e7e-a914-b05d2b870473",
+                                "datasetPath": "configuration.dataset",
+                                "datastorePath": "configuration.dataset.datastore"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "086c92a5-57e4-4579-9e33-2281cb1c6654",
+                    "type": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjSm9pbjI",
+                    "graphicalAttributes": {
+                        "position": {
+                            "x": 400,
+                            "y": 120
+                        },
+                        "nodeSize": {
+                            "width": 160,
+                            "height": 80
+                        },
+                        "nodeType": "processor",
+                        "label": "",
+                        "description": "",
+                        "properties": {
+                            "icon": "union-processor"
+                        }
+                    },
+                    "data": {
+                        "properties": {
+                            "configuration": {
+                                "conditions": [
+                                    {
+                                        "leftKey": ".Operator",
+                                        "rightKey": ".State",
+                                        "$leftKey_name": ".Operator",
+                                        "$rightKey_name": ".State",
+                                        "keepBothKeysInOutput": false
+                                    }
+                                ],
+                                "joinFunction": "LEFT_OUTER_JOIN",
+                                "ignoreDataOrigin": true
+                            },
+                            "$componentMetadata": {
+                                "name": "Join 1",
+                                "type": "Join",
+                                "version": 1,
+                                "description": "",
+                                "technicalType": "processing-beam#Processing#Join2"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "6464f8cb28a24dc66e6ee038",
+                    "type": "amRiYy1lZSNKZGJjI1RhYmxlTmFtZUlucHV0",
+                    "graphicalAttributes": {
+                        "position": {
+                            "x": 80,
+                            "y": 280
+                        },
+                        "nodeSize": {
+                            "width": 160,
+                            "height": 80
+                        },
+                        "nodeType": "source",
+                        "label": "",
+                        "description": "",
+                        "properties": {
+                            "icon": "datastore-connector"
+                        }
+                    },
+                    "data": {
+                        "properties": {
+                            "configuration": {},
+                            "$componentMetadata": {
+                                "name": "Sales Order Data",
+                                "type": "Table name input",
+                                "version": 3,
+                                "description": ""
+                            },
+                            "$datasetDefinition": {
+                                "datasetId": "32b186b1-f1c7-41ed-9b80-84f9d72cef09",
+                                "datasetPath": "configuration.dataSet",
+                                "datastorePath": "configuration.dataSet.connection"
+                            }
+                        }
+                    }
+                }
+            ],
+            "ports": [
+                {
+                    "id": "6464f8c328a24dc66e6ee02a",
+                    "nodeId": "6464f75828a24dc66e6ee026",
+                    "graphicalAttributes": {
+                        "portType": "port-basic",
+                        "position": {
+                            "x": 240,
+                            "y": 160
+                        },
+                        "properties": {
+                            "type": "OUTGOING",
+                            "index": 0
+                        }
+                    },
+                    "data": {
+                        "flowType": "__default__"
+                    }
+                },
+                {
+                    "id": "6464f8cb28a24dc66e6ee034",
+                    "nodeId": "086c92a5-57e4-4579-9e33-2281cb1c6654",
+                    "graphicalAttributes": {
+                        "portType": "port-basic",
+                        "position": {
+                            "x": 400,
+                            "y": 180
+                        },
+                        "properties": {
+                            "type": "INCOMING",
+                            "index": 1
+                        }
+                    },
+                    "data": {
+                        "flowType": "lookup"
+                    }
+                },
+                {
+                    "id": "6464f8d628a24dc66e6ee03d",
+                    "nodeId": "6464f8cb28a24dc66e6ee038",
+                    "graphicalAttributes": {
+                        "portType": "port-basic",
+                        "position": {
+                            "x": 240,
+                            "y": 320
+                        },
+                        "properties": {
+                            "type": "OUTGOING",
+                            "index": 0
+                        }
+                    },
+                    "data": {
+                        "flowType": "__default__"
+                    }
+                },
+                {
+                    "id": "6464faa8cd979f7ccecb6e5f",
+                    "nodeId": "6464f8c328a24dc66e6ee02b",
+                    "graphicalAttributes": {
+                        "portType": "port-basic",
+                        "position": {
+                            "x": 720,
+                            "y": 160
+                        },
+                        "properties": {
+                            "type": "INCOMING",
+                            "index": 0
+                        }
+                    },
+                    "data": {
+                        "flowType": "__default__"
+                    }
+                },
+                {
+                    "id": "6464f8cb28a24dc66e6ee032",
+                    "nodeId": "086c92a5-57e4-4579-9e33-2281cb1c6654",
+                    "graphicalAttributes": {
+                        "portType": "port-basic",
+                        "position": {
+                            "x": 560,
+                            "y": 160
+                        },
+                        "properties": {
+                            "type": "OUTGOING",
+                            "index": 0
+                        }
+                    },
+                    "data": {
+                        "flowType": "__default__"
+                    }
+                },
+                {
+                    "id": "6464f8cb28a24dc66e6ee031",
+                    "nodeId": "086c92a5-57e4-4579-9e33-2281cb1c6654",
+                    "graphicalAttributes": {
+                        "portType": "port-basic",
+                        "position": {
+                            "x": 400,
+                            "y": 160
+                        },
+                        "properties": {
+                            "type": "INCOMING",
+                            "index": 0
+                        }
+                    },
+                    "data": {
+                        "flowType": "__default__"
+                    }
+                }
+            ],
+            "steps": [
+                {
+                    "data": {
+                        "properties": {}
+                    },
+                    "id": "6464f8cb28a24dc66e6ee037",
+                    "sourceId": "6464f8c328a24dc66e6ee02a",
+                    "targetId": "6464f8cb28a24dc66e6ee031",
+                    "graphicalAttributes": {
+                        "linkType": "datastream-link",
+                        "properties": {}
+                    }
+                },
+                {
+                    "data": {
+                        "properties": {}
+                    },
+                    "id": "6464f8cb28a24dc66e6ee036",
+                    "sourceId": "6464f8cb28a24dc66e6ee032",
+                    "targetId": "6464faa8cd979f7ccecb6e5f",
+                    "graphicalAttributes": {
+                        "linkType": "datastream-link",
+                        "properties": {}
+                    }
+                },
+                {
+                    "data": {
+                        "properties": {
+                            "backward": true
+                        }
+                    },
+                    "id": "6464f8cb28a24dc66e6ee03a",
+                    "sourceId": "6464f8d628a24dc66e6ee03d",
+                    "targetId": "6464f8cb28a24dc66e6ee034",
+                    "graphicalAttributes": {
+                        "linkType": "datastream-link",
+                        "properties": {}
+                    }
+                }
+            ],
+            "id": "c051d7c6-9f66-409e-a7f9-0674c0e4e606",
+            "runner": "run_spark"
+        }
+    ],
+    "execProfileId": "6464af11ef00ab6259bb0871",
+    "metrics": [
+        {
+            "userFlowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+            "timestamp": 0,
+            "durationMs": 4,
+            "read": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            },
+            "produced": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            }
+        },
+        {
+            "userFlowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+            "timestamp": 0,
+            "durationMs": 5007,
+            "read": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            },
+            "produced": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            }
+        },
+        {
+            "userFlowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+            "timestamp": 0,
+            "durationMs": 10017,
+            "read": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            },
+            "produced": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            }
+        },
+        {
+            "userFlowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+            "timestamp": 0,
+            "durationMs": 15017,
+            "read": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            },
+            "produced": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            }
+        },
+        {
+            "userFlowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+            "timestamp": 0,
+            "durationMs": 20017,
+            "read": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            },
+            "produced": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            }
+        },
+        {
+            "userFlowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+            "timestamp": 0,
+            "durationMs": 25018,
+            "read": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            },
+            "produced": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            }
+        },
+        {
+            "userFlowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+            "timestamp": 1684339614929,
+            "durationMs": 30017,
+            "read": {
+                "recordsCount": 1000,
+                "bytesCount": 121850
+            },
+            "produced": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            }
+        },
+        {
+            "userFlowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+            "timestamp": 1684339619924,
+            "durationMs": 35017,
+            "read": {
+                "recordsCount": 6268,
+                "bytesCount": 1705298
+            },
+            "produced": {
+                "recordsCount": 0,
+                "bytesCount": 0
+            }
+        },
+        {
+            "userFlowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+            "timestamp": 1684339625588,
+            "durationMs": 40017,
+            "read": {
+                "recordsCount": 6268,
+                "bytesCount": 1705298
+            },
+            "produced": {
+                "recordsCount": 5268,
+                "bytesCount": 1704612
+            }
+        },
+        {
+            "userFlowId": "6f449bc9-c7e5-474a-bb79-8d3b86ed2a15",
+            "timestamp": 1684339625588,
+            "durationMs": 41204,
+            "read": {
+                "recordsCount": 6268,
+                "bytesCount": 1705298
+            },
+            "produced": {
+                "recordsCount": 5268,
+                "bytesCount": 1704612
+            }
+        }
+    ],
+    "owner": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46",
+    "entitlements": [
+        "STREAM_CREATE",
+        "STREAM_READ",
+        "STREAM_DELETE",
+        "STREAM_UPDATE",
+        "STREAM_SHARE"
+    ],
+    "sharing": {
+        "isOwner": true,
+        "isSharedWithOthers": false
+    },
+    "__acl": 251658240
+}

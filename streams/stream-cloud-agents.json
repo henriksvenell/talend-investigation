@@ -1,0 +1,19 @@
+[
+    {
+        "id": "6464af11ef00ab6259bb0870",
+        "name": "Cloud Engine for Design",
+        "description": "N/A",
+        "status": "PAIRED",
+        "availability": "AVAILABLE",
+        "infrastructure": "N/A",
+        "engineId": "0873bf26-a350-448a-8a21-388d85dfbff2",
+        "preAuthorizedKey": "N/A",
+        "maxSlots": "4",
+        "runningSlots": "0",
+        "enqueuedJobs": "0",
+        "maxQueueSize": "1000",
+        "runStatus": "RUNNING",
+        "environmentVersion": "",
+        "cloudRunner": true
+    }
+]

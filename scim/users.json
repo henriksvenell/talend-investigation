@@ -1,0 +1,29 @@
+{
+    "schemas": [
+        "urn:ietf:params:scim:api:messages:2.0:ListResponse"
+    ],
+    "totalResults": 1,
+    "itemsPerPage": 1,
+    "startIndex": 1,
+    "Resources": [
+        {
+            "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46",
+            "schemas": [
+                "urn:ietf:params:scim:schemas:core:2.0:User"
+            ],
+            "name": {
+                "formatted": "Henrik Svenell",
+                "familyName": "Svenell",
+                "givenName": "Henrik"
+            },
+            "emails": [
+                {
+                    "value": "",
+                    "display": "",
+                    "type": "work",
+                    "primary": true
+                }
+            ]
+        }
+    ]
+}

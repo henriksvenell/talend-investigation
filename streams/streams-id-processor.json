@@ -1,0 +1,622 @@
+[
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjV2luZG93",
+        "name": "Window",
+        "label": "Window",
+        "iconKey": "window-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Stores in memory subsets of streaming data and sends the windowing results as micro-batches to the output flow.",
+        "version": 1,
+        "category": "Streaming",
+        "metadata": {
+            "documentation::value": "Stores in memory subsets of streaming data and sends the windowing results as micro-batches to the output flow."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjTm9ybWFsaXpl",
+        "name": "Normalize",
+        "label": "Normalize",
+        "iconKey": "normalize-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Converts complex values of a single record into N number of flattened values.",
+        "version": 1,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Converts complex values of a single record into N number of flattened values."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjSm9pbg",
+        "name": "Join",
+        "label": "Join",
+        "iconKey": "union-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Transforms several existing datasets to a new set of combined records.",
+        "version": 2,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Transforms several existing datasets to a new set of combined records."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjSm9pbjI",
+        "name": "Join2",
+        "label": "Join",
+        "iconKey": "union-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "INCOMING",
+                "flowType": "lookup"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Transforms several existing datasets to a new set of combined records.",
+        "version": 1,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Transforms several existing datasets to a new set of combined records."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjRmllbGRSZW1vdmVy",
+        "name": "FieldRemover",
+        "label": "Field remover",
+        "iconKey": "field-remover-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Deletes one or more fields from a dataset",
+        "version": 1,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Deletes one or more fields from a dataset"
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjVHlwZUNvbnZlcnRlcg",
+        "name": "TypeConverter",
+        "label": "Type converter",
+        "iconKey": "type-converter-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Converts input field data from one type to another.",
+        "version": 2,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Converts input field data from one type to another."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjUmVwbGljYXRl",
+        "name": "Replicate",
+        "label": "Replicate",
+        "iconKey": "replicate-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "second"
+            }
+        ],
+        "documentation": "Duplicates the incoming schema into two identical output flows.",
+        "version": 1,
+        "category": "Routing",
+        "metadata": {
+            "documentation::value": "Duplicates the incoming schema into two identical output flows."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjRmlsdGVy",
+        "name": "Filter",
+        "label": "Filter",
+        "iconKey": "filter-row-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "reject"
+            }
+        ],
+        "documentation": "Filters fields based on one or multiple conditions, splits them and passes the separated data to the next step in the Pipeline.",
+        "version": 1,
+        "category": "Routing",
+        "metadata": {
+            "documentation::value": "Filters fields based on one or multiple conditions, splits them and passes the separated data to the next step in the Pipeline."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjU2VtYW50aWNGaWx0ZXI",
+        "name": "SemanticFilter",
+        "label": "Semantic filter",
+        "iconKey": "semantic-filter-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "reject"
+            }
+        ],
+        "documentation": "Filters fields based on semantic rules, splits them, and passes the separated data to the next step in the pipeline.",
+        "version": 5,
+        "category": "Data Quality",
+        "metadata": {
+            "documentation::value": "Filters fields based on semantic rules, splits them, and passes the separated data to the next step in the pipeline."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjRmllbGRTZWxlY3Rvcg",
+        "name": "FieldSelector",
+        "label": "Field selector",
+        "iconKey": "field-selector-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Selects, edits and reorganizes your input fields.",
+        "version": 2,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Selects, edits and reorganizes your input fields."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjQWdncmVnYXRl",
+        "name": "Aggregate",
+        "label": "Aggregate",
+        "iconKey": "aggregate-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Aggregates the incoming schema based on one or more columns, performs sets of operations.",
+        "version": 1,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Aggregates the incoming schema based on one or more columns, performs sets of operations."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjU2FtcGxpbmc",
+        "name": "Sampling",
+        "label": "Data sampling",
+        "iconKey": "sampling-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "reject"
+            }
+        ],
+        "documentation": "Extracts randomly a subset of your data based on an approximate ratio or a fixed number of records.",
+        "version": 2,
+        "category": "Data Quality",
+        "metadata": {
+            "documentation::value": "Extracts randomly a subset of your data based on an approximate ratio or a fixed number of records."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI0RhdGFwcmVwTWF0aA",
+        "name": "DataprepMath",
+        "label": "Math",
+        "iconKey": "maths-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Performs calculation and computation operations on records containing numbers.",
+        "version": 3,
+        "category": "Field Manipulation",
+        "metadata": {
+            "documentation::value": "Performs calculation and computation operations on records containing numbers."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI0RhdGFwcmVwU3BsaXQ",
+        "name": "DataprepSplit",
+        "label": "Split",
+        "iconKey": "cut-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Extracts information from fields or splits single field into multiple fields.",
+        "version": 1,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Extracts information from fields or splits single field into multiple fields."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI0RhdGFwcmVwTnVtYmVycw",
+        "name": "DataprepNumbers",
+        "label": "Numbers",
+        "iconKey": "numbers-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Performs multiple transformations (format, compare, round) on records containing numbers.",
+        "version": 1,
+        "category": "Field Manipulation",
+        "metadata": {
+            "documentation::value": "Performs multiple transformations (format, compare, round) on records containing numbers."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI0RhdGFwcmVwUGhvbmU",
+        "name": "DataprepPhone",
+        "label": "Phones",
+        "iconKey": "phone-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Formats phone number or extracts specific information from phone numbers.",
+        "version": 1,
+        "category": "Field Manipulation",
+        "metadata": {
+            "documentation::value": "Formats phone number or extracts specific information from phone numbers."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI0RhdGFwcmVwU3RyaW5nUHJvY2Vzc2luZw",
+        "name": "DataprepStringProcessing",
+        "label": "Strings",
+        "iconKey": "abc-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Applies multiple functions on fields with a String data type.",
+        "version": 2,
+        "category": "Field Manipulation",
+        "metadata": {
+            "documentation::value": "Applies multiple functions on fields with a String data type."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI0RhdGFwcmVwQ2xlYW5zaW5n",
+        "name": "DataprepCleansing",
+        "label": "Data cleansing",
+        "iconKey": "broom-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Replaces the content of records or fills records with a given value.",
+        "version": 1,
+        "category": "Data Quality",
+        "metadata": {
+            "documentation::value": "Replaces the content of records or fills records with a given value."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI0RhdGFwcmVwTWFza2luZw",
+        "name": "DataprepMasking",
+        "label": "Data hashing",
+        "iconKey": "hash-knife-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Hides the original data by modifying it through hashing.",
+        "version": 2,
+        "category": "Data Quality",
+        "metadata": {
+            "documentation::value": "Hides the original data by modifying it through hashing."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI0RhdGFwcmVwRmllbGRzQ29uY2F0ZW5hdG9y",
+        "name": "DataprepFieldsConcatenator",
+        "label": "Field concatenator",
+        "iconKey": "concatenate-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Merges the content of several fields into a new one.",
+        "version": 1,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Merges the content of several fields into a new one."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI0RhdGFwcmVwRGF0ZQ",
+        "name": "DataprepDate",
+        "label": "Dates",
+        "iconKey": "empty-calendar-processor",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Calculates, cleanses, converts, modifies or compares dates.",
+        "version": 1,
+        "category": "Field Manipulation",
+        "metadata": {
+            "documentation::value": "Calculates, cleanses, converts, modifies or compares dates."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy10YWNva2l0I1Byb2Nlc3NpbmdUYWNva2l0I0RhdGFNYXBwZXI",
+        "name": "DataMapper",
+        "label": "Data Mapping",
+        "iconKey": "DataMapper",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Matches the schema defined along the pipeline with the schema of the destination.",
+        "version": 3,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Matches the schema defined along the pipeline with the schema of the destination."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "ZGF0YS1zaGFwaW5nLWxhbmd1YWdlI0RzbCNEU0w",
+        "name": "DSL",
+        "label": "Data Shaping Language",
+        "iconKey": "DataShapingLanguage",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Data Shaping Query Language is a SQL-like language that allows you to transform hierarchical data.",
+        "version": 1,
+        "category": "Custom Code",
+        "metadata": {
+            "documentation::value": "Data Shaping Query Language is a SQL-like language that allows you to transform hierarchical data."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cHJvY2Vzc2luZy1weXRob24zI1Byb2Nlc3NpbmdQeXRob24zI1B5dGhvbjM",
+        "name": "Python3",
+        "label": "Python 3",
+        "iconKey": "python-connector",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Processes fields based on Python 3 code.",
+        "version": 2,
+        "category": "Custom Code",
+        "metadata": {
+            "documentation::value": "Processes fields based on Python 3 code."
+        },
+        "unbounded": "false"
+    },
+    {
+        "componentTypeId": "cGFyc2VyI3BhcnNlciNwYXJzZXI",
+        "name": "parser",
+        "label": "Parser",
+        "iconKey": "parser-connector",
+        "topology": "PROCESSOR",
+        "connectors": [
+            {
+                "connectorType": "INCOMING",
+                "flowType": "__default__"
+            },
+            {
+                "connectorType": "OUTGOING",
+                "flowType": "__default__"
+            }
+        ],
+        "documentation": "Performs JSON or XML parsing on input fields.",
+        "version": 1,
+        "category": "Schema Manipulation",
+        "metadata": {
+            "documentation::value": "Performs JSON or XML parsing on input fields."
+        },
+        "unbounded": "false"
+    }
+]

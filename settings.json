@@ -1,0 +1,270 @@
+{
+    "contentTypes": {},
+    "actions": {
+        "menu:semantic": {
+            "id": "menu:semantic",
+            "label": "Semantic types",
+            "iconName": "book",
+            "icon": "talend-semantic",
+            "payload": {
+                "type": "MENU_LINK",
+                "cmf": {
+                    "routerReplace": "/semantic"
+                }
+            },
+            "tooltip": true,
+            "tooltipPlacement": "right"
+        },
+        "object:add:semantic": {
+            "label": "Add semantic type",
+            "icon": "talend-plus-circle",
+            "data-feature": "semantictype.add",
+            "bsStyle": "info",
+            "availableExpression": {
+                "id": "hasOneOfEntitlementExpression",
+                "args": [
+                    [
+                        "TDQ_SEMANTIC_TYPE_MANAGE",
+                        "TDQ_SEMANTIC_TYPE_CREATE"
+                    ]
+                ]
+            },
+            "payload": {
+                "type": "CALL_EVENT_HANDLER",
+                "eventName": "ADD_SEMANTIC_TYPE"
+            }
+        },
+        "object:import:semantic": {
+            "displayMode": "file",
+            "accept": "json",
+            "label": "Import semantic types",
+            "data-feature": "semantictype.import",
+            "bsStyle": "info btn-inverse",
+            "icon": "talend-download",
+            "actionCreator": "import:semantic",
+            "availableExpression": {
+                "id": "hasOneOfEntitlementExpression",
+                "args": [
+                    [
+                        "TDQ_SEMANTIC_TYPE_MANAGE",
+                        "TDQ_SEMANTIC_TYPE_CREATE"
+                    ]
+                ]
+            },
+            "tooltipLabel": "Import a semantic type previously exported"
+        },
+        "object:download:semantic": {
+            "id": "object:download:semantic",
+            "label": "Export semantic types",
+            "icon": "talend-upload",
+            "availableExpression": {
+                "id": "hasOneOfEntitlementExpression",
+                "args": [
+                    [
+                        "TDQ_SEMANTIC_TYPE_MANAGE",
+                        "TDQ_SEMANTIC_TYPE_VIEW"
+                    ]
+                ]
+            },
+            "payload": {
+                "type": "EXPORT_SEMANTIC_TYPE"
+            }
+        },
+        "object:export:categories": {
+            "id": "object:export:categories",
+            "label": "Export semantic types",
+            "bsStyle": "info btn-inverse",
+            "icon": "talend-upload",
+            "availableExpression": {
+                "id": "hasOneOfEntitlementExpression",
+                "args": [
+                    [
+                        "TDQ_SEMANTIC_TYPE_MANAGE",
+                        "TDQ_SEMANTIC_TYPE_VIEW"
+                    ]
+                ]
+            },
+            "payload": {
+                "type": "EXPORT_SEMANTIC_TYPES"
+            },
+            "actionCreator": "export:categories",
+            "inProgressExpression": "exportSemanticInProgress"
+        },
+        "object:publish:categories": {
+            "id": "object:publish:categories",
+            "label": "Publish semantic types",
+            "bsStyle": "info btn-inverse",
+            "icon": "talend-send",
+            "availableExpression": {
+                "id": "hasOneOfEntitlementExpression",
+                "args": [
+                    [
+                        "TDQ_SEMANTIC_TYPE_MANAGE",
+                        "TDQ_SEMANTIC_TYPE_PUBLISH"
+                    ]
+                ]
+            },
+            "payload": {
+                "type": "PUBLISH_SEMANTIC_TYPES"
+            },
+            "actionCreator": "publish:categories",
+            "inProgressExpression": "publishCategoriesInProgress"
+        },
+        "object:show:remove:semantic": {
+            "id": "object:show:remove:semantic",
+            "name": "object:show:remove:semantic",
+            "label": "Remove semantic type",
+            "icon": "talend-trash",
+            "availableExpression": {
+                "id": "hasOneOfEntitlementExpression",
+                "args": [
+                    [
+                        "TDQ_SEMANTIC_TYPE_MANAGE",
+                        "TDQ_SEMANTIC_TYPE_DELETE"
+                    ]
+                ]
+            },
+            "payload": {
+                "labelSemanticType": "The semantic type ",
+                "labelUsedinCompound": " is used by the following compound types: ",
+                "body": "Are you sure you want to remove the semantic type ",
+                "header": "Remove semantic type",
+                "type": "SLA_SHOW_REMOVE_SEMANTIC_TYPE",
+                "validateAction": "object:remove:semantic",
+                "cancelAction": "object:cancel:remove:semantic"
+            }
+        },
+        "object:remove:semantic": {
+            "label": "Remove",
+            "bsStyle": "danger",
+            "id": "object:remove:semantic",
+            "actionCreator": "remove:semantic",
+            "inProgressExpression": "removeSemanticInProgress"
+        },
+        "object:cancel:remove:semantic": {
+            "label": "Cancel",
+            "bsStyle": "default btn-inverse",
+            "autoFocus": true,
+            "id": "object:cancel:remove:semantic",
+            "actionCreator": "cancel:remove:semantic",
+            "disabledExpression": "removeSemanticInProgress"
+        },
+        "object:show:remove:categories": {
+            "id": "object:show:remove:categories",
+            "name": "object:show:remove:categories",
+            "label": "Remove semantic type",
+            "icon": "talend-trash",
+            "bsStyle": "danger btn-inverse",
+            "availableExpression": {
+                "id": "hasOneOfEntitlementExpression",
+                "args": [
+                    [
+                        "TDQ_SEMANTIC_TYPE_MANAGE",
+                        "TDQ_SEMANTIC_TYPE_DELETE"
+                    ]
+                ]
+            },
+            "payload": {
+                "body": "Are you sure you want to remove the selected semantic types?",
+                "header": "Remove semantic types",
+                "type": "SLA_SHOW_MASS_REMOVE_SEMANTIC_TYPE",
+                "validateAction": "object:remove:categories",
+                "cancelAction": "object:cancel:remove:categories"
+            }
+        },
+        "object:remove:categories": {
+            "label": "Remove",
+            "bsStyle": "danger",
+            "id": "object:remove:categories",
+            "actionCreator": "remove:categories",
+            "inProgressExpression": "removeSemanticInProgress"
+        },
+        "object:cancel:remove:categories": {
+            "label": "Cancel",
+            "bsStyle": "default btn-inverse",
+            "autoFocus": true,
+            "id": "object:cancel:remove:categories",
+            "actionCreator": "cancel:remove:categories",
+            "disabledExpression": "removeSemanticInProgress"
+        },
+        "object:sandbox:validate": {
+            "label": "Edit semantic type",
+            "bsStyle": "primary",
+            "id": "object:sandbox:validate",
+            "actionCreator": "sandbox:validate",
+            "inProgressExpression": "sandboxStealingInProgress"
+        },
+        "object:sandbox:cancel": {
+            "label": "Cancel",
+            "bsStyle": "default btn-inverse",
+            "autoFocus": true,
+            "id": "object:sandbox:cancel",
+            "actionCreator": "sandbox:cancel",
+            "disabledExpression": "sandboxStealingInProgress"
+        },
+        "object:import:validate": {
+            "label": "Import values",
+            "bsStyle": "primary",
+            "id": "object:import:validate",
+            "actionCreator": "import:validate"
+        },
+        "object:import:cancel": {
+            "label": "Cancel",
+            "bsStyle": "default btn-inverse",
+            "autoFocus": true,
+            "id": "object:import:cancel",
+            "actionCreator": "import:cancel"
+        },
+        "object:import:semantic:overwrite": {
+            "label": "Overwrite",
+            "bsStyle": "primary",
+            "id": "object:import:semantic:overwrite",
+            "actionCreator": "import:semantic:overwrite",
+            "inProgressExpression": "overwriteSemanticInProgress",
+            "disabledExpression": "disabledOverwriteExpression"
+        },
+        "object:import:semantic:cancel": {
+            "label": "Cancel",
+            "bsStyle": "default btn-inverse",
+            "autoFocus": true,
+            "id": "object:import:semantic:cancel",
+            "actionCreator": "import:semantic:cancel",
+            "disabledExpression": "disabledOverwriteExpression"
+        }
+    },
+    "props": {
+        "SemanticLayout#SemanticList": {
+            "keepComponentState": true,
+            "semanticList": true,
+            "header": {},
+            "sidepanel": {}
+        },
+        "SemanticLayout#SemanticForm": {
+            "semanticList": false,
+            "header": {},
+            "sidepanel": {}
+        },
+        "Container(ShortcutManager)#default": {
+            "redirectMap": {
+                "esc": {
+                    "/connections/add": "/connections",
+                    "^[/]connections[/].*[/]view$": "/connections",
+                    "^[/]connections[/].*[/]edit$": "/connections",
+                    "^[/]connections[/].*[/]delete$": "/connections",
+                    "^[/]connections[/].*[/]edit[/]add-dataset$": "/connections",
+                    "/datasets/add": "/datasets",
+                    "^[/]datasets[/].*[/]view$": "/datasets",
+                    "^[/]datasets[/].*[/]edit$": "/datasets",
+                    "^[/]datasets[/].*[/]delete$": "/datasets"
+                }
+            }
+        },
+        "ComponentForm#add-dataset-form": {
+            "saga": "datasetForm"
+        },
+        "ComponentForm#edit-dataset-form": {
+            "saga": "datasetForm"
+        }
+    },
+    "ref": {}
+}

@@ -1,0 +1,113 @@
+{
+    "data": [
+        {
+            "id": "05ec261e-3079-4a83-89a7-e618d2951c32",
+            "businessId": "quality_completeness",
+            "label": "facet.quality-completeness.label",
+            "category": "built-in",
+            "values": [
+                "1.0"
+            ],
+            "isDefault": false
+        },
+        {
+            "id": "137a9144-892d-451b-b94b-43ac7631918d",
+            "businessId": "description",
+            "label": "Description",
+            "category": "built-in",
+            "values": [
+                ""
+            ],
+            "isDefault": false
+        },
+        {
+            "id": "43a729f5-afe8-43fb-8988-c9979e45294b",
+            "businessId": "primitive_type_quality",
+            "label": "facet.primitive-type-quality.label",
+            "category": "built-in",
+            "values": [
+                "1.0"
+            ],
+            "isDefault": false
+        },
+        {
+            "id": "4b2f6059-bd34-4303-b8f4-e94ec753115a",
+            "businessId": "number_of_pipelines",
+            "label": "facet.number-of-pipelines.label",
+            "category": "built-in",
+            "values": [
+                "0"
+            ],
+            "isDefault": false
+        },
+        {
+            "id": "76fc48e3-0ee6-49bd-92c0-5f6d6dbdca68",
+            "businessId": "number_of_preparations",
+            "label": "facet.number-of-preparations.label",
+            "category": "built-in",
+            "values": [
+                "0"
+            ],
+            "isDefault": false
+        },
+        {
+            "id": "876a300d-38eb-4718-8c8b-75301bb041c8",
+            "businessId": "number_of_views",
+            "label": "built-in.number-of-views.label",
+            "category": "built-in",
+            "values": [],
+            "isDefault": true
+        },
+        {
+            "id": "b14998ac-a708-4f5f-b341-45de3f2a1a64",
+            "businessId": "semantic_type_quality",
+            "label": "facet.semantic-type-quality.label",
+            "category": "built-in",
+            "values": [
+                "1.0"
+            ],
+            "isDefault": false
+        },
+        {
+            "id": "b2ef8976-a430-11eb-bcbc-0242ac130002",
+            "businessId": "crawler_id",
+            "label": "built-in.crawler-id.label",
+            "category": "built-in",
+            "values": [],
+            "isDefault": true
+        },
+        {
+            "id": "e11b00bb-8a6e-4146-a076-a1fe16d9aa98",
+            "businessId": "tags",
+            "label": "Tags",
+            "category": "built-in",
+            "values": [],
+            "isDefault": true
+        },
+        {
+            "id": "eefb2078-f668-4135-87f9-24acacc12591",
+            "businessId": "api_status",
+            "label": "API Status",
+            "category": "built-in",
+            "values": [
+                "Unconfigured"
+            ],
+            "isDefault": false
+        },
+        {
+            "id": "efd30f8b-db6e-4be4-94fa-0ab64259a7e0",
+            "businessId": "semantic_type_ratio",
+            "label": "facet.semantic-type-ratio.label",
+            "category": "built-in",
+            "values": [
+                "0.5"
+            ],
+            "isDefault": false
+        }
+    ],
+    "paging": {
+        "total": 11,
+        "offset": 0,
+        "limit": 100
+    }
+}

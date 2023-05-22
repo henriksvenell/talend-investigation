@@ -1,0 +1,49 @@
+{
+    "entitlements": [
+        "CONNECTION_SHARE",
+        "CONNECTION_UPDATE",
+        "CONNECTION_READ",
+        "CONNECTION_DELETE"
+    ],
+    "__acl": 46,
+    "id": "1129c4e8-85f8-48bb-b2f7-58f3f321f0f8",
+    "created": 1684320165070,
+    "updated": 1684320165070,
+    "enabled": true,
+    "label": "MySQL Database",
+    "type": "amRiYy1lZSNKZGJjI2RhdGFzdG9yZSNKZGJjQ29ubmVjdGlvbg",
+    "typeLabel": null,
+    "description": null,
+    "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2",
+    "tags": null,
+    "properties": {
+        "$formId": "amRiYy1lZSNKZGJjI2RhdGFzdG9yZSNKZGJjQ29ubmVjdGlvbg",
+        "__version": "3",
+        "configuration.host": "talend-cloud-trials.cdc6ngw47u0b.us-east-2.rds.amazonaws.com",
+        "configuration.port": "3306.0",
+        "configuration.dbType": "MySQL",
+        "configuration.userId": "talend_trial",
+        "configuration.database": "talend",
+        "configuration.password": "",
+        "configuration.grantType": "CLIENT_CREDENTIALS",
+        "configuration.setRawUrl": "false",
+        "configuration.$dbType_name": "MySQL",
+        "configuration.defineProtocol": "false",
+        "configuration.connectionTimeOut": "30.0",
+        "configuration.authenticationType": "BASIC",
+        "configuration.connectionValidationTimeOut": "10.0"
+    },
+    "datasetsCount": 2,
+    "owner": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46",
+    "version": 0,
+    "icon": "datastore-family",
+    "familyId": "amRiYy1lZSNKZGJj",
+    "createdBy": {
+        "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+    },
+    "updatedBy": {
+        "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+    },
+    "dqEngineEnabled": true,
+    "schemaVersion": 0
+}

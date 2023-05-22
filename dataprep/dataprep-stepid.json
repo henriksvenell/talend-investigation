@@ -1,0 +1,140 @@
+{
+    "jsonSchema": {
+        "properties": {
+            "column_id": {
+                "type": "string"
+            },
+            "scope": {
+                "type": "string"
+            },
+            "filter": {
+                "type": "string"
+            },
+            "create_new_column": {
+                "type": "boolean"
+            },
+            "cell_value": {
+                "properties": {
+                    "operator": {
+                        "enum": [
+                            "equals",
+                            "contains",
+                            "starts_with",
+                            "ends_with",
+                            "regex"
+                        ],
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "replace_value": {
+                "type": "string"
+            },
+            "replace_entire_cell": {
+                "type": "boolean"
+            },
+            "action_id": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "cell_value"
+        ],
+        "title": "Search and replace",
+        "type": "object"
+    },
+    "properties": {
+        "create_new_column": false,
+        "action_id": "replace_on_value",
+        "cell_value": {
+            "value": "00/00/0000",
+            "operator": "equals"
+        },
+        "replace_entire_cell": false,
+        "replace_value": "01/01/2000",
+        "column_id": "0006",
+        "scope": "column"
+    },
+    "uiSchema": [
+        {
+            "key": "column_id",
+            "type": "hidden"
+        },
+        {
+            "key": "scope",
+            "type": "hidden"
+        },
+        {
+            "key": "filter",
+            "type": "hidden"
+        },
+        {
+            "disabled": true,
+            "key": "create_new_column",
+            "readOnly": true,
+            "required": false,
+            "title": "Create new column",
+            "tooltip": "Toggle if this function will create a new column or be applied in place"
+        },
+        {
+            "disabled": false,
+            "key": "cell_value",
+            "options": {
+                "symbols": {
+                    "equals": "=",
+                    "contains": "≅",
+                    "starts_with": ">",
+                    "ends_with": "<",
+                    "regex": "^\\"
+                }
+            },
+            "readOnly": false,
+            "required": true,
+            "title": "Search for",
+            "titleMap": [
+                {
+                    "name": "Equals",
+                    "value": "equals"
+                },
+                {
+                    "name": "Contains",
+                    "value": "contains"
+                },
+                {
+                    "name": "Starts with",
+                    "value": "starts_with"
+                },
+                {
+                    "name": "Ends with",
+                    "value": "ends_with"
+                },
+                {
+                    "name": "Regex",
+                    "value": "regex"
+                }
+            ],
+            "tooltip": "The current value",
+            "widget": "comparator"
+        },
+        {
+            "key": "replace_value",
+            "required": false,
+            "title": "Replace with",
+            "tooltip": "The new value to set"
+        },
+        {
+            "key": "replace_entire_cell",
+            "required": false,
+            "title": "Overwrite entire cell",
+            "tooltip": "Defines greedy level. If checked, it will overwrite the entire cell, if not, it will only replace the part of the value that matches"
+        },
+        {
+            "key": "action_id",
+            "type": "hidden"
+        }
+    ]
+}

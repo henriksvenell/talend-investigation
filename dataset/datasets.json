@@ -1,0 +1,996 @@
+{
+    "paging": {
+        "total": 10,
+        "offset": 0,
+        "limit": 1000
+    },
+    "data": [
+        {
+            "entitlements": [
+                "DATASET_API_VIEW",
+                "CONNECTION_SHARE",
+                "CONNECTION_READ",
+                "CONNECTION_UPDATE",
+                "DATASET_API_MANAGE",
+                "DATASET_READ",
+                "DATASET_DOWNLOAD",
+                "DATASET_DELETE",
+                "DATASET_CERTIFY",
+                "DATASET_SCHEMA_UPDATE",
+                "CONNECTION_DELETE",
+                "DATASET_UPDATE",
+                "DATASET_SHARE"
+            ],
+            "__acl": 11822,
+            "id": "2c595b3a-95cd-48e1-bd05-b8548a19209f",
+            "created": 1684320168441,
+            "updated": 1684320191231,
+            "creator": "Henrik Svenell",
+            "label": "Tax Rates",
+            "datastore": {
+                "id": "1129c4e8-85f8-48bb-b2f7-58f3f321f0f8",
+                "label": "MySQL Database",
+                "type": "amRiYy1lZSNKZGJjI2RhdGFzdG9yZSNKZGJjQ29ubmVjdGlvbg",
+                "typeLabel": "Database",
+                "icon": "datastore-family",
+                "familyId": "amRiYy1lZSNKZGJj",
+                "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2"
+            },
+            "rating": {},
+            "certification": "none",
+            "type": "amRiYy1lZSNKZGJjI2RhdGFzZXQjVGFibGVOYW1lRGF0YXNldA",
+            "fullScanExecution": false,
+            "qualityStatus": "sampleAvailable",
+            "sharing": {
+                "isOwner": true,
+                "isSharedWithOthers": false
+            },
+            "favorite": false,
+            "talendGlobalQuality": {
+                "-1": 0,
+                "1": 100,
+                "0": 0,
+                "total": 100
+            },
+            "trustScore": 2.64,
+            "trustScoreAxes": [
+                {
+                    "id": "validity",
+                    "label": "Validity",
+                    "description": "Fix validity issues with Data Preparation or Pipeline Designer to improve the quality of the data itself. The validity takes into account the number of valid and invalid values across the dataset sample, as well as the data type and the ratio of semantic types versus primitive types.",
+                    "currentValue": 92.31,
+                    "maxValue": 100,
+                    "order": 0
+                },
+                {
+                    "id": "social-curation",
+                    "label": "Popularity",
+                    "description": "Review user feedback and gauge the reliability of the dataset. The Popularity axis lets you see how your dataset is rated by users across your organization, and also takes into account the certification level of the dataset.",
+                    "currentValue": 21.43,
+                    "maxValue": 100,
+                    "order": 1
+                },
+                {
+                    "id": "discoverability",
+                    "label": "Discoverability",
+                    "description": "The better your datasets are documented with proper metadata, the easier it will be for other users of your organization to find, understand, and use these assets. Add tags, set custom attributes and fill in the description in order to make your datasets easier to find.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 3
+                },
+                {
+                    "id": "usage",
+                    "label": "Usage",
+                    "description": "How often a dataset is used or consulted is representative of how useful it is. This aspect of the Trust Score takes into account the pipelines and preparations that rely on this dataset as a source, as well as how frequently it is updated.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 4
+                },
+                {
+                    "id": "completeness",
+                    "label": "Completeness",
+                    "description": "If your dataset includes empty values, improve its completeness by deleting or completing the empty attributes and records using Data Preparation or Pipeline Designer.",
+                    "currentValue": 100,
+                    "maxValue": 100,
+                    "order": 2
+                }
+            ],
+            "nested": false,
+            "caValues": null,
+            "updatedBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            },
+            "createdBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            }
+        },
+        {
+            "entitlements": [
+                "DATASET_API_VIEW",
+                "CONNECTION_SHARE",
+                "CONNECTION_READ",
+                "CONNECTION_UPDATE",
+                "DATASET_API_MANAGE",
+                "DATASET_READ",
+                "DATASET_DOWNLOAD",
+                "DATASET_DELETE",
+                "DATASET_CERTIFY",
+                "DATASET_SCHEMA_UPDATE",
+                "CONNECTION_DELETE",
+                "DATASET_UPDATE",
+                "DATASET_SHARE"
+            ],
+            "__acl": 11822,
+            "id": "32b186b1-f1c7-41ed-9b80-84f9d72cef09",
+            "created": 1684320166370,
+            "updated": 1684320193700,
+            "creator": "Henrik Svenell",
+            "label": "Sales Order Data",
+            "datastore": {
+                "id": "1129c4e8-85f8-48bb-b2f7-58f3f321f0f8",
+                "label": "MySQL Database",
+                "type": "amRiYy1lZSNKZGJjI2RhdGFzdG9yZSNKZGJjQ29ubmVjdGlvbg",
+                "typeLabel": "Database",
+                "icon": "datastore-family",
+                "familyId": "amRiYy1lZSNKZGJj",
+                "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2"
+            },
+            "rating": {},
+            "certification": "none",
+            "type": "amRiYy1lZSNKZGJjI2RhdGFzZXQjVGFibGVOYW1lRGF0YXNldA",
+            "fullScanExecution": false,
+            "qualityStatus": "sampleAvailable",
+            "sharing": {
+                "isOwner": true,
+                "isSharedWithOthers": false
+            },
+            "favorite": false,
+            "talendGlobalQuality": {
+                "-1": 200,
+                "1": 9502,
+                "0": 298,
+                "total": 10000
+            },
+            "trustScore": 2.76,
+            "trustScoreAxes": [
+                {
+                    "id": "usage",
+                    "label": "Usage",
+                    "description": "How often a dataset is used or consulted is representative of how useful it is. This aspect of the Trust Score takes into account the pipelines and preparations that rely on this dataset as a source, as well as how frequently it is updated.",
+                    "currentValue": 33.33,
+                    "maxValue": 100,
+                    "order": 4
+                },
+                {
+                    "id": "social-curation",
+                    "label": "Popularity",
+                    "description": "Review user feedback and gauge the reliability of the dataset. The Popularity axis lets you see how your dataset is rated by users across your organization, and also takes into account the certification level of the dataset.",
+                    "currentValue": 21.43,
+                    "maxValue": 100,
+                    "order": 1
+                },
+                {
+                    "id": "completeness",
+                    "label": "Completeness",
+                    "description": "If your dataset includes empty values, improve its completeness by deleting or completing the empty attributes and records using Data Preparation or Pipeline Designer.",
+                    "currentValue": 97.72,
+                    "maxValue": 100,
+                    "order": 2
+                },
+                {
+                    "id": "discoverability",
+                    "label": "Discoverability",
+                    "description": "The better your datasets are documented with proper metadata, the easier it will be for other users of your organization to find, understand, and use these assets. Add tags, set custom attributes and fill in the description in order to make your datasets easier to find.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 3
+                },
+                {
+                    "id": "validity",
+                    "label": "Validity",
+                    "description": "Fix validity issues with Data Preparation or Pipeline Designer to improve the quality of the data itself. The validity takes into account the number of valid and invalid values across the dataset sample, as well as the data type and the ratio of semantic types versus primitive types.",
+                    "currentValue": 90.85,
+                    "maxValue": 100,
+                    "order": 0
+                }
+            ],
+            "nested": false,
+            "caValues": null,
+            "updatedBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            },
+            "createdBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            }
+        },
+        {
+            "entitlements": [
+                "DATASET_API_VIEW",
+                "CONNECTION_SHARE",
+                "CONNECTION_READ",
+                "CONNECTION_UPDATE",
+                "DATASET_API_MANAGE",
+                "DATASET_READ",
+                "DATASET_DOWNLOAD",
+                "DATASET_DELETE",
+                "DATASET_CERTIFY",
+                "DATASET_SCHEMA_UPDATE",
+                "CONNECTION_DELETE",
+                "DATASET_UPDATE",
+                "DATASET_SHARE"
+            ],
+            "__acl": 11822,
+            "id": "99d1a6f0-6d1b-455a-8389-f46d00a90ce0",
+            "created": 1684328267220,
+            "updated": 1684328695976,
+            "creator": "Henrik Svenell",
+            "label": "Cleaned Data",
+            "datastore": {
+                "id": "2b8f3711-5bce-4ddf-965c-797d53e96a73",
+                "label": "MySQL Database",
+                "type": "amRiYy1lZSNKZGJjI2RhdGFzdG9yZSNKZGJjQ29ubmVjdGlvbg",
+                "typeLabel": "Database",
+                "icon": "datastore-family",
+                "familyId": "amRiYy1lZSNKZGJj",
+                "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2"
+            },
+            "rating": {},
+            "certification": "none",
+            "type": "amRiYy1lZSNKZGJjI2RhdGFzZXQjVGFibGVOYW1lRGF0YXNldA",
+            "fullScanExecution": false,
+            "qualityStatus": "sampleAvailable",
+            "sharing": {
+                "isOwner": true,
+                "isSharedWithOthers": false
+            },
+            "favorite": false,
+            "talendGlobalQuality": {
+                "-1": 104,
+                "1": 9598,
+                "0": 298,
+                "total": 10000
+            },
+            "trustScore": 2.66,
+            "trustScoreAxes": [
+                {
+                    "id": "validity",
+                    "label": "Validity",
+                    "description": "Fix validity issues with Data Preparation or Pipeline Designer to improve the quality of the data itself. The validity takes into account the number of valid and invalid values across the dataset sample, as well as the data type and the ratio of semantic types versus primitive types.",
+                    "currentValue": 91.84,
+                    "maxValue": 100,
+                    "order": 0
+                },
+                {
+                    "id": "social-curation",
+                    "label": "Popularity",
+                    "description": "Review user feedback and gauge the reliability of the dataset. The Popularity axis lets you see how your dataset is rated by users across your organization, and also takes into account the certification level of the dataset.",
+                    "currentValue": 21.43,
+                    "maxValue": 100,
+                    "order": 1
+                },
+                {
+                    "id": "usage",
+                    "label": "Usage",
+                    "description": "How often a dataset is used or consulted is representative of how useful it is. This aspect of the Trust Score takes into account the pipelines and preparations that rely on this dataset as a source, as well as how frequently it is updated.",
+                    "currentValue": 10.03,
+                    "maxValue": 100,
+                    "order": 4
+                },
+                {
+                    "id": "completeness",
+                    "label": "Completeness",
+                    "description": "If your dataset includes empty values, improve its completeness by deleting or completing the empty attributes and records using Data Preparation or Pipeline Designer.",
+                    "currentValue": 97.72,
+                    "maxValue": 100,
+                    "order": 2
+                },
+                {
+                    "id": "discoverability",
+                    "label": "Discoverability",
+                    "description": "The better your datasets are documented with proper metadata, the easier it will be for other users of your organization to find, understand, and use these assets. Add tags, set custom attributes and fill in the description in order to make your datasets easier to find.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 3
+                }
+            ],
+            "nested": false,
+            "caValues": null,
+            "updatedBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            },
+            "createdBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            }
+        },
+        {
+            "entitlements": [
+                "DATASET_API_VIEW",
+                "CONNECTION_SHARE",
+                "CONNECTION_READ",
+                "CONNECTION_UPDATE",
+                "DATASET_API_MANAGE",
+                "DATASET_READ",
+                "DATASET_DOWNLOAD",
+                "DATASET_DELETE",
+                "DATASET_CERTIFY",
+                "DATASET_SCHEMA_UPDATE",
+                "CONNECTION_DELETE",
+                "DATASET_UPDATE",
+                "DATASET_SHARE"
+            ],
+            "__acl": 11822,
+            "id": "60b6485d-eea3-4f03-bc98-50068fbf62c3",
+            "created": 1684328267640,
+            "updated": null,
+            "creator": "Henrik Svenell",
+            "label": "Report Data",
+            "datastore": {
+                "id": "2b8f3711-5bce-4ddf-965c-797d53e96a73",
+                "label": "MySQL Database",
+                "type": "amRiYy1lZSNKZGJjI2RhdGFzdG9yZSNKZGJjQ29ubmVjdGlvbg",
+                "typeLabel": "Database",
+                "icon": "datastore-family",
+                "familyId": "amRiYy1lZSNKZGJj",
+                "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2"
+            },
+            "rating": {},
+            "certification": "none",
+            "type": "amRiYy1lZSNKZGJjI2RhdGFzZXQjVGFibGVOYW1lRGF0YXNldA",
+            "fullScanExecution": false,
+            "qualityStatus": "none",
+            "sharing": {
+                "isOwner": true,
+                "isSharedWithOthers": false
+            },
+            "favorite": false,
+            "talendGlobalQuality": {
+                "-1": 0,
+                "1": 0,
+                "0": 0,
+                "total": 0
+            },
+            "trustScore": 0,
+            "trustScoreAxes": [
+                {
+                    "id": "usage",
+                    "label": "Usage",
+                    "description": "How often a dataset is used or consulted is representative of how useful it is. This aspect of the Trust Score takes into account the pipelines and preparations that rely on this dataset as a source, as well as how frequently it is updated.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 4
+                },
+                {
+                    "id": "completeness",
+                    "label": "Completeness",
+                    "description": "If your dataset includes empty values, improve its completeness by deleting or completing the empty attributes and records using Data Preparation or Pipeline Designer.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 2
+                },
+                {
+                    "id": "validity",
+                    "label": "Validity",
+                    "description": "Fix validity issues with Data Preparation or Pipeline Designer to improve the quality of the data itself. The validity takes into account the number of valid and invalid values across the dataset sample, as well as the data type and the ratio of semantic types versus primitive types.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 0
+                },
+                {
+                    "id": "social-curation",
+                    "label": "Popularity",
+                    "description": "Review user feedback and gauge the reliability of the dataset. The Popularity axis lets you see how your dataset is rated by users across your organization, and also takes into account the certification level of the dataset.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 1
+                },
+                {
+                    "id": "discoverability",
+                    "label": "Discoverability",
+                    "description": "The better your datasets are documented with proper metadata, the easier it will be for other users of your organization to find, understand, and use these assets. Add tags, set custom attributes and fill in the description in order to make your datasets easier to find.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 3
+                }
+            ],
+            "nested": null,
+            "caValues": null,
+            "updatedBy": null,
+            "createdBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            }
+        },
+        {
+            "entitlements": [
+                "DATASET_API_VIEW",
+                "CONNECTION_SHARE",
+                "CONNECTION_READ",
+                "CONNECTION_UPDATE",
+                "DATASET_API_MANAGE",
+                "DATASET_READ",
+                "DATASET_DOWNLOAD",
+                "DATASET_DELETE",
+                "DATASET_CERTIFY",
+                "DATASET_SCHEMA_UPDATE",
+                "CONNECTION_DELETE",
+                "DATASET_UPDATE",
+                "DATASET_SHARE"
+            ],
+            "__acl": 11822,
+            "id": "3f86c923-6956-468b-a159-dd04b45b743c",
+            "created": 1684340882816,
+            "updated": null,
+            "creator": "Henrik Svenell",
+            "label": "test32",
+            "datastore": {
+                "id": "1db9951d-08b0-4e00-829f-2d35354e86d1",
+                "label": "Local Connection",
+                "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc3RvcmUjTG9jYWxTdG9yYWdlRGF0YVN0b3Jl",
+                "typeLabel": "Local connection",
+                "icon": "local-storage-family",
+                "familyId": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZQ",
+                "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2"
+            },
+            "rating": {},
+            "certification": "none",
+            "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc2V0I0xvY2FsU3RvcmFnZURhdGFTZXQ",
+            "fullScanExecution": false,
+            "qualityStatus": "failed",
+            "sharing": {
+                "isOwner": true,
+                "isSharedWithOthers": false
+            },
+            "favorite": false,
+            "talendGlobalQuality": {
+                "-1": 0,
+                "1": 0,
+                "0": 0,
+                "total": 0
+            },
+            "trustScore": 0,
+            "trustScoreAxes": [
+                {
+                    "id": "usage",
+                    "label": "Usage",
+                    "description": "How often a dataset is used or consulted is representative of how useful it is. This aspect of the Trust Score takes into account the pipelines and preparations that rely on this dataset as a source, as well as how frequently it is updated.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 4
+                },
+                {
+                    "id": "completeness",
+                    "label": "Completeness",
+                    "description": "If your dataset includes empty values, improve its completeness by deleting or completing the empty attributes and records using Data Preparation or Pipeline Designer.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 2
+                },
+                {
+                    "id": "validity",
+                    "label": "Validity",
+                    "description": "Fix validity issues with Data Preparation or Pipeline Designer to improve the quality of the data itself. The validity takes into account the number of valid and invalid values across the dataset sample, as well as the data type and the ratio of semantic types versus primitive types.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 0
+                },
+                {
+                    "id": "social-curation",
+                    "label": "Popularity",
+                    "description": "Review user feedback and gauge the reliability of the dataset. The Popularity axis lets you see how your dataset is rated by users across your organization, and also takes into account the certification level of the dataset.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 1
+                },
+                {
+                    "id": "discoverability",
+                    "label": "Discoverability",
+                    "description": "The better your datasets are documented with proper metadata, the easier it will be for other users of your organization to find, understand, and use these assets. Add tags, set custom attributes and fill in the description in order to make your datasets easier to find.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 3
+                }
+            ],
+            "nested": null,
+            "caValues": null,
+            "updatedBy": null,
+            "createdBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            }
+        },
+        {
+            "entitlements": [
+                "DATASET_API_VIEW",
+                "CONNECTION_SHARE",
+                "CONNECTION_READ",
+                "CONNECTION_UPDATE",
+                "DATASET_API_MANAGE",
+                "DATASET_READ",
+                "DATASET_DOWNLOAD",
+                "DATASET_DELETE",
+                "DATASET_CERTIFY",
+                "DATASET_SCHEMA_UPDATE",
+                "CONNECTION_DELETE",
+                "DATASET_UPDATE",
+                "DATASET_SHARE"
+            ],
+            "__acl": 11822,
+            "id": "43b7ddbb-5961-4295-b346-5d23037b3576",
+            "created": 1684340628018,
+            "updated": 1684340663792,
+            "creator": "Henrik Svenell",
+            "label": "Reiter_Amended copy",
+            "datastore": {
+                "id": "1db9951d-08b0-4e00-829f-2d35354e86d1",
+                "label": "Local Connection",
+                "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc3RvcmUjTG9jYWxTdG9yYWdlRGF0YVN0b3Jl",
+                "typeLabel": "Local connection",
+                "icon": "local-storage-family",
+                "familyId": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZQ",
+                "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2"
+            },
+            "rating": {},
+            "certification": "none",
+            "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc2V0I0xvY2FsU3RvcmFnZURhdGFTZXQ",
+            "fullScanExecution": false,
+            "qualityStatus": "sampleAvailable",
+            "sharing": {
+                "isOwner": true,
+                "isSharedWithOthers": false
+            },
+            "favorite": false,
+            "talendGlobalQuality": {
+                "-1": 106,
+                "1": 2497,
+                "0": 65,
+                "total": 2668
+            },
+            "trustScore": 2.6,
+            "trustScoreAxes": [
+                {
+                    "id": "validity",
+                    "label": "Validity",
+                    "description": "Fix validity issues with Data Preparation or Pipeline Designer to improve the quality of the data itself. The validity takes into account the number of valid and invalid values across the dataset sample, as well as the data type and the ratio of semantic types versus primitive types.",
+                    "currentValue": 82.8,
+                    "maxValue": 100,
+                    "order": 0
+                },
+                {
+                    "id": "completeness",
+                    "label": "Completeness",
+                    "description": "If your dataset includes empty values, improve its completeness by deleting or completing the empty attributes and records using Data Preparation or Pipeline Designer.",
+                    "currentValue": 97.9,
+                    "maxValue": 100,
+                    "order": 2
+                },
+                {
+                    "id": "usage",
+                    "label": "Usage",
+                    "description": "How often a dataset is used or consulted is representative of how useful it is. This aspect of the Trust Score takes into account the pipelines and preparations that rely on this dataset as a source, as well as how frequently it is updated.",
+                    "currentValue": 33.33,
+                    "maxValue": 100,
+                    "order": 4
+                },
+                {
+                    "id": "social-curation",
+                    "label": "Popularity",
+                    "description": "Review user feedback and gauge the reliability of the dataset. The Popularity axis lets you see how your dataset is rated by users across your organization, and also takes into account the certification level of the dataset.",
+                    "currentValue": 21.43,
+                    "maxValue": 100,
+                    "order": 1
+                },
+                {
+                    "id": "discoverability",
+                    "label": "Discoverability",
+                    "description": "The better your datasets are documented with proper metadata, the easier it will be for other users of your organization to find, understand, and use these assets. Add tags, set custom attributes and fill in the description in order to make your datasets easier to find.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 3
+                }
+            ],
+            "nested": false,
+            "caValues": null,
+            "updatedBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            },
+            "createdBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            }
+        },
+        {
+            "entitlements": [
+                "DATASET_API_VIEW",
+                "CONNECTION_SHARE",
+                "CONNECTION_READ",
+                "CONNECTION_UPDATE",
+                "DATASET_API_MANAGE",
+                "DATASET_READ",
+                "DATASET_DOWNLOAD",
+                "DATASET_DELETE",
+                "DATASET_CERTIFY",
+                "DATASET_SCHEMA_UPDATE",
+                "CONNECTION_DELETE",
+                "DATASET_UPDATE",
+                "DATASET_SHARE"
+            ],
+            "__acl": 11822,
+            "id": "0f2c7b84-483d-4e7e-a914-b05d2b870473",
+            "created": 1684339366343,
+            "updated": null,
+            "creator": "Henrik Svenell",
+            "label": "Test",
+            "datastore": {
+                "id": "1db9951d-08b0-4e00-829f-2d35354e86d1",
+                "label": "Local Connection",
+                "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc3RvcmUjTG9jYWxTdG9yYWdlRGF0YVN0b3Jl",
+                "typeLabel": "Local connection",
+                "icon": "local-storage-family",
+                "familyId": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZQ",
+                "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2"
+            },
+            "rating": {},
+            "certification": "none",
+            "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc2V0I0xvY2FsU3RvcmFnZURhdGFTZXQ",
+            "fullScanExecution": false,
+            "qualityStatus": "failed",
+            "sharing": {
+                "isOwner": true,
+                "isSharedWithOthers": false
+            },
+            "favorite": false,
+            "talendGlobalQuality": {
+                "-1": 0,
+                "1": 0,
+                "0": 0,
+                "total": 0
+            },
+            "trustScore": 0,
+            "trustScoreAxes": [
+                {
+                    "id": "usage",
+                    "label": "Usage",
+                    "description": "How often a dataset is used or consulted is representative of how useful it is. This aspect of the Trust Score takes into account the pipelines and preparations that rely on this dataset as a source, as well as how frequently it is updated.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 4
+                },
+                {
+                    "id": "completeness",
+                    "label": "Completeness",
+                    "description": "If your dataset includes empty values, improve its completeness by deleting or completing the empty attributes and records using Data Preparation or Pipeline Designer.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 2
+                },
+                {
+                    "id": "validity",
+                    "label": "Validity",
+                    "description": "Fix validity issues with Data Preparation or Pipeline Designer to improve the quality of the data itself. The validity takes into account the number of valid and invalid values across the dataset sample, as well as the data type and the ratio of semantic types versus primitive types.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 0
+                },
+                {
+                    "id": "social-curation",
+                    "label": "Popularity",
+                    "description": "Review user feedback and gauge the reliability of the dataset. The Popularity axis lets you see how your dataset is rated by users across your organization, and also takes into account the certification level of the dataset.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 1
+                },
+                {
+                    "id": "discoverability",
+                    "label": "Discoverability",
+                    "description": "The better your datasets are documented with proper metadata, the easier it will be for other users of your organization to find, understand, and use these assets. Add tags, set custom attributes and fill in the description in order to make your datasets easier to find.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 3
+                }
+            ],
+            "nested": null,
+            "caValues": null,
+            "updatedBy": null,
+            "createdBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            }
+        },
+        {
+            "entitlements": [
+                "DATASET_API_VIEW",
+                "CONNECTION_SHARE",
+                "CONNECTION_READ",
+                "CONNECTION_UPDATE",
+                "DATASET_API_MANAGE",
+                "DATASET_READ",
+                "DATASET_DOWNLOAD",
+                "DATASET_DELETE",
+                "DATASET_CERTIFY",
+                "DATASET_SCHEMA_UPDATE",
+                "CONNECTION_DELETE",
+                "DATASET_UPDATE",
+                "DATASET_SHARE"
+            ],
+            "__acl": 11822,
+            "id": "22eeb0b3-310e-42bd-b5a9-df966a63960a",
+            "created": 1684337228658,
+            "updated": 1684337288363,
+            "creator": "Henrik Svenell",
+            "label": "Human Resources Sample",
+            "datastore": {
+                "id": "1db9951d-08b0-4e00-829f-2d35354e86d1",
+                "label": "Local Connection",
+                "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc3RvcmUjTG9jYWxTdG9yYWdlRGF0YVN0b3Jl",
+                "typeLabel": "Local connection",
+                "icon": "local-storage-family",
+                "familyId": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZQ",
+                "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2"
+            },
+            "rating": {},
+            "certification": "none",
+            "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc2V0I0xvY2FsU3RvcmFnZURhdGFTZXQ",
+            "fullScanExecution": false,
+            "qualityStatus": "sampleAvailable",
+            "sharing": {
+                "isOwner": true,
+                "isSharedWithOthers": false
+            },
+            "favorite": false,
+            "talendGlobalQuality": {
+                "-1": 0,
+                "1": 5,
+                "0": 5,
+                "total": 10
+            },
+            "trustScore": 2.12,
+            "trustScoreAxes": [
+                {
+                    "id": "usage",
+                    "label": "Usage",
+                    "description": "How often a dataset is used or consulted is representative of how useful it is. This aspect of the Trust Score takes into account the pipelines and preparations that rely on this dataset as a source, as well as how frequently it is updated.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 4
+                },
+                {
+                    "id": "validity",
+                    "label": "Validity",
+                    "description": "Fix validity issues with Data Preparation or Pipeline Designer to improve the quality of the data itself. The validity takes into account the number of valid and invalid values across the dataset sample, as well as the data type and the ratio of semantic types versus primitive types.",
+                    "currentValue": 84.62,
+                    "maxValue": 100,
+                    "order": 0
+                },
+                {
+                    "id": "discoverability",
+                    "label": "Discoverability",
+                    "description": "The better your datasets are documented with proper metadata, the easier it will be for other users of your organization to find, understand, and use these assets. Add tags, set custom attributes and fill in the description in order to make your datasets easier to find.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 3
+                },
+                {
+                    "id": "completeness",
+                    "label": "Completeness",
+                    "description": "If your dataset includes empty values, improve its completeness by deleting or completing the empty attributes and records using Data Preparation or Pipeline Designer.",
+                    "currentValue": 50,
+                    "maxValue": 100,
+                    "order": 2
+                },
+                {
+                    "id": "social-curation",
+                    "label": "Popularity",
+                    "description": "Review user feedback and gauge the reliability of the dataset. The Popularity axis lets you see how your dataset is rated by users across your organization, and also takes into account the certification level of the dataset.",
+                    "currentValue": 21.43,
+                    "maxValue": 100,
+                    "order": 1
+                }
+            ],
+            "nested": false,
+            "caValues": null,
+            "updatedBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            },
+            "createdBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            }
+        },
+        {
+            "entitlements": [
+                "DATASET_API_VIEW",
+                "CONNECTION_SHARE",
+                "CONNECTION_READ",
+                "CONNECTION_UPDATE",
+                "DATASET_API_MANAGE",
+                "DATASET_READ",
+                "DATASET_DOWNLOAD",
+                "DATASET_DELETE",
+                "DATASET_CERTIFY",
+                "DATASET_SCHEMA_UPDATE",
+                "CONNECTION_DELETE",
+                "DATASET_UPDATE",
+                "DATASET_SHARE"
+            ],
+            "__acl": 11822,
+            "id": "8857906b-554e-43ae-8fd3-e15b67710d5a",
+            "created": 1684337123621,
+            "updated": 1684337167098,
+            "creator": "Henrik Svenell",
+            "label": "Airplane_Crashes_and_Fatalities_Since_1908",
+            "datastore": {
+                "id": "1db9951d-08b0-4e00-829f-2d35354e86d1",
+                "label": "Local Connection",
+                "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc3RvcmUjTG9jYWxTdG9yYWdlRGF0YVN0b3Jl",
+                "typeLabel": "Local connection",
+                "icon": "local-storage-family",
+                "familyId": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZQ",
+                "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2"
+            },
+            "rating": {
+                "global": 0.5,
+                "contributors": 1
+            },
+            "certification": "none",
+            "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc2V0I0xvY2FsU3RvcmFnZURhdGFTZXQ",
+            "fullScanExecution": false,
+            "qualityStatus": "sampleAvailable",
+            "sharing": {
+                "isOwner": true,
+                "isSharedWithOthers": false
+            },
+            "favorite": false,
+            "talendGlobalQuality": {
+                "-1": 1336,
+                "1": 56950,
+                "0": 10198,
+                "total": 68484
+            },
+            "trustScore": 2.69,
+            "trustScoreAxes": [
+                {
+                    "id": "completeness",
+                    "label": "Completeness",
+                    "description": "If your dataset includes empty values, improve its completeness by deleting or completing the empty attributes and records using Data Preparation or Pipeline Designer.",
+                    "currentValue": 94.27,
+                    "maxValue": 100,
+                    "order": 2
+                },
+                {
+                    "id": "social-curation",
+                    "label": "Popularity",
+                    "description": "Review user feedback and gauge the reliability of the dataset. The Popularity axis lets you see how your dataset is rated by users across your organization, and also takes into account the certification level of the dataset.",
+                    "currentValue": 21.43,
+                    "maxValue": 100,
+                    "order": 1
+                },
+                {
+                    "id": "usage",
+                    "label": "Usage",
+                    "description": "How often a dataset is used or consulted is representative of how useful it is. This aspect of the Trust Score takes into account the pipelines and preparations that rely on this dataset as a source, as well as how frequently it is updated.",
+                    "currentValue": 56.63,
+                    "maxValue": 100,
+                    "order": 4
+                },
+                {
+                    "id": "validity",
+                    "label": "Validity",
+                    "description": "Fix validity issues with Data Preparation or Pipeline Designer to improve the quality of the data itself. The validity takes into account the number of valid and invalid values across the dataset sample, as well as the data type and the ratio of semantic types versus primitive types.",
+                    "currentValue": 82.92,
+                    "maxValue": 100,
+                    "order": 0
+                },
+                {
+                    "id": "discoverability",
+                    "label": "Discoverability",
+                    "description": "The better your datasets are documented with proper metadata, the easier it will be for other users of your organization to find, understand, and use these assets. Add tags, set custom attributes and fill in the description in order to make your datasets easier to find.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 3
+                }
+            ],
+            "nested": false,
+            "caValues": null,
+            "updatedBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            },
+            "createdBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            }
+        },
+        {
+            "entitlements": [
+                "DATASET_API_VIEW",
+                "CONNECTION_SHARE",
+                "CONNECTION_READ",
+                "CONNECTION_UPDATE",
+                "DATASET_API_MANAGE",
+                "DATASET_READ",
+                "DATASET_DOWNLOAD",
+                "DATASET_DELETE",
+                "DATASET_CERTIFY",
+                "DATASET_SCHEMA_UPDATE",
+                "CONNECTION_DELETE",
+                "DATASET_UPDATE",
+                "DATASET_SHARE"
+            ],
+            "__acl": 11822,
+            "id": "5feea8ed-7d80-470e-89e0-eca903264aed",
+            "created": 1684337019485,
+            "updated": 1684337097120,
+            "creator": "Henrik Svenell",
+            "label": "ManyDates_2",
+            "datastore": {
+                "id": "1db9951d-08b0-4e00-829f-2d35354e86d1",
+                "label": "Local Connection",
+                "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc3RvcmUjTG9jYWxTdG9yYWdlRGF0YVN0b3Jl",
+                "typeLabel": "Local connection",
+                "icon": "local-storage-family",
+                "familyId": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZQ",
+                "cloudAgentId": "0873bf26-a350-448a-8a21-388d85dfbff2"
+            },
+            "rating": {},
+            "certification": "none",
+            "type": "bG9jYWxzdG9yYWdlI0xvY2FsU3RvcmFnZSNkYXRhc2V0I0xvY2FsU3RvcmFnZURhdGFTZXQ",
+            "fullScanExecution": false,
+            "qualityStatus": "sampleAvailable",
+            "sharing": {
+                "isOwner": true,
+                "isSharedWithOthers": false
+            },
+            "favorite": false,
+            "talendGlobalQuality": {
+                "-1": 943,
+                "1": 127292,
+                "0": 69831,
+                "total": 198066
+            },
+            "trustScore": 2.33,
+            "trustScoreAxes": [
+                {
+                    "id": "usage",
+                    "label": "Usage",
+                    "description": "How often a dataset is used or consulted is representative of how useful it is. This aspect of the Trust Score takes into account the pipelines and preparations that rely on this dataset as a source, as well as how frequently it is updated.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 4
+                },
+                {
+                    "id": "discoverability",
+                    "label": "Discoverability",
+                    "description": "The better your datasets are documented with proper metadata, the easier it will be for other users of your organization to find, understand, and use these assets. Add tags, set custom attributes and fill in the description in order to make your datasets easier to find.",
+                    "currentValue": 0,
+                    "maxValue": 100,
+                    "order": 3
+                },
+                {
+                    "id": "validity",
+                    "label": "Validity",
+                    "description": "Fix validity issues with Data Preparation or Pipeline Designer to improve the quality of the data itself. The validity takes into account the number of valid and invalid values across the dataset sample, as well as the data type and the ratio of semantic types versus primitive types.",
+                    "currentValue": 85.57,
+                    "maxValue": 100,
+                    "order": 0
+                },
+                {
+                    "id": "completeness",
+                    "label": "Completeness",
+                    "description": "If your dataset includes empty values, improve its completeness by deleting or completing the empty attributes and records using Data Preparation or Pipeline Designer.",
+                    "currentValue": 76.85,
+                    "maxValue": 100,
+                    "order": 2
+                },
+                {
+                    "id": "social-curation",
+                    "label": "Popularity",
+                    "description": "Review user feedback and gauge the reliability of the dataset. The Popularity axis lets you see how your dataset is rated by users across your organization, and also takes into account the certification level of the dataset.",
+                    "currentValue": 21.43,
+                    "maxValue": 100,
+                    "order": 1
+                }
+            ],
+            "nested": false,
+            "caValues": null,
+            "updatedBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            },
+            "createdBy": {
+                "id": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46"
+            }
+        }
+    ]
+}

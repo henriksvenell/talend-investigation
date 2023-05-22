@@ -1,0 +1,611 @@
+[
+    {
+        "id": "head",
+        "type": "head",
+        "label": "head",
+        "nbColumns": 2,
+        "updated": 1684320191194,
+        "updater": "henrik.svenell@trial23952.eu.talend.com",
+        "size": 50,
+        "qualityUpToDate": true,
+        "nested": false,
+        "schema": {
+            "primitives": [
+                {
+                    "id": "BOOLEAN",
+                    "label": "Boolean"
+                },
+                {
+                    "id": "INTEGER",
+                    "label": "Integer"
+                },
+                {
+                    "id": "DOUBLE",
+                    "label": "Decimal"
+                },
+                {
+                    "id": "STRING",
+                    "label": "Text"
+                },
+                {
+                    "id": "DATE",
+                    "label": "Date"
+                },
+                {
+                    "id": "TIME",
+                    "label": "Duration"
+                },
+                {
+                    "id": "EMPTY",
+                    "label": "Empty"
+                }
+            ],
+            "lastUpdate": "2023-05-17T10:43:11.19400",
+            "name": "Record_2_3112581739537674014",
+            "namespace": "org.talend.sdk.component.schema.generated",
+            "categories": [
+                {
+                    "id": "5836fbc242b02a698753b2e3",
+                    "label": "Weekday"
+                },
+                {
+                    "id": "4e508870c04b091057ad70a7",
+                    "label": "Christian religious title"
+                },
+                {
+                    "id": "4e508870c04b091057ad70a8",
+                    "label": "Islamic religious title"
+                },
+                {
+                    "id": "4e508870c04b091057ad70a9",
+                    "label": "Judaic religious title"
+                },
+                {
+                    "id": "5836fbec42b02a698755cbbd",
+                    "label": "Sector"
+                },
+                {
+                    "id": "4e508870c04b091057ad70a6",
+                    "label": "Formal title"
+                },
+                {
+                    "id": "5836fc0042b02a698756d733",
+                    "label": "FR Region"
+                },
+                {
+                    "id": "5836fbb042b02a698752e6a1",
+                    "label": "Country"
+                },
+                {
+                    "id": "5836fbec42b02a698755cbc1",
+                    "label": "FR Commune"
+                },
+                {
+                    "id": "5836fbb042b02a698752e66b",
+                    "label": "Civility"
+                },
+                {
+                    "id": "5836fbb142b02a698752eed9",
+                    "label": "HR Department"
+                },
+                {
+                    "id": "5836fbc242b02a698753b2f3",
+                    "label": "Museum"
+                },
+                {
+                    "id": "5836fbb142b02a698752edad",
+                    "label": "Currency Code"
+                },
+                {
+                    "id": "5836fc0042b02a698756dc1f",
+                    "label": "MX Estado"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6432",
+                    "label": "BG VAT Number"
+                },
+                {
+                    "id": "5836fbc542b02a698753d671",
+                    "label": "US County"
+                },
+                {
+                    "id": "5836fb7642b02a69874f77e3",
+                    "label": "Airport Code"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6430",
+                    "label": "Email"
+                },
+                {
+                    "id": "5836fc0042b02a698756d903",
+                    "label": "Language Code ISO2"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6436",
+                    "label": "Geographic coordinate"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6434",
+                    "label": "URL"
+                },
+                {
+                    "id": "5836fc0042b02a698756da75",
+                    "label": "Language Code ISO3"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6438",
+                    "label": "MAC Address"
+                },
+                {
+                    "id": "583edc44ec06957a34fa646a",
+                    "label": "EN Month Abbrev"
+                },
+                {
+                    "id": "583edc44ec06957a34fa646e",
+                    "label": "Geographic Coordinates"
+                },
+                {
+                    "id": "4e50887000c04b094367d3a5",
+                    "label": "Generic URL"
+                },
+                {
+                    "id": "583edc44ec06957a34fa646c",
+                    "label": "FR Phone"
+                },
+                {
+                    "id": "5911906440161c655fd8b681",
+                    "label": "North American state"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6482",
+                    "label": "AT VAT Number"
+                },
+                {
+                    "id": "4e508870c04b091057ad70aa",
+                    "label": "Religious title"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6480",
+                    "label": "BE Postal Code"
+                },
+                {
+                    "id": "4e508870c04b091057ad70ab",
+                    "label": "Title"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6486",
+                    "label": "Passport"
+                },
+                {
+                    "id": "5836fbb042b02a698752e68f",
+                    "label": "Continent Code"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6484",
+                    "label": "SEDOL"
+                },
+                {
+                    "id": "5836fc0042b02a698756d759",
+                    "label": "FR Region Legacy"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6488",
+                    "label": "US Postal Code"
+                },
+                {
+                    "id": "4e508870c04b091057ad70ac",
+                    "label": "Inherited suffix"
+                },
+                {
+                    "id": "4e508870c04b091057ad70ad",
+                    "label": "Academic and professional suffix"
+                },
+                {
+                    "id": "4e508870c04b091057ad70ae",
+                    "label": "Military suffix"
+                },
+                {
+                    "id": "4e508870c04b091057ad70af",
+                    "label": "Name suffix"
+                },
+                {
+                    "id": "5836fbec42b02a698755cbb9",
+                    "label": "Industry Group"
+                },
+                {
+                    "id": "583edc44ec06957a34fa647a",
+                    "label": "HDFS URL"
+                },
+                {
+                    "id": "583edc44ec06957a34fa647e",
+                    "label": "UK Phone"
+                },
+                {
+                    "id": "583edc44ec06957a34fa647c",
+                    "label": "DE Postal Code"
+                },
+                {
+                    "id": "5836fbc142b02a698753a93f",
+                    "label": "Gender"
+                },
+                {
+                    "id": "58eb5a0deee16441b0d2d76c",
+                    "label": "Address Line"
+                },
+                {
+                    "id": "5836fbeb42b02a698755c54d",
+                    "label": "Beverage"
+                },
+                {
+                    "id": "5836fb6f42b02a69874f3a95",
+                    "label": "Animal"
+                },
+                {
+                    "id": "5836fbc142b02a698753a951",
+                    "label": "Job Title"
+                },
+                {
+                    "id": "5836fbec42b02a698755cbb5",
+                    "label": "Industry"
+                },
+                {
+                    "id": "5836fbc242b02a698753b2a3",
+                    "label": "Month"
+                },
+                {
+                    "id": "583edc44ec06957a34fa644c",
+                    "label": "UK Social Security Number"
+                },
+                {
+                    "id": "583edc44ec06957a34fa644a",
+                    "label": "ISBN-13"
+                },
+                {
+                    "id": "583edc44ec06957a34fa644e",
+                    "label": "Money Amount (EN)"
+                },
+                {
+                    "id": "5836fc0042b02a698756dbe7",
+                    "label": "CA Province Territory"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6460",
+                    "label": "IBAN"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6464",
+                    "label": "Data URL"
+                },
+                {
+                    "id": "5836fbb942b02a6987534b81",
+                    "label": "Last Name"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6462",
+                    "label": "Geographic Coordinates (degree)"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6468",
+                    "label": "Money Amount (FR)"
+                },
+                {
+                    "id": "5836fbb042b02a698752ea89",
+                    "label": "Country Code ISO3"
+                },
+                {
+                    "id": "5836fc0042b02a698756dc61",
+                    "label": "MX Estado Code"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6466",
+                    "label": "IPv4 Address"
+                },
+                {
+                    "id": "591191f640161c655fd8b682",
+                    "label": "North American state code"
+                },
+                {
+                    "id": "583edc44ec06957a34fa645c",
+                    "label": "US Phone"
+                },
+                {
+                    "id": "5836fbb042b02a698752e895",
+                    "label": "Country Code ISO2"
+                },
+                {
+                    "id": "5836fbcc42b02a69875431b3",
+                    "label": "Company"
+                },
+                {
+                    "id": "583edc44ec06957a34fa645a",
+                    "label": "MailTo URL"
+                },
+                {
+                    "id": "583edc44ec06957a34fa645e",
+                    "label": "FR Insee Code"
+                },
+                {
+                    "id": "5836fbec42b02a698755caef",
+                    "label": "Measure Unit"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6472",
+                    "label": "File URL"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6470",
+                    "label": "US State"
+                },
+                {
+                    "id": "5836fc0042b02a698756d667",
+                    "label": "FR Departement"
+                },
+                {
+                    "id": "4e50887000c04b09d5bb8107",
+                    "label": "Academic and professional title"
+                },
+                {
+                    "id": "5836fb7042b02a69874f3aff",
+                    "label": "Answer"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6476",
+                    "label": "Color Hex Code"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6474",
+                    "label": "US State Code"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6478",
+                    "label": "FR VAT Number"
+                },
+                {
+                    "id": "5836fbc642b02a698753e4c7",
+                    "label": "Organization"
+                },
+                {
+                    "id": "583edc44ec06957a34fa642e",
+                    "label": "US Social Security Number"
+                },
+                {
+                    "id": "583edc44ec06957a34fa642c",
+                    "label": "Web Domain"
+                },
+                {
+                    "id": "5836fbb142b02a698752eedd",
+                    "label": "First Name"
+                },
+                {
+                    "id": "5836fc0042b02a698756d791",
+                    "label": "Language"
+                },
+                {
+                    "id": "5836fbc242b02a698753b2bd",
+                    "label": "Street Type"
+                },
+                {
+                    "id": "5836fbb142b02a698752ec7d",
+                    "label": "Currency Name"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6442",
+                    "label": "MasterCard"
+                },
+                {
+                    "id": "58f9d2e8b45fc36367e8bc38",
+                    "label": "Phone number"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6440",
+                    "label": "Visa Card"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6446",
+                    "label": "ISBN-10"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6444",
+                    "label": "FR Social Security Number"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6448",
+                    "label": "SE Social Security Number"
+                },
+                {
+                    "id": "5836fbb042b02a698752e679",
+                    "label": "Continent"
+                },
+                {
+                    "id": "5836fc0042b02a698756dc03",
+                    "label": "CA Province Territory Code"
+                },
+                {
+                    "id": "583edc44ec06957a34fa643a",
+                    "label": "EN Weekday"
+                },
+                {
+                    "id": "5836fb7042b02a69874f3b0b",
+                    "label": "Airport"
+                },
+                {
+                    "id": "583edc44ec06957a34fa643e",
+                    "label": "DE Phone"
+                },
+                {
+                    "id": "583edc44ec06957a34fa643c",
+                    "label": "FR Postal Code"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6450",
+                    "label": "Bank Routing Transit Number"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6454",
+                    "label": "UK Postal Code"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6452",
+                    "label": "Amex Card"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6458",
+                    "label": "IPv6 Address"
+                },
+                {
+                    "id": "58eb5a0feee16441b0d2d792",
+                    "label": "Full Name"
+                },
+                {
+                    "id": "583edc44ec06957a34fa6456",
+                    "label": "EN Month"
+                }
+            ],
+            "fields": [
+                {
+                    "path": "State",
+                    "matchings": [
+                        {
+                            "id": "583edc44ec06957a34fa6474",
+                            "label": "US State Code",
+                            "score": 100
+                        },
+                        {
+                            "id": "591191f640161c655fd8b682",
+                            "label": "North American state code",
+                            "score": 100
+                        },
+                        {
+                            "id": "5836fc0042b02a698756d903",
+                            "label": "Language Code ISO2",
+                            "score": 54
+                        },
+                        {
+                            "id": "5836fbb042b02a698752e895",
+                            "label": "Country Code ISO2",
+                            "score": 52
+                        },
+                        {
+                            "id": "4e508870c04b091057ad70ad",
+                            "label": "Academic and professional suffix",
+                            "score": 6
+                        },
+                        {
+                            "id": "5836fbb942b02a6987534b81",
+                            "label": "Last Name",
+                            "score": 6
+                        },
+                        {
+                            "id": "4e508870c04b091057ad70ab",
+                            "label": "Title",
+                            "score": 6
+                        },
+                        {
+                            "id": "4e508870c04b091057ad70af",
+                            "label": "Name suffix",
+                            "score": 6
+                        },
+                        {
+                            "id": "4e50887000c04b09d5bb8107",
+                            "label": "Academic and professional title",
+                            "score": 4
+                        },
+                        {
+                            "id": "5836fbb142b02a698752eedd",
+                            "label": "First Name",
+                            "score": 4
+                        },
+                        {
+                            "id": "5836fbcc42b02a69875431b3",
+                            "label": "Company",
+                            "score": 4
+                        },
+                        {
+                            "id": "5836fbb042b02a698752e66b",
+                            "label": "Civility",
+                            "score": 2
+                        },
+                        {
+                            "id": "5836fbec42b02a698755cbc1",
+                            "label": "FR Commune",
+                            "score": 2
+                        }
+                    ],
+                    "name": "State",
+                    "type": [
+                        {
+                            "dqType": "US State Code",
+                            "dataTypeLabel": "Text",
+                            "dataType": "STRING",
+                            "dqTypeId": "583edc44ec06957a34fa6474",
+                            "type": "null",
+                            "dqTypeLabel": "US State Code",
+                            "isForced": "false",
+                            "dqTypeName": "US_STATE_CODE"
+                        },
+                        {
+                            "dqType": "US State Code",
+                            "dataTypeLabel": "Text",
+                            "dataType": "STRING",
+                            "dqTypeId": "583edc44ec06957a34fa6474",
+                            "type": "string",
+                            "dqTypeLabel": "US State Code",
+                            "@talend-quality@": {
+                                "-1": 0,
+                                "0": 0,
+                                "1": 50,
+                                "total": 50
+                            },
+                            "isForced": "false",
+                            "dqTypeName": "US_STATE_CODE"
+                        }
+                    ],
+                    "field.origin.type": "VARCHAR",
+                    "field.size": "2"
+                },
+                {
+                    "path": "Tax_Rate",
+                    "matchings": [],
+                    "name": "Tax_Rate",
+                    "type": [
+                        {
+                            "dqType": "Decimal",
+                            "dataTypeLabel": "Decimal",
+                            "dataType": "DOUBLE",
+                            "dqTypeId": "DOUBLE",
+                            "type": "null",
+                            "dqTypeLabel": "Decimal",
+                            "isForced": "false",
+                            "dqTypeName": ""
+                        },
+                        {
+                            "dqType": "Decimal",
+                            "dataTypeLabel": "Decimal",
+                            "dataType": "DOUBLE",
+                            "dqTypeId": "DOUBLE",
+                            "type": "string",
+                            "dqTypeLabel": "Decimal",
+                            "@talend-quality@": {
+                                "-1": 0,
+                                "0": 0,
+                                "1": 50,
+                                "total": 50
+                            },
+                            "isForced": "false",
+                            "dqTypeName": ""
+                        }
+                    ],
+                    "field.origin.type": "VARCHAR",
+                    "field.size": "5"
+                }
+            ],
+            "@talend-global-quality@": {
+                "-1": 0,
+                "0": 0,
+                "1": 100,
+                "total": 100
+            },
+            "type": "record"
+        }
+    }
+]

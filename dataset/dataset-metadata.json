@@ -1,0 +1,55 @@
+[
+    {
+        "path": "State",
+        "type": {
+            "originalType": "string",
+            "status": "NOT_FORCED",
+            "primitiveType": "STRING",
+            "semanticType": "583edc44ec06957a34fa6474"
+        },
+        "dqRules": [],
+        "qualities": {
+            "aggregated": {
+                "valid": 50,
+                "invalid": 0,
+                "notApplicable": 0,
+                "empty": 0,
+                "total": 50
+            },
+            "type": {
+                "valid": 50,
+                "invalid": 0,
+                "notApplicable": 0,
+                "empty": 0,
+                "total": 50
+            },
+            "dqRules": []
+        }
+    },
+    {
+        "path": "Tax_Rate",
+        "type": {
+            "originalType": "string",
+            "status": "NOT_FORCED",
+            "primitiveType": "DOUBLE"
+        },
+        "dqRules": [],
+        "qualities": {
+            "aggregated": {
+                "valid": 50,
+                "invalid": 0,
+                "notApplicable": 0,
+                "empty": 0,
+                "total": 50
+            },
+            "type": {
+                "valid": 50,
+                "invalid": 0,
+                "notApplicable": 0,
+                "empty": 0,
+                "total": 50
+            },
+            "dqRules": []
+        }
+    }
+]

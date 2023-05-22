@@ -1,0 +1,34 @@
+api/v1/iam-server/application-details
+
+[
+    {
+        "id": "TDC",
+        "name": "Data Inventory",
+        "icon": "tdc",
+        "url": "https://tdc.eu.cloud.talend.com"
+    },
+    {
+        "id": "TDP",
+        "name": "Data Preparation",
+        "icon": "tdp",
+        "url": "https://tdp.eu.cloud.talend.com"
+    },
+    {
+        "id": "TDS",
+        "name": "Data Stewardship",
+        "icon": "tds",
+        "url": "https://tds.eu.cloud.talend.com"
+    },
+    {
+        "id": "TMC",
+        "name": "Management Console",
+        "icon": "tmc",
+        "url": "https://tmc.eu.cloud.talend.com"
+    },
+    {
+        "id": "DSS",
+        "name": "Pipeline Designer",
+        "icon": "datastreams",
+        "url": "https://tpd.eu.cloud.talend.com"
+    }
+]

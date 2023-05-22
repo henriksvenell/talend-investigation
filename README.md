@@ -90,7 +90,7 @@ Lists available data stores
 
 ## Streams/Pipeline
 
-### api/v1/streams/:id
+### [api/v1/streams/:id](./streams/streams-id.json)
 
 Information on the current pipeline
 
@@ -113,7 +113,9 @@ Payload:
     - processor - left outer join
     - sink - local storage
   - Ports - incomming and outgoing endpoints to the nodes
-  - Steps
+  - Steps - edges between the nodes
+    - sourceId - source port
+    - targetId - target port
 
 ### api/v1/streams/:id/processors
 

@@ -6,77 +6,72 @@ Uses:
 - Launch darkly
 - scim (read more about)
 
-## SCIM
-
-### api/v1/scim/me
-
-Returns info about the user:
-
-- Applications assigned
-- Email and display names
-- List of entitlements:
-- Roles
-- Metadata
-
-### api/v2/scim/accounts/current
-
-### api/v1/iam-server/application-details
-
-Gets URL to the assigned applications
-
-### api/v1/scim/Users
-
-### api/v1/scim/Groups
-
-## Infra
-
-### api/user
-
-### api/v1/streams-cloud-agents
-
-## Datastore
-
-### api/v1/datastores
-
-Lists available data stores
-
-### api/v1/datastores/:id
-
-## Dataset
+## Data Inventory
 
 - One dataset per table, for excel files there will be multiple datasets.
+- Supports head and random samples
 - Extended [classification](./dataset/classification.md) information
 - Statistics ~ the same but Talend have variance + [medcouple](https://en.wikipedia.org/wiki/Medcouple)
 
-### api/v1/datasets
+### [api/v1/datastores](./datastore/datastores.json)
 
-### api/v1/datasets/:id/attributes
+Lists available data stores
 
-### api/v1/datasets/:id/metadata
+### [api/v1/datastores/:id](./datastore/datastore_id.json)
 
-### api/v1/dataset-samples/:id
+### [api/v1/datasets](./dataset/datasets.json)
 
-### api/v1/datasets/trust-score/composite-history
+Information on:
 
-## Metadata
+- dataset metadata
+  - name
+  - owner
+  - sharing information
+  - entitlements
+- trust score
 
-### api/v1/facets
+<img src="./images/trust_score_axis.png" height="150">
 
-### api/v1/crawlers
+### [api/v1/datasets/:id/attributes](./dataset/dataset-attributes.json)
 
-### api/v1/semantic/categories
+### [api/v1/datasets/:id/metadata](./dataset/dataset-metadata.json)
 
-### api/v1/rules
+### [api/v1/dataset-samples/:id](./dataset/dataset-samples.json)
+
+Sample data is either random or head sample. Shows semantic classification and data quality score.
+
+<img src="./images/samples.png" height="300">
+
+### [api/v1/datasets/trust-score/composite-history](./dataset/trust-score-composite.history.json)
+
+Shows history of how the trust score changed over time
+
+<img src="./images/trust_score.png" height="150">
 
 ## Data preparation
 
+### [api/preparations/:id/details](./dataprep/dataprep-details.json)
+
+Information on the data prep actions that is added for the dataset
+
+### [api/preparations/:id/content](./dataprep/dataprep-content.json)
+
+Content of the dataset after dataprep actions have been performed.
+
+### [api/v2/preparations/:id/steps/:stepId](./dataprep/dataprep-stepid.json)
+
+Returns details of a transfomrations step.
+
+### [api/preparations/:id/steps/:stepId/columns/:columnId/statistics](./dataprep/statistics.json)
+
+Column statistics:
+
+- Pattern frequency
+- Histogram information
+
+<img src="./images/dataset_statistics.png" height="150">
+
 ### api/export/formats/preparations/:id
-
-### api/preparations/:id/content
-
-### api/v2/preparations/:id/steps/:stepId
-
-### api/preparations/:id/steps/:stepId/columns/:columnId/statistics
 
 ### transform/preparations/functions/mapping
 
@@ -117,10 +112,46 @@ Payload:
     - sourceId - source port
     - targetId - target port
 
-### api/v1/streams/:id/processors
+### [api/v1/streams/:id/processors](./streams/streams-id-processor.json)
 
 Information on the current processors
 
 <img src="./images/processors.png" height="600">
 
 ### api/v1/streams/pipelines/:id/previews/:previewId/ports/:portId/schema
+
+### api/v1/streams-cloud-agents
+
+## SCIM
+
+### api/v1/scim/me
+
+Returns info about the user:
+
+- Applications assigned
+- Email and display names
+- List of entitlements:
+- Roles
+- Metadata
+
+### api/v2/scim/accounts/current
+
+### api/v1/iam-server/application-details
+
+Gets URL to the assigned applications
+
+### api/v1/scim/Users
+
+### api/v1/scim/Groups
+
+### api/user
+
+## Other
+
+### api/v1/facets
+
+### api/v1/crawlers
+
+### api/v1/semantic/categories
+
+### api/v1/rules

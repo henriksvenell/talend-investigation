@@ -1,0 +1,110 @@
+{
+    "frequency": [
+        {
+            "pattern": "MM/dd/yyyy",
+            "occurrences": 5268
+        },
+        {
+            "pattern": "dd/MM/yyyy",
+            "occurrences": 2085
+        },
+        {
+            "pattern": "M/d/yyyy",
+            "occurrences": 1014
+        },
+        {
+            "pattern": "d/M/yyyy",
+            "occurrences": 137
+        }
+    ],
+    "histogram": {
+        "type": "date",
+        "items": [
+            {
+                "occurrences": 1,
+                "range": {
+                    "min": -2.2089888E12,
+                    "max": -1.893456E12
+                }
+            },
+            {
+                "occurrences": 27,
+                "range": {
+                    "min": -1.893456E12,
+                    "max": -1.5779232E12
+                }
+            },
+            {
+                "occurrences": 178,
+                "range": {
+                    "min": -1.5779232E12,
+                    "max": -1.262304E12
+                }
+            },
+            {
+                "occurrences": 323,
+                "range": {
+                    "min": -1.262304E12,
+                    "max": -9.467712E11
+                }
+            },
+            {
+                "occurrences": 510,
+                "range": {
+                    "min": -9.467712E11,
+                    "max": -6.31152E11
+                }
+            },
+            {
+                "occurrences": 596,
+                "range": {
+                    "min": -6.31152E11,
+                    "max": -3.156192E11
+                }
+            },
+            {
+                "occurrences": 721,
+                "range": {
+                    "min": -3.156192E11,
+                    "max": 0.0
+                }
+            },
+            {
+                "occurrences": 837,
+                "range": {
+                    "min": 0.0,
+                    "max": 3.155328E11
+                }
+            },
+            {
+                "occurrences": 717,
+                "range": {
+                    "min": 3.155328E11,
+                    "max": 6.31152E11
+                }
+            },
+            {
+                "occurrences": 775,
+                "range": {
+                    "min": 6.31152E11,
+                    "max": 9.466848E11
+                }
+            },
+            {
+                "occurrences": 583,
+                "range": {
+                    "min": 9.466848E11,
+                    "max": 1.262304E12
+                }
+            }
+        ],
+        "pace": "DECADE"
+    },
+    "min": -1.9341504E12,
+    "max": 1.2444192E12,
+    "mean": "NaN",
+    "variance": "NaN",
+    "distinctCount": 4753,
+    "duplicateCount": 515,
+    "count": 5268
+}

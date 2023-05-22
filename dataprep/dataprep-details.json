@@ -1,0 +1,4682 @@
+{
+    "id": "d5b65e6a-8544-4083-8790-fc85aa258b79",
+    "dataSetId": "8857906b-554e-43ae-8fd3-e15b67710d5a",
+    "dataSetName": "Airplane_Crashes_and_Fatalities_Since_1908",
+    "dataSetRoles": [
+        "OWNER"
+    ],
+    "creationDate": 1684337643809,
+    "lastModificationDate": 1684337870386,
+    "name": "Airplane_Crashes_and_Fatalities_Since_1908 Preparation",
+    "steps": [
+        "f6e172c33bdacbc69bca9d32b2bd78174712a171",
+        "e26c00f4-21f0-43c1-890d-ce2a6a447cc9",
+        "f5c0bbc8-fa02-49d1-8b18-28c51b3bab29"
+    ],
+    "actions": [
+        {
+            "action": "type_change",
+            "parameters": {
+                "column_id": "0004",
+                "new_type": "STRING",
+                "scope": "column",
+                "column_name": "Flight #"
+            },
+            "filterColumns": [
+                {
+                    "quality": {
+                        "empty": 4199,
+                        "invalid": 140,
+                        "valid": 929
+                    },
+                    "id": "0004",
+                    "name": "Flight #",
+                    "headerSize": 0,
+                    "statistics": {
+                        "count": 5268,
+                        "valid": 0,
+                        "invalid": 0,
+                        "empty": 0,
+                        "max": 2.7307905E7,
+                        "min": 1.0,
+                        "mean": 30479.2594187298,
+                        "variance": 8.02653878991469E11,
+                        "duplicateCount": 4543,
+                        "distinctCount": 725,
+                        "medCouple": "NaN",
+                        "wordPatternFrequencyTable": [
+                            {
+                                "pattern": "",
+                                "occurrences": 4199
+                            },
+                            {
+                                "pattern": "[number]",
+                                "occurrences": 887
+                            },
+                            {
+                                "pattern": "-",
+                                "occurrences": 67
+                            },
+                            {
+                                "pattern": "[digit]",
+                                "occurrences": 42
+                            },
+                            {
+                                "pattern": "[number]/[number]",
+                                "occurrences": 18
+                            },
+                            {
+                                "pattern": "[number][Char]",
+                                "occurrences": 17
+                            },
+                            {
+                                "pattern": "[WORD][number]",
+                                "occurrences": 4
+                            },
+                            {
+                                "pattern": "[number] / [number]",
+                                "occurrences": 4
+                            },
+                            {
+                                "pattern": "[number]-[digit]",
+                                "occurrences": 3
+                            },
+                            {
+                                "pattern": "[digit]-[number]",
+                                "occurrences": 3
+                            },
+                            {
+                                "pattern": "[Word] [number]",
+                                "occurrences": 2
+                            },
+                            {
+                                "pattern": "[number] / -",
+                                "occurrences": 2
+                            },
+                            {
+                                "pattern": "[number]/[digit]",
+                                "occurrences": 2
+                            },
+                            {
+                                "pattern": "[number]-[number]",
+                                "occurrences": 2
+                            },
+                            {
+                                "pattern": "[WORD] [number]",
+                                "occurrences": 2
+                            }
+                        ],
+                        "quantiles": {
+                            "median": 505.0,
+                            "lowerQuantile": 181.5,
+                            "upperQuantile": 858.5
+                        },
+                        "histogram": {
+                            "type": "number",
+                            "items": [
+                                {
+                                    "occurrences": 928,
+                                    "range": {
+                                        "min": 1.0,
+                                        "max": 1157121.0
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1157121.0,
+                                        "max": 2314241.0
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 2314241.0,
+                                        "max": 3471361.0
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 3471361.0,
+                                        "max": 4628481.0
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 4628481.0,
+                                        "max": 5785601.0
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 5785601.0,
+                                        "max": 6942721.0
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 6942721.0,
+                                        "max": 8099841.0
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 8099841.0,
+                                        "max": 9256961.0
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 9256961.0,
+                                        "max": 1.0414081E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.0414081E7,
+                                        "max": 1.1571201E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.1571201E7,
+                                        "max": 1.2728321E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.2728321E7,
+                                        "max": 1.3885441E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.3885441E7,
+                                        "max": 1.5042561E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.5042561E7,
+                                        "max": 1.6199681E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.6199681E7,
+                                        "max": 1.7356801E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.7356801E7,
+                                        "max": 1.8513921E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.8513921E7,
+                                        "max": 1.9671041E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.9671041E7,
+                                        "max": 2.0828161E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 2.0828161E7,
+                                        "max": 2.1985281E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 2.1985281E7,
+                                        "max": 2.3142401E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 2.3142401E7,
+                                        "max": 2.4299521E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 2.4299521E7,
+                                        "max": 2.5456641E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 2.5456641E7,
+                                        "max": 2.6613761E7
+                                    }
+                                },
+                                {
+                                    "occurrences": 1,
+                                    "range": {
+                                        "min": 2.6613761E7,
+                                        "max": 2.7770881E7
+                                    }
+                                }
+                            ]
+                        },
+                        "textLengthSummary": {
+                            "minimalLength": "NaN",
+                            "maximalLength": "NaN",
+                            "averageLength": "NaN"
+                        },
+                        "frequencyTable": [
+                            {
+                                "data": "",
+                                "occurrences": 4199
+                            },
+                            {
+                                "data": "-",
+                                "occurrences": 67
+                            },
+                            {
+                                "data": "1",
+                                "occurrences": 10
+                            },
+                            {
+                                "data": "4",
+                                "occurrences": 7
+                            },
+                            {
+                                "data": "6",
+                                "occurrences": 6
+                            },
+                            {
+                                "data": "101",
+                                "occurrences": 6
+                            },
+                            {
+                                "data": "21",
+                                "occurrences": 6
+                            },
+                            {
+                                "data": "901",
+                                "occurrences": 6
+                            },
+                            {
+                                "data": "7",
+                                "occurrences": 5
+                            },
+                            {
+                                "data": "701",
+                                "occurrences": 5
+                            },
+                            {
+                                "data": "703",
+                                "occurrences": 5
+                            },
+                            {
+                                "data": "706",
+                                "occurrences": 5
+                            },
+                            {
+                                "data": "201",
+                                "occurrences": 5
+                            },
+                            {
+                                "data": "2",
+                                "occurrences": 4
+                            },
+                            {
+                                "data": "601",
+                                "occurrences": 4
+                            }
+                        ],
+                        "patternFrequencyTable": [
+                            {
+                                "pattern": "",
+                                "occurrences": 4199
+                            },
+                            {
+                                "pattern": "999",
+                                "occurrences": 628
+                            },
+                            {
+                                "pattern": "9999",
+                                "occurrences": 173
+                            },
+                            {
+                                "pattern": "99",
+                                "occurrences": 85
+                            },
+                            {
+                                "pattern": "-",
+                                "occurrences": 67
+                            },
+                            {
+                                "pattern": "9",
+                                "occurrences": 42
+                            },
+                            {
+                                "pattern": "999A",
+                                "occurrences": 10
+                            },
+                            {
+                                "pattern": "999/999",
+                                "occurrences": 7
+                            },
+                            {
+                                "pattern": "99A",
+                                "occurrences": 6
+                            },
+                            {
+                                "pattern": "999/99",
+                                "occurrences": 5
+                            },
+                            {
+                                "pattern": "9999/9999",
+                                "occurrences": 3
+                            },
+                            {
+                                "pattern": "AA999",
+                                "occurrences": 2
+                            },
+                            {
+                                "pattern": "999 / -",
+                                "occurrences": 2
+                            },
+                            {
+                                "pattern": "99-9",
+                                "occurrences": 2
+                            },
+                            {
+                                "pattern": "AA 999",
+                                "occurrences": 2
+                            }
+                        ]
+                    },
+                    "domain": "",
+                    "domainLabel": "",
+                    "domainFrequency": 0.0,
+                    "semanticDomains": [],
+                    "domainForced": false,
+                    "typeForced": false,
+                    "type": "integer"
+                }
+            ]
+        },
+        {
+            "action": "type_change",
+            "parameters": {
+                "column_id": "0008",
+                "new_type": "STRING",
+                "scope": "column",
+                "column_name": "cn/In"
+            },
+            "filterColumns": [
+                {
+                    "quality": {
+                        "empty": 1228,
+                        "invalid": 1196,
+                        "valid": 2844
+                    },
+                    "id": "0008",
+                    "name": "cn/In",
+                    "headerSize": 0,
+                    "statistics": {
+                        "count": 5268,
+                        "valid": 0,
+                        "invalid": 0,
+                        "empty": 0,
+                        "max": 9.773053359122E12,
+                        "min": 1.0,
+                        "mean": 5.092742718922642E9,
+                        "variance": 4.075966973142182E22,
+                        "duplicateCount": 1560,
+                        "distinctCount": 3708,
+                        "medCouple": "NaN",
+                        "wordPatternFrequencyTable": [
+                            {
+                                "pattern": "[number]",
+                                "occurrences": 2821
+                            },
+                            {
+                                "pattern": "",
+                                "occurrences": 1228
+                            },
+                            {
+                                "pattern": "[number]/[number]",
+                                "occurrences": 516
+                            },
+                            {
+                                "pattern": "[number]-[number]",
+                                "occurrences": 195
+                            },
+                            {
+                                "pattern": "[WORD]-[number]",
+                                "occurrences": 96
+                            },
+                            {
+                                "pattern": "[number][Char]-[number]",
+                                "occurrences": 83
+                            },
+                            {
+                                "pattern": "[Char]-[number]",
+                                "occurrences": 45
+                            },
+                            {
+                                "pattern": "[number][Char][number]",
+                                "occurrences": 32
+                            },
+                            {
+                                "pattern": "[WORD][number]",
+                                "occurrences": 27
+                            },
+                            {
+                                "pattern": "[digit]",
+                                "occurrences": 23
+                            },
+                            {
+                                "pattern": "[Char][number]",
+                                "occurrences": 23
+                            },
+                            {
+                                "pattern": "[number] / [number]",
+                                "occurrences": 19
+                            },
+                            {
+                                "pattern": "[digit]-[WORD]-[number]",
+                                "occurrences": 17
+                            },
+                            {
+                                "pattern": "[digit][Char][number]-[number]",
+                                "occurrences": 11
+                            },
+                            {
+                                "pattern": "[WORD]-[number][Char]",
+                                "occurrences": 10
+                            }
+                        ],
+                        "quantiles": {
+                            "median": 5205.5,
+                            "lowerQuantile": 704.5,
+                            "upperQuantile": 21604.75
+                        },
+                        "histogram": {
+                            "type": "number",
+                            "items": [
+                                {
+                                    "occurrences": 2842,
+                                    "range": {
+                                        "min": 1.0,
+                                        "max": 4.11243118593E11
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 4.11243118593E11,
+                                        "max": 8.22486237185E11
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 8.22486237185E11,
+                                        "max": 1.233729355777E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.233729355777E12,
+                                        "max": 1.644972474369E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 1.644972474369E12,
+                                        "max": 2.056215592961E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 2.056215592961E12,
+                                        "max": 2.467458711553E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 2.467458711553E12,
+                                        "max": 2.878701830145E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 2.878701830145E12,
+                                        "max": 3.289944948737E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 3.289944948737E12,
+                                        "max": 3.701188067329E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 3.701188067329E12,
+                                        "max": 4.112431185921E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 1,
+                                    "range": {
+                                        "min": 4.112431185921E12,
+                                        "max": 4.523674304513E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 4.523674304513E12,
+                                        "max": 4.934917423105E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 4.934917423105E12,
+                                        "max": 5.346160541697E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 5.346160541697E12,
+                                        "max": 5.757403660289E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 5.757403660289E12,
+                                        "max": 6.168646778881E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 6.168646778881E12,
+                                        "max": 6.579889897473E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 6.579889897473E12,
+                                        "max": 6.991133016065E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 6.991133016065E12,
+                                        "max": 7.402376134657E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 7.402376134657E12,
+                                        "max": 7.813619253249E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 7.813619253249E12,
+                                        "max": 8.224862371841E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 8.224862371841E12,
+                                        "max": 8.636105490433E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 8.636105490433E12,
+                                        "max": 9.047348609025E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 0,
+                                    "range": {
+                                        "min": 9.047348609025E12,
+                                        "max": 9.458591727617E12
+                                    }
+                                },
+                                {
+                                    "occurrences": 1,
+                                    "range": {
+                                        "min": 9.458591727617E12,
+                                        "max": 9.869834846209E12
+                                    }
+                                }
+                            ]
+                        },
+                        "textLengthSummary": {
+                            "minimalLength": "NaN",
+                            "maximalLength": "NaN",
+                            "averageLength": "NaN"
+                        },
+                        "frequencyTable": [
+                            {
+                                "data": "",
+                                "occurrences": 1228
+                            },
+                            {
+                                "data": "178",
+                                "occurrences": 6
+                            },
+                            {
+                                "data": "213",
+                                "occurrences": 5
+                            },
+                            {
+                                "data": "229",
+                                "occurrences": 5
+                            },
+                            {
+                                "data": "19",
+                                "occurrences": 5
+                            },
+                            {
+                                "data": "125",
+                                "occurrences": 5
+                            },
+                            {
+                                "data": "1",
+                                "occurrences": 4
+                            },
+                            {
+                                "data": "4",
+                                "occurrences": 4
+                            },
+                            {
+                                "data": "6",
+                                "occurrences": 4
+                            },
+                            {
+                                "data": "212",
+                                "occurrences": 4
+                            },
+                            {
+                                "data": "1965",
+                                "occurrences": 4
+                            },
+                            {
+                                "data": "31",
+                                "occurrences": 4
+                            },
+                            {
+                                "data": "44",
+                                "occurrences": 4
+                            },
+                            {
+                                "data": "55",
+                                "occurrences": 4
+                            },
+                            {
+                                "data": "439",
+                                "occurrences": 4
+                            }
+                        ],
+                        "patternFrequencyTable": [
+                            {
+                                "pattern": "",
+                                "occurrences": 1228
+                            },
+                            {
+                                "pattern": "9999",
+                                "occurrences": 844
+                            },
+                            {
+                                "pattern": "99999",
+                                "occurrences": 829
+                            },
+                            {
+                                "pattern": "999",
+                                "occurrences": 602
+                            },
+                            {
+                                "pattern": "99999/999",
+                                "occurrences": 303
+                            },
+                            {
+                                "pattern": "9999999",
+                                "occurrences": 125
+                            },
+                            {
+                                "pattern": "999999",
+                                "occurrences": 115
+                            },
+                            {
+                                "pattern": "99",
+                                "occurrences": 113
+                            },
+                            {
+                                "pattern": "99999999",
+                                "occurrences": 107
+                            },
+                            {
+                                "pattern": "99999/99999",
+                                "occurrences": 79
+                            },
+                            {
+                                "pattern": "99999/9999",
+                                "occurrences": 61
+                            },
+                            {
+                                "pattern": "999999999",
+                                "occurrences": 61
+                            },
+                            {
+                                "pattern": "AA-999",
+                                "occurrences": 57
+                            },
+                            {
+                                "pattern": "999-9999",
+                                "occurrences": 56
+                            },
+                            {
+                                "pattern": "999A-9999",
+                                "occurrences": 53
+                            }
+                        ]
+                    },
+                    "domain": "",
+                    "domainLabel": "",
+                    "domainFrequency": 0.0,
+                    "semanticDomains": [
+                        {
+                            "id": "FR_CODE_COMMUNE_INSEE",
+                            "label": "FR Insee Code",
+                            "frequency": 15.74
+                        },
+                        {
+                            "id": "US_POSTAL_CODE",
+                            "label": "US Postal Code",
+                            "frequency": 15.74
+                        },
+                        {
+                            "id": "FR_POSTAL_CODE",
+                            "label": "FR Postal Code",
+                            "frequency": 15.7
+                        },
+                        {
+                            "id": "DE_POSTAL_CODE",
+                            "label": "DE Postal Code",
+                            "frequency": 15.7
+                        },
+                        {
+                            "id": "US_PHONE",
+                            "label": "US Phone",
+                            "frequency": 2.94
+                        },
+                        {
+                            "id": "PHONE",
+                            "label": "Phone number",
+                            "frequency": 2.94
+                        },
+                        {
+                            "id": "BANK_ROUTING_TRANSIT_NUMBER",
+                            "label": "Bank Routing Transit Number",
+                            "frequency": 0.28
+                        },
+                        {
+                            "id": "SEDOL",
+                            "label": "SEDOL",
+                            "frequency": 0.06
+                        },
+                        {
+                            "id": "UK_SSN",
+                            "label": "UK Social Security Number",
+                            "frequency": 0.02
+                        }
+                    ],
+                    "domainForced": false,
+                    "typeForced": false,
+                    "type": "integer"
+                }
+            ]
+        }
+    ],
+    "author": "8ca1f2b1-e25f-4611-8ab5-99dfe0d32e46",
+    "metadata": [
+        {
+            "name": "type_change",
+            "category": "column metadata",
+            "alternateCategory": "column metadata",
+            "parameters": [
+                {
+                    "name": "column_id",
+                    "type": "string",
+                    "implicit": true,
+                    "canBeBlank": true,
+                    "placeHolder": "",
+                    "label": "Column",
+                    "description": "The column to which you want to apply this action",
+                    "default": ""
+                },
+                {
+                    "name": "scope",
+                    "type": "string",
+                    "implicit": true,
+                    "canBeBlank": true,
+                    "placeHolder": "",
+                    "label": "Scope",
+                    "description": "The transformation scope (Cell | Row | Column | Dataset)",
+                    "default": ""
+                },
+                {
+                    "name": "filter",
+                    "type": "filter",
+                    "implicit": true,
+                    "canBeBlank": true,
+                    "placeHolder": "",
+                    "label": "Filter",
+                    "description": "An optional filter to apply action on matching values only.",
+                    "default": ""
+                }
+            ],
+            "actionScope": [
+                "COLUMN"
+            ],
+            "extended": false,
+            "description": "Change type of this column (number, text, date, etc.)",
+            "alternateDescription": "Change type of this column (number, text, date, etc.)",
+            "label": "Change data type",
+            "alternateLabel": "Change data type",
+            "hasParameters": false,
+            "docUrl": ""
+        },
+        {
+            "name": "type_change",
+            "category": "column metadata",
+            "alternateCategory": "column metadata",
+            "parameters": [
+                {
+                    "name": "column_id",
+                    "type": "string",
+                    "implicit": true,
+                    "canBeBlank": true,
+                    "placeHolder": "",
+                    "label": "Column",
+                    "description": "The column to which you want to apply this action",
+                    "default": ""
+                },
+                {
+                    "name": "scope",
+                    "type": "string",
+                    "implicit": true,
+                    "canBeBlank": true,
+                    "placeHolder": "",
+                    "label": "Scope",
+                    "description": "The transformation scope (Cell | Row | Column | Dataset)",
+                    "default": ""
+                },
+                {
+                    "name": "filter",
+                    "type": "filter",
+                    "implicit": true,
+                    "canBeBlank": true,
+                    "placeHolder": "",
+                    "label": "Filter",
+                    "description": "An optional filter to apply action on matching values only.",
+                    "default": ""
+                }
+            ],
+            "actionScope": [
+                "COLUMN"
+            ],
+            "extended": false,
+            "description": "Change type of this column (number, text, date, etc.)",
+            "alternateDescription": "Change type of this column (number, text, date, etc.)",
+            "label": "Change data type",
+            "alternateLabel": "Change data type",
+            "hasParameters": false,
+            "docUrl": ""
+        }
+    ],
+    "diff": [
+        {
+            "createdColumns": []
+        },
+        {
+            "createdColumns": []
+        }
+    ],
+    "allowDistributedRun": true,
+    "allowFullRun": false,
+    "rowMetadata": {
+        "columns": [
+            {
+                "quality": {
+                    "empty": 0,
+                    "invalid": 0,
+                    "valid": 5268
+                },
+                "id": "0000",
+                "name": "Date",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": 1.2444192E12,
+                    "min": -1.9341504E12,
+                    "mean": "NaN",
+                    "variance": "NaN",
+                    "duplicateCount": 515,
+                    "distinctCount": 4753,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "[number]/[number]/[number]",
+                            "occurrences": 5268
+                        }
+                    ],
+                    "quantiles": {
+                        "median": "NaN",
+                        "lowerQuantile": "NaN",
+                        "upperQuantile": "NaN"
+                    },
+                    "histogram": {
+                        "type": "date",
+                        "items": [
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": -2.2089888E12,
+                                    "max": -1.893456E12
+                                }
+                            },
+                            {
+                                "occurrences": 27,
+                                "range": {
+                                    "min": -1.893456E12,
+                                    "max": -1.5779232E12
+                                }
+                            },
+                            {
+                                "occurrences": 178,
+                                "range": {
+                                    "min": -1.5779232E12,
+                                    "max": -1.262304E12
+                                }
+                            },
+                            {
+                                "occurrences": 323,
+                                "range": {
+                                    "min": -1.262304E12,
+                                    "max": -9.467712E11
+                                }
+                            },
+                            {
+                                "occurrences": 510,
+                                "range": {
+                                    "min": -9.467712E11,
+                                    "max": -6.31152E11
+                                }
+                            },
+                            {
+                                "occurrences": 596,
+                                "range": {
+                                    "min": -6.31152E11,
+                                    "max": -3.156192E11
+                                }
+                            },
+                            {
+                                "occurrences": 721,
+                                "range": {
+                                    "min": -3.156192E11,
+                                    "max": 0.0
+                                }
+                            },
+                            {
+                                "occurrences": 837,
+                                "range": {
+                                    "min": 0.0,
+                                    "max": 3.155328E11
+                                }
+                            },
+                            {
+                                "occurrences": 717,
+                                "range": {
+                                    "min": 3.155328E11,
+                                    "max": 6.31152E11
+                                }
+                            },
+                            {
+                                "occurrences": 775,
+                                "range": {
+                                    "min": 6.31152E11,
+                                    "max": 9.466848E11
+                                }
+                            },
+                            {
+                                "occurrences": 583,
+                                "range": {
+                                    "min": 9.466848E11,
+                                    "max": 1.262304E12
+                                }
+                            }
+                        ],
+                        "pace": "DECADE"
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": "NaN",
+                        "maximalLength": "NaN",
+                        "averageLength": "NaN"
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "06/18/1972",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "08/28/1976",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "09/11/2001",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "02/28/1973",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "08/27/1992",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "08/31/1988",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "10/11/1985",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "01/21/1972",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "01/18/1988",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "01/25/1947",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "01/11/1995",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "05/29/1947",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "12/09/1982",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "03/23/1994",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "09/09/1978",
+                            "occurrences": 3
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "MM/dd/yyyy",
+                            "occurrences": 5268
+                        },
+                        {
+                            "pattern": "dd/MM/yyyy",
+                            "occurrences": 2085
+                        },
+                        {
+                            "pattern": "M/d/yyyy",
+                            "occurrences": 1014
+                        },
+                        {
+                            "pattern": "d/M/yyyy",
+                            "occurrences": 137
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "date"
+            },
+            {
+                "quality": {
+                    "empty": 2219,
+                    "invalid": 0,
+                    "valid": 3049
+                },
+                "id": "0001",
+                "name": "Time",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": "NaN",
+                    "min": "NaN",
+                    "mean": "NaN",
+                    "variance": "NaN",
+                    "duplicateCount": 4262,
+                    "distinctCount": 1006,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "[number]:[number]",
+                            "occurrences": 3031
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 2219
+                        },
+                        {
+                            "pattern": "[digit]:[number]",
+                            "occurrences": 6
+                        },
+                        {
+                            "pattern": "[char]: [digit]:[number]",
+                            "occurrences": 3
+                        },
+                        {
+                            "pattern": "[char]:[number]:[number]",
+                            "occurrences": 3
+                        },
+                        {
+                            "pattern": "[number]'[number]",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "[char][number]:[number]",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "[number]",
+                            "occurrences": 1
+                        },
+                        {
+                            "pattern": "[number].[number]",
+                            "occurrences": 1
+                        }
+                    ],
+                    "quantiles": {
+                        "median": "NaN",
+                        "lowerQuantile": "NaN",
+                        "upperQuantile": "NaN"
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": 0.0,
+                        "maximalLength": 7.0,
+                        "averageLength": 2.89540622627183
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "",
+                            "occurrences": 2219
+                        },
+                        {
+                            "data": "15:00",
+                            "occurrences": 32
+                        },
+                        {
+                            "data": "12:00",
+                            "occurrences": 31
+                        },
+                        {
+                            "data": "11:00",
+                            "occurrences": 29
+                        },
+                        {
+                            "data": "16:00",
+                            "occurrences": 26
+                        },
+                        {
+                            "data": "19:30",
+                            "occurrences": 26
+                        },
+                        {
+                            "data": "14:00",
+                            "occurrences": 25
+                        },
+                        {
+                            "data": "19:00",
+                            "occurrences": 24
+                        },
+                        {
+                            "data": "10:30",
+                            "occurrences": 22
+                        },
+                        {
+                            "data": "09:30",
+                            "occurrences": 22
+                        },
+                        {
+                            "data": "17:00",
+                            "occurrences": 22
+                        },
+                        {
+                            "data": "13:00",
+                            "occurrences": 20
+                        },
+                        {
+                            "data": "14:30",
+                            "occurrences": 19
+                        },
+                        {
+                            "data": "17:30",
+                            "occurrences": 19
+                        },
+                        {
+                            "data": "20:30",
+                            "occurrences": 19
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "99:99",
+                            "occurrences": 3030
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 2219
+                        },
+                        {
+                            "pattern": "9:99",
+                            "occurrences": 6
+                        },
+                        {
+                            "pattern": "a:99:99",
+                            "occurrences": 3
+                        },
+                        {
+                            "pattern": "a: 9:99",
+                            "occurrences": 3
+                        },
+                        {
+                            "pattern": "99'99",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "a99:99",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "99.99",
+                            "occurrences": 1
+                        },
+                        {
+                            "pattern": "999:99",
+                            "occurrences": 1
+                        },
+                        {
+                            "pattern": "9999",
+                            "occurrences": 1
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "string"
+            },
+            {
+                "quality": {
+                    "empty": 20,
+                    "invalid": 0,
+                    "valid": 5248
+                },
+                "id": "0002",
+                "name": "Location",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": "NaN",
+                    "min": "NaN",
+                    "mean": "NaN",
+                    "variance": "NaN",
+                    "duplicateCount": 964,
+                    "distinctCount": 4304,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "[Word], [Word]",
+                            "occurrences": 1990
+                        },
+                        {
+                            "pattern": "[Word] [Word], [Word]",
+                            "occurrences": 1541
+                        },
+                        {
+                            "pattern": "[Word] [Word] [Word], [Word]",
+                            "occurrences": 247
+                        },
+                        {
+                            "pattern": "[Word], [Word] [Word]",
+                            "occurrences": 191
+                        },
+                        {
+                            "pattern": "[Word] [Word], [Word] [Word]",
+                            "occurrences": 167
+                        },
+                        {
+                            "pattern": "[Word] [Word] [Word], [Word] [Word]",
+                            "occurrences": 67
+                        },
+                        {
+                            "pattern": "[Word] [Word], [Word], [Word]",
+                            "occurrences": 61
+                        },
+                        {
+                            "pattern": "[Word] [word] [Word], [Word]",
+                            "occurrences": 55
+                        },
+                        {
+                            "pattern": "[Word], [Word], [Word]",
+                            "occurrences": 49
+                        },
+                        {
+                            "pattern": "[Word] [Word]",
+                            "occurrences": 48
+                        },
+                        {
+                            "pattern": "[Word]",
+                            "occurrences": 44
+                        },
+                        {
+                            "pattern": "[Word]. [Word], [Word]",
+                            "occurrences": 44
+                        },
+                        {
+                            "pattern": "[Word] [Word] [word] [Word], [Word]",
+                            "occurrences": 31
+                        },
+                        {
+                            "pattern": "[Word] [Word], [Word] [Word], [Word]",
+                            "occurrences": 27
+                        },
+                        {
+                            "pattern": "[Word], [Word] [Word] [Word]",
+                            "occurrences": 24
+                        }
+                    ],
+                    "quantiles": {
+                        "median": "NaN",
+                        "lowerQuantile": "NaN",
+                        "upperQuantile": "NaN"
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": 0.0,
+                        "maximalLength": 60.0,
+                        "averageLength": 20.302581624905088
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "",
+                            "occurrences": 20
+                        },
+                        {
+                            "data": "Moscow, Russia",
+                            "occurrences": 15
+                        },
+                        {
+                            "data": "Sao Paulo, Brazil",
+                            "occurrences": 15
+                        },
+                        {
+                            "data": "Rio de Janeiro, Brazil",
+                            "occurrences": 14
+                        },
+                        {
+                            "data": "Bogota, Colombia",
+                            "occurrences": 13
+                        },
+                        {
+                            "data": "Anchorage, Alaska",
+                            "occurrences": 13
+                        },
+                        {
+                            "data": "Manila, Philippines",
+                            "occurrences": 13
+                        },
+                        {
+                            "data": "Cairo, Egypt",
+                            "occurrences": 12
+                        },
+                        {
+                            "data": "New York, New York",
+                            "occurrences": 12
+                        },
+                        {
+                            "data": "Chicago, Illinois",
+                            "occurrences": 11
+                        },
+                        {
+                            "data": "Near Moscow, Russia",
+                            "occurrences": 9
+                        },
+                        {
+                            "data": "AtlantiOcean",
+                            "occurrences": 9
+                        },
+                        {
+                            "data": "Tehran, Iran",
+                            "occurrences": 9
+                        },
+                        {
+                            "data": "Paris, France",
+                            "occurrences": 8
+                        },
+                        {
+                            "data": "Denver, Colorado",
+                            "occurrences": 8
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "Aaaaaa, Aaaaaa",
+                            "occurrences": 123
+                        },
+                        {
+                            "pattern": "Aaaaaaa, Aaaaaa",
+                            "occurrences": 92
+                        },
+                        {
+                            "pattern": "Aaaaaaaaa, Aaaaaa",
+                            "occurrences": 81
+                        },
+                        {
+                            "pattern": "Aaaaaaaa, Aaaaaa",
+                            "occurrences": 72
+                        },
+                        {
+                            "pattern": "Aaaaaaaa, Aaaaaaa",
+                            "occurrences": 67
+                        },
+                        {
+                            "pattern": "Aaaaa, Aaaaaa",
+                            "occurrences": 65
+                        },
+                        {
+                            "pattern": "Aaaaaaa, Aaaaa",
+                            "occurrences": 64
+                        },
+                        {
+                            "pattern": "Aaaaaaa, Aaaaaaa",
+                            "occurrences": 63
+                        },
+                        {
+                            "pattern": "Aaaaa, Aaaaa",
+                            "occurrences": 61
+                        },
+                        {
+                            "pattern": "Aaaaaaa, Aaaaaaaa",
+                            "occurrences": 60
+                        },
+                        {
+                            "pattern": "Aaaaaa, Aaaaaaa",
+                            "occurrences": 59
+                        },
+                        {
+                            "pattern": "Aaaaaa, Aaaaaaaa",
+                            "occurrences": 56
+                        },
+                        {
+                            "pattern": "Aaaaaa, Aaaaa",
+                            "occurrences": 54
+                        },
+                        {
+                            "pattern": "Aaaaaaaa, Aaaaa",
+                            "occurrences": 54
+                        },
+                        {
+                            "pattern": "Aaaa Aaaaaa, Aaaaaa",
+                            "occurrences": 54
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [
+                    {
+                        "id": "COUNTRY",
+                        "label": "Country",
+                        "frequency": 0.78
+                    },
+                    {
+                        "id": "ADDRESS_LINE",
+                        "label": "Address Line",
+                        "frequency": 0.72
+                    },
+                    {
+                        "id": "AIRPORT",
+                        "label": "Airport",
+                        "frequency": 0.4
+                    },
+                    {
+                        "id": "FIRST_NAME",
+                        "label": "First Name",
+                        "frequency": 0.13
+                    },
+                    {
+                        "id": "LAST_NAME",
+                        "label": "Last Name",
+                        "frequency": 0.11
+                    },
+                    {
+                        "id": "US_COUNTY",
+                        "label": "US County",
+                        "frequency": 0.04
+                    },
+                    {
+                        "id": "COMPANY",
+                        "label": "Company",
+                        "frequency": 0.04
+                    },
+                    {
+                        "id": "MX_ESTADO",
+                        "label": "MX Estado",
+                        "frequency": 0.04
+                    },
+                    {
+                        "id": "US_STATE",
+                        "label": "US State",
+                        "frequency": 0.04
+                    },
+                    {
+                        "id": "NA_STATE",
+                        "label": "North American state",
+                        "frequency": 0.04
+                    },
+                    {
+                        "id": "LANGUAGE",
+                        "label": "Language",
+                        "frequency": 0.02
+                    },
+                    {
+                        "id": "FULL_NAME",
+                        "label": "Full Name",
+                        "frequency": 0.02
+                    }
+                ],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "string"
+            },
+            {
+                "quality": {
+                    "empty": 18,
+                    "invalid": 0,
+                    "valid": 5250
+                },
+                "id": "0003",
+                "name": "Operator",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": "NaN",
+                    "min": "NaN",
+                    "mean": "NaN",
+                    "variance": "NaN",
+                    "duplicateCount": 2791,
+                    "distinctCount": 2477,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "[Word] [Word]",
+                            "occurrences": 1269
+                        },
+                        {
+                            "pattern": "[Word] [Word] [Word]",
+                            "occurrences": 1016
+                        },
+                        {
+                            "pattern": "[Word]",
+                            "occurrences": 624
+                        },
+                        {
+                            "pattern": "[Word] - [Word] [Word] [Word]",
+                            "occurrences": 265
+                        },
+                        {
+                            "pattern": "[Word] [Word] [Word] [Word]",
+                            "occurrences": 200
+                        },
+                        {
+                            "pattern": "[WORD]",
+                            "occurrences": 194
+                        },
+                        {
+                            "pattern": "[Word] - [Char].[Char]. [Word] [Word]",
+                            "occurrences": 189
+                        },
+                        {
+                            "pattern": "[Word] [Word] - [Word] [Word]",
+                            "occurrences": 108
+                        },
+                        {
+                            "pattern": "[Word] - [Word] [Word] [Word] [Word]",
+                            "occurrences": 78
+                        },
+                        {
+                            "pattern": "[WORD] [Word] [Word] [Word]",
+                            "occurrences": 72
+                        },
+                        {
+                            "pattern": "[Word] [Word] [Word] - [Word] [Word]",
+                            "occurrences": 68
+                        },
+                        {
+                            "pattern": "[Word] - [Char].[Char]. [Word]",
+                            "occurrences": 62
+                        },
+                        {
+                            "pattern": "[Word] - [Word] [Word]",
+                            "occurrences": 54
+                        },
+                        {
+                            "pattern": "[Word] [word] [Word]",
+                            "occurrences": 53
+                        },
+                        {
+                            "pattern": "[WORD] [Word] [Word]",
+                            "occurrences": 49
+                        }
+                    ],
+                    "quantiles": {
+                        "median": "NaN",
+                        "lowerQuantile": "NaN",
+                        "upperQuantile": "NaN"
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": 0.0,
+                        "maximalLength": 65.0,
+                        "averageLength": 19.427296886864085
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "Aeroflot",
+                            "occurrences": 179
+                        },
+                        {
+                            "data": "Military - U.S. Air Force",
+                            "occurrences": 176
+                        },
+                        {
+                            "data": "Air France",
+                            "occurrences": 70
+                        },
+                        {
+                            "data": "Deutsche Lufthansa",
+                            "occurrences": 65
+                        },
+                        {
+                            "data": "Air Taxi",
+                            "occurrences": 44
+                        },
+                        {
+                            "data": "United Air Lines",
+                            "occurrences": 44
+                        },
+                        {
+                            "data": "China National Aviation Corporation",
+                            "occurrences": 44
+                        },
+                        {
+                            "data": "Military - U.S. Army Air Forces",
+                            "occurrences": 43
+                        },
+                        {
+                            "data": "Pan American World Airways",
+                            "occurrences": 41
+                        },
+                        {
+                            "data": "Military - U.S. Navy",
+                            "occurrences": 36
+                        },
+                        {
+                            "data": "American Airlines",
+                            "occurrences": 36
+                        },
+                        {
+                            "data": "Military - Royal Air Force",
+                            "occurrences": 36
+                        },
+                        {
+                            "data": "US Aerial Mail Service",
+                            "occurrences": 36
+                        },
+                        {
+                            "data": "Indian Airlines",
+                            "occurrences": 34
+                        },
+                        {
+                            "data": "KLM Royal Dutch Airlines",
+                            "occurrences": 33
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "Aaaaaaaa",
+                            "occurrences": 270
+                        },
+                        {
+                            "pattern": "Aaaaaaaa - A.A. Aaa Aaaaa",
+                            "occurrences": 176
+                        },
+                        {
+                            "pattern": "Aaa Aaaaaa",
+                            "occurrences": 106
+                        },
+                        {
+                            "pattern": "Aaaaaa Aaaaaaaa",
+                            "occurrences": 104
+                        },
+                        {
+                            "pattern": "Aaaaaa",
+                            "occurrences": 103
+                        },
+                        {
+                            "pattern": "Aaaaaaa",
+                            "occurrences": 103
+                        },
+                        {
+                            "pattern": "Aaaaaaa Aaaaaaaa",
+                            "occurrences": 87
+                        },
+                        {
+                            "pattern": "Aaaaaaaa Aaaaaaaa",
+                            "occurrences": 84
+                        },
+                        {
+                            "pattern": "AAAA",
+                            "occurrences": 74
+                        },
+                        {
+                            "pattern": "Aaaaaaaa Aaaaaaaaa",
+                            "occurrences": 68
+                        },
+                        {
+                            "pattern": "Aaaaaaaaa Aaaaaaaa",
+                            "occurrences": 62
+                        },
+                        {
+                            "pattern": "Aaaaaaaa - A.A. Aaaa",
+                            "occurrences": 59
+                        },
+                        {
+                            "pattern": "Aaaaaaaa - Aaaaaaa Aaa Aaaaa",
+                            "occurrences": 58
+                        },
+                        {
+                            "pattern": "Aaa Aaaa",
+                            "occurrences": 56
+                        },
+                        {
+                            "pattern": "Aaaaaaa Aaaaaaa",
+                            "occurrences": 55
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [
+                    {
+                        "id": "COMPANY",
+                        "label": "Company",
+                        "frequency": 1.88
+                    },
+                    {
+                        "id": "AIRPORT_CODE",
+                        "label": "Airport Code",
+                        "frequency": 0.38
+                    },
+                    {
+                        "id": "LAST_NAME",
+                        "label": "Last Name",
+                        "frequency": 0.3
+                    },
+                    {
+                        "id": "FR_COMMUNE",
+                        "label": "FR Commune",
+                        "frequency": 0.21
+                    },
+                    {
+                        "id": "FIRST_NAME",
+                        "label": "First Name",
+                        "frequency": 0.17
+                    },
+                    {
+                        "id": "AIRPORT",
+                        "label": "Airport",
+                        "frequency": 0.15
+                    },
+                    {
+                        "id": "US_COUNTY",
+                        "label": "US County",
+                        "frequency": 0.15
+                    },
+                    {
+                        "id": "ADDRESS_LINE",
+                        "label": "Address Line",
+                        "frequency": 0.04
+                    },
+                    {
+                        "id": "CONTINENT",
+                        "label": "Continent",
+                        "frequency": 0.02
+                    },
+                    {
+                        "id": "ORGANIZATION",
+                        "label": "Organization",
+                        "frequency": 0.02
+                    },
+                    {
+                        "id": "BEVERAGE",
+                        "label": "Beverage",
+                        "frequency": 0.02
+                    },
+                    {
+                        "id": "FULL_NAME",
+                        "label": "Full Name",
+                        "frequency": 0.02
+                    }
+                ],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "string"
+            },
+            {
+                "quality": {
+                    "empty": 4199,
+                    "invalid": 140,
+                    "valid": 929
+                },
+                "id": "0004",
+                "name": "Flight #",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": 2.7307905E7,
+                    "min": 1.0,
+                    "mean": 30479.2594187298,
+                    "variance": 8.02653878991469E11,
+                    "duplicateCount": 4543,
+                    "distinctCount": 725,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "",
+                            "occurrences": 4199
+                        },
+                        {
+                            "pattern": "[number]",
+                            "occurrences": 887
+                        },
+                        {
+                            "pattern": "-",
+                            "occurrences": 67
+                        },
+                        {
+                            "pattern": "[digit]",
+                            "occurrences": 42
+                        },
+                        {
+                            "pattern": "[number]/[number]",
+                            "occurrences": 18
+                        },
+                        {
+                            "pattern": "[number][Char]",
+                            "occurrences": 17
+                        },
+                        {
+                            "pattern": "[WORD][number]",
+                            "occurrences": 4
+                        },
+                        {
+                            "pattern": "[number] / [number]",
+                            "occurrences": 4
+                        },
+                        {
+                            "pattern": "[number]-[digit]",
+                            "occurrences": 3
+                        },
+                        {
+                            "pattern": "[digit]-[number]",
+                            "occurrences": 3
+                        },
+                        {
+                            "pattern": "[Word] [number]",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "[number] / -",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "[number]/[digit]",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "[number]-[number]",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "[WORD] [number]",
+                            "occurrences": 2
+                        }
+                    ],
+                    "quantiles": {
+                        "median": 505.0,
+                        "lowerQuantile": 181.5,
+                        "upperQuantile": 858.5
+                    },
+                    "histogram": {
+                        "type": "number",
+                        "items": [
+                            {
+                                "occurrences": 928,
+                                "range": {
+                                    "min": 1.0,
+                                    "max": 1157121.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1157121.0,
+                                    "max": 2314241.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2314241.0,
+                                    "max": 3471361.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 3471361.0,
+                                    "max": 4628481.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 4628481.0,
+                                    "max": 5785601.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 5785601.0,
+                                    "max": 6942721.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 6942721.0,
+                                    "max": 8099841.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 8099841.0,
+                                    "max": 9256961.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 9256961.0,
+                                    "max": 1.0414081E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.0414081E7,
+                                    "max": 1.1571201E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.1571201E7,
+                                    "max": 1.2728321E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.2728321E7,
+                                    "max": 1.3885441E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.3885441E7,
+                                    "max": 1.5042561E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.5042561E7,
+                                    "max": 1.6199681E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.6199681E7,
+                                    "max": 1.7356801E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.7356801E7,
+                                    "max": 1.8513921E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.8513921E7,
+                                    "max": 1.9671041E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.9671041E7,
+                                    "max": 2.0828161E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2.0828161E7,
+                                    "max": 2.1985281E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2.1985281E7,
+                                    "max": 2.3142401E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2.3142401E7,
+                                    "max": 2.4299521E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2.4299521E7,
+                                    "max": 2.5456641E7
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2.5456641E7,
+                                    "max": 2.6613761E7
+                                }
+                            },
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": 2.6613761E7,
+                                    "max": 2.7770881E7
+                                }
+                            }
+                        ]
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": "NaN",
+                        "maximalLength": "NaN",
+                        "averageLength": "NaN"
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "",
+                            "occurrences": 4199
+                        },
+                        {
+                            "data": "-",
+                            "occurrences": 67
+                        },
+                        {
+                            "data": "1",
+                            "occurrences": 10
+                        },
+                        {
+                            "data": "4",
+                            "occurrences": 7
+                        },
+                        {
+                            "data": "6",
+                            "occurrences": 6
+                        },
+                        {
+                            "data": "101",
+                            "occurrences": 6
+                        },
+                        {
+                            "data": "21",
+                            "occurrences": 6
+                        },
+                        {
+                            "data": "901",
+                            "occurrences": 6
+                        },
+                        {
+                            "data": "7",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "701",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "703",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "706",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "201",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "2",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "601",
+                            "occurrences": 4
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "",
+                            "occurrences": 4199
+                        },
+                        {
+                            "pattern": "999",
+                            "occurrences": 628
+                        },
+                        {
+                            "pattern": "9999",
+                            "occurrences": 173
+                        },
+                        {
+                            "pattern": "99",
+                            "occurrences": 85
+                        },
+                        {
+                            "pattern": "-",
+                            "occurrences": 67
+                        },
+                        {
+                            "pattern": "9",
+                            "occurrences": 42
+                        },
+                        {
+                            "pattern": "999A",
+                            "occurrences": 10
+                        },
+                        {
+                            "pattern": "999/999",
+                            "occurrences": 7
+                        },
+                        {
+                            "pattern": "99A",
+                            "occurrences": 6
+                        },
+                        {
+                            "pattern": "999/99",
+                            "occurrences": 5
+                        },
+                        {
+                            "pattern": "9999/9999",
+                            "occurrences": 3
+                        },
+                        {
+                            "pattern": "AA999",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "999 / -",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "99-9",
+                            "occurrences": 2
+                        },
+                        {
+                            "pattern": "AA 999",
+                            "occurrences": 2
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "integer"
+            },
+            {
+                "quality": {
+                    "empty": 1706,
+                    "invalid": 0,
+                    "valid": 3562
+                },
+                "id": "0005",
+                "name": "Route",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": "NaN",
+                    "min": "NaN",
+                    "mean": "NaN",
+                    "variance": "NaN",
+                    "duplicateCount": 2023,
+                    "distinctCount": 3245,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "",
+                            "occurrences": 1706
+                        },
+                        {
+                            "pattern": "[Word] - [Word]",
+                            "occurrences": 1450
+                        },
+                        {
+                            "pattern": "[Word], [WORD] - [Word], [WORD]",
+                            "occurrences": 231
+                        },
+                        {
+                            "pattern": "[Word] - [Word] [Word]",
+                            "occurrences": 218
+                        },
+                        {
+                            "pattern": "[Word] [Word] - [Word]",
+                            "occurrences": 216
+                        },
+                        {
+                            "pattern": "[Word]",
+                            "occurrences": 139
+                        },
+                        {
+                            "pattern": "[Word] [Word] - [Word] [Word]",
+                            "occurrences": 108
+                        },
+                        {
+                            "pattern": "[Word], [Word] - [Word], [Word]",
+                            "occurrences": 78
+                        },
+                        {
+                            "pattern": "[Word] - [Word] - [Word]",
+                            "occurrences": 72
+                        },
+                        {
+                            "pattern": "[Word], [WORD] - [Word] [Word], [WORD]",
+                            "occurrences": 54
+                        },
+                        {
+                            "pattern": "[Word] [Word], [WORD] - [Word], [WORD]",
+                            "occurrences": 48
+                        },
+                        {
+                            "pattern": "[Word] [word]",
+                            "occurrences": 35
+                        },
+                        {
+                            "pattern": "[Word] [Word] [Word] - [Word]",
+                            "occurrences": 29
+                        },
+                        {
+                            "pattern": "[Word] [word] [Word] - [Word]",
+                            "occurrences": 26
+                        },
+                        {
+                            "pattern": "[Word] - [Word] [Word] [Word]",
+                            "occurrences": 26
+                        }
+                    ],
+                    "quantiles": {
+                        "median": "NaN",
+                        "lowerQuantile": "NaN",
+                        "upperQuantile": "NaN"
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": 0.0,
+                        "maximalLength": 59.0,
+                        "averageLength": 14.93507972665148
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "",
+                            "occurrences": 1706
+                        },
+                        {
+                            "data": "Training",
+                            "occurrences": 81
+                        },
+                        {
+                            "data": "Sightseeing",
+                            "occurrences": 29
+                        },
+                        {
+                            "data": "Test flight",
+                            "occurrences": 17
+                        },
+                        {
+                            "data": "Test",
+                            "occurrences": 6
+                        },
+                        {
+                            "data": "Sao Paulo - Rio de Janeiro",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "Bogota - Barranquilla",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "Saigon - Paris",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "Sao Paulo - Porto Alegre",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "Villavicencio - Mitu",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "London - Glasgow",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "Hue - Da Nang",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "Otis AFB",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "Bangkok - Hong Kong",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "Istanbul - Ankara",
+                            "occurrences": 3
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "",
+                            "occurrences": 1706
+                        },
+                        {
+                            "pattern": "Aaaaaa - Aaaaaa",
+                            "occurrences": 99
+                        },
+                        {
+                            "pattern": "Aaaaaaaa",
+                            "occurrences": 83
+                        },
+                        {
+                            "pattern": "Aaaaaa - Aaaaaaa",
+                            "occurrences": 69
+                        },
+                        {
+                            "pattern": "Aaaaaaa - Aaaaaa",
+                            "occurrences": 68
+                        },
+                        {
+                            "pattern": "Aaaaaa - Aaaaa",
+                            "occurrences": 62
+                        },
+                        {
+                            "pattern": "Aaaaa - Aaaaaa",
+                            "occurrences": 55
+                        },
+                        {
+                            "pattern": "Aaaaaaa - Aaaaaaaa",
+                            "occurrences": 54
+                        },
+                        {
+                            "pattern": "Aaaaaaa - Aaaaaaa",
+                            "occurrences": 52
+                        },
+                        {
+                            "pattern": "Aaaaaa - Aaaaaaaa",
+                            "occurrences": 52
+                        },
+                        {
+                            "pattern": "Aaaaaaaa - Aaaaaa",
+                            "occurrences": 47
+                        },
+                        {
+                            "pattern": "Aaaaaaa - Aaaaa",
+                            "occurrences": 40
+                        },
+                        {
+                            "pattern": "Aaaaaaaaa - Aaaaaa",
+                            "occurrences": 40
+                        },
+                        {
+                            "pattern": "Aaaaaaaaa - Aaaaaaa",
+                            "occurrences": 39
+                        },
+                        {
+                            "pattern": "Aaaaa - Aaaaa",
+                            "occurrences": 39
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [
+                    {
+                        "id": "ADDRESS_LINE",
+                        "label": "Address Line",
+                        "frequency": 0.89
+                    },
+                    {
+                        "id": "FULL_NAME",
+                        "label": "Full Name",
+                        "frequency": 0.11
+                    },
+                    {
+                        "id": "AIRPORT",
+                        "label": "Airport",
+                        "frequency": 0.06
+                    }
+                ],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "string"
+            },
+            {
+                "quality": {
+                    "empty": 27,
+                    "invalid": 0,
+                    "valid": 5241
+                },
+                "id": "0006",
+                "name": "Type",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": "NaN",
+                    "min": "NaN",
+                    "mean": "NaN",
+                    "variance": "NaN",
+                    "duplicateCount": 2821,
+                    "distinctCount": 2447,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "[Word] [WORD]-[digit]",
+                            "occurrences": 427
+                        },
+                        {
+                            "pattern": "[Word] [Char]-[number][Char]",
+                            "occurrences": 306
+                        },
+                        {
+                            "pattern": "[Word] [WORD]-[number]",
+                            "occurrences": 302
+                        },
+                        {
+                            "pattern": "[Word] [number]",
+                            "occurrences": 233
+                        },
+                        {
+                            "pattern": "[Word] [Char]-[number]",
+                            "occurrences": 198
+                        },
+                        {
+                            "pattern": "[Word] [WORD]-[number][Char]",
+                            "occurrences": 194
+                        },
+                        {
+                            "pattern": "[Word] [number][Char]",
+                            "occurrences": 175
+                        },
+                        {
+                            "pattern": "[word] [Word] [Word] [WORD]-[digit] [Word] [Word] [number]",
+                            "occurrences": 114
+                        },
+                        {
+                            "pattern": "[Word] [Char]-[number]-[number]",
+                            "occurrences": 101
+                        },
+                        {
+                            "pattern": "[Word] [number] [Word]",
+                            "occurrences": 94
+                        },
+                        {
+                            "pattern": "[Word] [WORD]-[digit][Char]",
+                            "occurrences": 90
+                        },
+                        {
+                            "pattern": "[Word] [Char]-[number] [Word] [number]",
+                            "occurrences": 77
+                        },
+                        {
+                            "pattern": "[Word] [Char]-[number][Char] [Word]",
+                            "occurrences": 65
+                        },
+                        {
+                            "pattern": "[Word][Word] [Word] [WORD]-[digit]-[number]",
+                            "occurrences": 58
+                        },
+                        {
+                            "pattern": "[Word] [Word]",
+                            "occurrences": 56
+                        }
+                    ],
+                    "quantiles": {
+                        "median": "NaN",
+                        "lowerQuantile": "NaN",
+                        "upperQuantile": "NaN"
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": 0.0,
+                        "maximalLength": 40.0,
+                        "averageLength": 18.231776765375855
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "Douglas DC-3",
+                            "occurrences": 334
+                        },
+                        {
+                            "data": "de Havilland Canada DHC-6 Twin Otter 300",
+                            "occurrences": 81
+                        },
+                        {
+                            "data": "Douglas C-47A",
+                            "occurrences": 74
+                        },
+                        {
+                            "data": "Douglas C-47",
+                            "occurrences": 62
+                        },
+                        {
+                            "data": "Douglas DC-4",
+                            "occurrences": 40
+                        },
+                        {
+                            "data": "Yakovlev YAK-40",
+                            "occurrences": 37
+                        },
+                        {
+                            "data": "Antonov AN-26",
+                            "occurrences": 36
+                        },
+                        {
+                            "data": "Junkers JU-52/3m",
+                            "occurrences": 32
+                        },
+                        {
+                            "data": "Douglas C-47B",
+                            "occurrences": 29
+                        },
+                        {
+                            "data": "De Havilland DH-4",
+                            "occurrences": 28
+                        },
+                        {
+                            "data": "",
+                            "occurrences": 27
+                        },
+                        {
+                            "data": "Douglas DC-6B",
+                            "occurrences": 27
+                        },
+                        {
+                            "data": "Breguet 14",
+                            "occurrences": 23
+                        },
+                        {
+                            "data": "Curtiss C-46A",
+                            "occurrences": 21
+                        },
+                        {
+                            "data": "Douglas C-47-DL",
+                            "occurrences": 20
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "Aaaaaaa AA-9",
+                            "occurrences": 419
+                        },
+                        {
+                            "pattern": "Aaaaaaa A-99A",
+                            "occurrences": 198
+                        },
+                        {
+                            "pattern": "Aaaaaaa A-99",
+                            "occurrences": 123
+                        },
+                        {
+                            "pattern": "aa Aaaaaaaaa Aaaaaa AAA-9 Aaaa Aaaaa 999",
+                            "occurrences": 114
+                        },
+                        {
+                            "pattern": "Aaaaaaa AA-99",
+                            "occurrences": 109
+                        },
+                        {
+                            "pattern": "Aaaaaa 999A",
+                            "occurrences": 86
+                        },
+                        {
+                            "pattern": "Aaaaaa A-999-999",
+                            "occurrences": 84
+                        },
+                        {
+                            "pattern": "Aaaaaaa AA-9A",
+                            "occurrences": 82
+                        },
+                        {
+                            "pattern": "Aaaaaa 999",
+                            "occurrences": 81
+                        },
+                        {
+                            "pattern": "Aaaaa AA-99",
+                            "occurrences": 59
+                        },
+                        {
+                            "pattern": "Aaaaaaa AA-999",
+                            "occurrences": 58
+                        },
+                        {
+                            "pattern": "Aaaaaa A-99 Aaaaaaaaaa 999",
+                            "occurrences": 58
+                        },
+                        {
+                            "pattern": "AaAaaaaaa Aaaaaaa AA-9-99",
+                            "occurrences": 58
+                        },
+                        {
+                            "pattern": "Aaaaaa A-999-999A",
+                            "occurrences": 51
+                        },
+                        {
+                            "pattern": "Aaaaaaa AA-999A",
+                            "occurrences": 51
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [
+                    {
+                        "id": "FULL_NAME",
+                        "label": "Full Name",
+                        "frequency": 0.32
+                    },
+                    {
+                        "id": "LAST_NAME",
+                        "label": "Last Name",
+                        "frequency": 0.04
+                    },
+                    {
+                        "id": "AIRPORT",
+                        "label": "Airport",
+                        "frequency": 0.02
+                    },
+                    {
+                        "id": "ADDRESS_LINE",
+                        "label": "Address Line",
+                        "frequency": 0.02
+                    }
+                ],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "string"
+            },
+            {
+                "quality": {
+                    "empty": 335,
+                    "invalid": 0,
+                    "valid": 4933
+                },
+                "id": "0007",
+                "name": "Registration",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": "NaN",
+                    "min": "NaN",
+                    "mean": "NaN",
+                    "variance": "NaN",
+                    "duplicateCount": 362,
+                    "distinctCount": 4906,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "[WORD]-[WORD]",
+                            "occurrences": 1243
+                        },
+                        {
+                            "pattern": "[Char]-[WORD]",
+                            "occurrences": 582
+                        },
+                        {
+                            "pattern": "[WORD]-[number]",
+                            "occurrences": 535
+                        },
+                        {
+                            "pattern": "[Char][number][Char]",
+                            "occurrences": 465
+                        },
+                        {
+                            "pattern": "[Char][number][WORD]",
+                            "occurrences": 394
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 335
+                        },
+                        {
+                            "pattern": "[Char][number]",
+                            "occurrences": 280
+                        },
+                        {
+                            "pattern": "[WORD][number]",
+                            "occurrences": 252
+                        },
+                        {
+                            "pattern": "[number]-[number]",
+                            "occurrences": 215
+                        },
+                        {
+                            "pattern": "[number]",
+                            "occurrences": 174
+                        },
+                        {
+                            "pattern": "[digit][Char]-[WORD]",
+                            "occurrences": 152
+                        },
+                        {
+                            "pattern": "[Char]-[number]",
+                            "occurrences": 111
+                        },
+                        {
+                            "pattern": "[WORD]-[Char][number]",
+                            "occurrences": 73
+                        },
+                        {
+                            "pattern": "[Char][digit]-[WORD]",
+                            "occurrences": 68
+                        },
+                        {
+                            "pattern": "[WORD]-[number][Char]",
+                            "occurrences": 46
+                        }
+                    ],
+                    "quantiles": {
+                        "median": "NaN",
+                        "lowerQuantile": "NaN",
+                        "upperQuantile": "NaN"
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": 0.0,
+                        "maximalLength": 15.0,
+                        "averageLength": 5.987281700835232
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "",
+                            "occurrences": 335
+                        },
+                        {
+                            "data": "49",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "CF-TCL",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "CCCP-46724",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "204",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "223",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "PT-EPH",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "PT-EHH",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "32",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "77",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "82",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "VH-USG",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "412",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "N37741",
+                            "occurrences": 2
+                        },
+                        {
+                            "data": "65-0990",
+                            "occurrences": 2
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "AA-AAA",
+                            "occurrences": 1240
+                        },
+                        {
+                            "pattern": "A-AAAA",
+                            "occurrences": 580
+                        },
+                        {
+                            "pattern": "A9999A",
+                            "occurrences": 367
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 335
+                        },
+                        {
+                            "pattern": "A999AA",
+                            "occurrences": 304
+                        },
+                        {
+                            "pattern": "A99999",
+                            "occurrences": 204
+                        },
+                        {
+                            "pattern": "AAAA-99999",
+                            "occurrences": 183
+                        },
+                        {
+                            "pattern": "9A-AAA",
+                            "occurrences": 152
+                        },
+                        {
+                            "pattern": "99-9999",
+                            "occurrences": 138
+                        },
+                        {
+                            "pattern": "AA99999",
+                            "occurrences": 128
+                        },
+                        {
+                            "pattern": "AA-9999",
+                            "occurrences": 107
+                        },
+                        {
+                            "pattern": "A99AA",
+                            "occurrences": 90
+                        },
+                        {
+                            "pattern": "AA-999",
+                            "occurrences": 90
+                        },
+                        {
+                            "pattern": "A999A",
+                            "occurrences": 83
+                        },
+                        {
+                            "pattern": "AA-99999",
+                            "occurrences": 81
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [
+                    {
+                        "id": "UK_POSTAL_CODE",
+                        "label": "UK Postal Code",
+                        "frequency": 5.39
+                    },
+                    {
+                        "id": "BE_POSTAL_CODE",
+                        "label": "BE Postal Code",
+                        "frequency": 0.63
+                    },
+                    {
+                        "id": "FR_POSTAL_CODE",
+                        "label": "FR Postal Code",
+                        "frequency": 0.42
+                    },
+                    {
+                        "id": "FR_CODE_COMMUNE_INSEE",
+                        "label": "FR Insee Code",
+                        "frequency": 0.42
+                    },
+                    {
+                        "id": "US_POSTAL_CODE",
+                        "label": "US Postal Code",
+                        "frequency": 0.42
+                    },
+                    {
+                        "id": "DE_POSTAL_CODE",
+                        "label": "DE Postal Code",
+                        "frequency": 0.42
+                    },
+                    {
+                        "id": "SEDOL",
+                        "label": "SEDOL",
+                        "frequency": 0.25
+                    },
+                    {
+                        "id": "US_PHONE",
+                        "label": "US Phone",
+                        "frequency": 0.02
+                    },
+                    {
+                        "id": "US_STATE_CODE",
+                        "label": "US State Code",
+                        "frequency": 0.02
+                    },
+                    {
+                        "id": "PHONE",
+                        "label": "Phone number",
+                        "frequency": 0.02
+                    },
+                    {
+                        "id": "NA_STATE_CODE",
+                        "label": "North American state code",
+                        "frequency": 0.02
+                    }
+                ],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "string"
+            },
+            {
+                "quality": {
+                    "empty": 1228,
+                    "invalid": 1196,
+                    "valid": 2844
+                },
+                "id": "0008",
+                "name": "cn/In",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": 9.773053359122E12,
+                    "min": 1.0,
+                    "mean": 5.092742718922642E9,
+                    "variance": 4.075966973142182E22,
+                    "duplicateCount": 1560,
+                    "distinctCount": 3708,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "[number]",
+                            "occurrences": 2821
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 1228
+                        },
+                        {
+                            "pattern": "[number]/[number]",
+                            "occurrences": 516
+                        },
+                        {
+                            "pattern": "[number]-[number]",
+                            "occurrences": 195
+                        },
+                        {
+                            "pattern": "[WORD]-[number]",
+                            "occurrences": 96
+                        },
+                        {
+                            "pattern": "[number][Char]-[number]",
+                            "occurrences": 83
+                        },
+                        {
+                            "pattern": "[Char]-[number]",
+                            "occurrences": 45
+                        },
+                        {
+                            "pattern": "[number][Char][number]",
+                            "occurrences": 32
+                        },
+                        {
+                            "pattern": "[WORD][number]",
+                            "occurrences": 27
+                        },
+                        {
+                            "pattern": "[digit]",
+                            "occurrences": 23
+                        },
+                        {
+                            "pattern": "[Char][number]",
+                            "occurrences": 23
+                        },
+                        {
+                            "pattern": "[number] / [number]",
+                            "occurrences": 19
+                        },
+                        {
+                            "pattern": "[digit]-[WORD]-[number]",
+                            "occurrences": 17
+                        },
+                        {
+                            "pattern": "[digit][Char][number]-[number]",
+                            "occurrences": 11
+                        },
+                        {
+                            "pattern": "[WORD]-[number][Char]",
+                            "occurrences": 10
+                        }
+                    ],
+                    "quantiles": {
+                        "median": 5205.5,
+                        "lowerQuantile": 704.5,
+                        "upperQuantile": 21604.75
+                    },
+                    "histogram": {
+                        "type": "number",
+                        "items": [
+                            {
+                                "occurrences": 2842,
+                                "range": {
+                                    "min": 1.0,
+                                    "max": 4.11243118593E11
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 4.11243118593E11,
+                                    "max": 8.22486237185E11
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 8.22486237185E11,
+                                    "max": 1.233729355777E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.233729355777E12,
+                                    "max": 1.644972474369E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1.644972474369E12,
+                                    "max": 2.056215592961E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2.056215592961E12,
+                                    "max": 2.467458711553E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2.467458711553E12,
+                                    "max": 2.878701830145E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2.878701830145E12,
+                                    "max": 3.289944948737E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 3.289944948737E12,
+                                    "max": 3.701188067329E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 3.701188067329E12,
+                                    "max": 4.112431185921E12
+                                }
+                            },
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": 4.112431185921E12,
+                                    "max": 4.523674304513E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 4.523674304513E12,
+                                    "max": 4.934917423105E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 4.934917423105E12,
+                                    "max": 5.346160541697E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 5.346160541697E12,
+                                    "max": 5.757403660289E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 5.757403660289E12,
+                                    "max": 6.168646778881E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 6.168646778881E12,
+                                    "max": 6.579889897473E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 6.579889897473E12,
+                                    "max": 6.991133016065E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 6.991133016065E12,
+                                    "max": 7.402376134657E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 7.402376134657E12,
+                                    "max": 7.813619253249E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 7.813619253249E12,
+                                    "max": 8.224862371841E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 8.224862371841E12,
+                                    "max": 8.636105490433E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 8.636105490433E12,
+                                    "max": 9.047348609025E12
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 9.047348609025E12,
+                                    "max": 9.458591727617E12
+                                }
+                            },
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": 9.458591727617E12,
+                                    "max": 9.869834846209E12
+                                }
+                            }
+                        ]
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": "NaN",
+                        "maximalLength": "NaN",
+                        "averageLength": "NaN"
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "",
+                            "occurrences": 1228
+                        },
+                        {
+                            "data": "178",
+                            "occurrences": 6
+                        },
+                        {
+                            "data": "213",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "229",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "19",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "125",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "1",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "4",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "6",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "212",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "1965",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "31",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "44",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "55",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "439",
+                            "occurrences": 4
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "",
+                            "occurrences": 1228
+                        },
+                        {
+                            "pattern": "9999",
+                            "occurrences": 844
+                        },
+                        {
+                            "pattern": "99999",
+                            "occurrences": 829
+                        },
+                        {
+                            "pattern": "999",
+                            "occurrences": 602
+                        },
+                        {
+                            "pattern": "99999/999",
+                            "occurrences": 303
+                        },
+                        {
+                            "pattern": "9999999",
+                            "occurrences": 125
+                        },
+                        {
+                            "pattern": "999999",
+                            "occurrences": 115
+                        },
+                        {
+                            "pattern": "99",
+                            "occurrences": 113
+                        },
+                        {
+                            "pattern": "99999999",
+                            "occurrences": 107
+                        },
+                        {
+                            "pattern": "99999/99999",
+                            "occurrences": 79
+                        },
+                        {
+                            "pattern": "99999/9999",
+                            "occurrences": 61
+                        },
+                        {
+                            "pattern": "999999999",
+                            "occurrences": 61
+                        },
+                        {
+                            "pattern": "AA-999",
+                            "occurrences": 57
+                        },
+                        {
+                            "pattern": "999-9999",
+                            "occurrences": 56
+                        },
+                        {
+                            "pattern": "999A-9999",
+                            "occurrences": 53
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [
+                    {
+                        "id": "FR_CODE_COMMUNE_INSEE",
+                        "label": "FR Insee Code",
+                        "frequency": 15.74
+                    },
+                    {
+                        "id": "US_POSTAL_CODE",
+                        "label": "US Postal Code",
+                        "frequency": 15.74
+                    },
+                    {
+                        "id": "FR_POSTAL_CODE",
+                        "label": "FR Postal Code",
+                        "frequency": 15.7
+                    },
+                    {
+                        "id": "DE_POSTAL_CODE",
+                        "label": "DE Postal Code",
+                        "frequency": 15.7
+                    },
+                    {
+                        "id": "US_PHONE",
+                        "label": "US Phone",
+                        "frequency": 2.94
+                    },
+                    {
+                        "id": "PHONE",
+                        "label": "Phone number",
+                        "frequency": 2.94
+                    },
+                    {
+                        "id": "BANK_ROUTING_TRANSIT_NUMBER",
+                        "label": "Bank Routing Transit Number",
+                        "frequency": 0.28
+                    },
+                    {
+                        "id": "SEDOL",
+                        "label": "SEDOL",
+                        "frequency": 0.06
+                    },
+                    {
+                        "id": "UK_SSN",
+                        "label": "UK Social Security Number",
+                        "frequency": 0.02
+                    }
+                ],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "integer"
+            },
+            {
+                "quality": {
+                    "empty": 22,
+                    "invalid": 0,
+                    "valid": 5246
+                },
+                "id": "0009",
+                "name": "Aboard",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": 644.0,
+                    "min": 0.0,
+                    "mean": 27.554517727792646,
+                    "variance": 1855.6030329704213,
+                    "duplicateCount": 5028,
+                    "distinctCount": 240,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "[number]",
+                            "occurrences": 3133
+                        },
+                        {
+                            "pattern": "[digit]",
+                            "occurrences": 2113
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 22
+                        }
+                    ],
+                    "quantiles": {
+                        "median": 13.0,
+                        "lowerQuantile": 5.0,
+                        "upperQuantile": 30.0
+                    },
+                    "histogram": {
+                        "type": "number",
+                        "items": [
+                            {
+                                "occurrences": 2,
+                                "range": {
+                                    "min": -63.0,
+                                    "max": 1.0
+                                }
+                            },
+                            {
+                                "occurrences": 4691,
+                                "range": {
+                                    "min": 1.0,
+                                    "max": 65.0
+                                }
+                            },
+                            {
+                                "occurrences": 365,
+                                "range": {
+                                    "min": 65.0,
+                                    "max": 129.0
+                                }
+                            },
+                            {
+                                "occurrences": 124,
+                                "range": {
+                                    "min": 129.0,
+                                    "max": 193.0
+                                }
+                            },
+                            {
+                                "occurrences": 26,
+                                "range": {
+                                    "min": 193.0,
+                                    "max": 257.0
+                                }
+                            },
+                            {
+                                "occurrences": 26,
+                                "range": {
+                                    "min": 257.0,
+                                    "max": 321.0
+                                }
+                            },
+                            {
+                                "occurrences": 7,
+                                "range": {
+                                    "min": 321.0,
+                                    "max": 385.0
+                                }
+                            },
+                            {
+                                "occurrences": 2,
+                                "range": {
+                                    "min": 385.0,
+                                    "max": 449.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 449.0,
+                                    "max": 513.0
+                                }
+                            },
+                            {
+                                "occurrences": 2,
+                                "range": {
+                                    "min": 513.0,
+                                    "max": 577.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 577.0,
+                                    "max": 641.0
+                                }
+                            },
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": 641.0,
+                                    "max": 705.0
+                                }
+                            }
+                        ]
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": "NaN",
+                        "maximalLength": "NaN",
+                        "averageLength": "NaN"
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "2",
+                            "occurrences": 377
+                        },
+                        {
+                            "data": "3",
+                            "occurrences": 370
+                        },
+                        {
+                            "data": "4",
+                            "occurrences": 296
+                        },
+                        {
+                            "data": "5",
+                            "occurrences": 239
+                        },
+                        {
+                            "data": "6",
+                            "occurrences": 223
+                        },
+                        {
+                            "data": "10",
+                            "occurrences": 200
+                        },
+                        {
+                            "data": "1",
+                            "occurrences": 164
+                        },
+                        {
+                            "data": "7",
+                            "occurrences": 157
+                        },
+                        {
+                            "data": "9",
+                            "occurrences": 152
+                        },
+                        {
+                            "data": "8",
+                            "occurrences": 133
+                        },
+                        {
+                            "data": "11",
+                            "occurrences": 127
+                        },
+                        {
+                            "data": "13",
+                            "occurrences": 123
+                        },
+                        {
+                            "data": "12",
+                            "occurrences": 119
+                        },
+                        {
+                            "data": "18",
+                            "occurrences": 110
+                        },
+                        {
+                            "data": "16",
+                            "occurrences": 102
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "99",
+                            "occurrences": 2826
+                        },
+                        {
+                            "pattern": "9",
+                            "occurrences": 2113
+                        },
+                        {
+                            "pattern": "999",
+                            "occurrences": 307
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 22
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "integer"
+            },
+            {
+                "quality": {
+                    "empty": 12,
+                    "invalid": 0,
+                    "valid": 5256
+                },
+                "id": "0010",
+                "name": "Fatalities",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": 583.0,
+                    "min": 0.0,
+                    "mean": 20.068302891932966,
+                    "variance": 1102.2368181278391,
+                    "duplicateCount": 5076,
+                    "distinctCount": 192,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "[digit]",
+                            "occurrences": 2680
+                        },
+                        {
+                            "pattern": "[number]",
+                            "occurrences": 2576
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 12
+                        }
+                    ],
+                    "quantiles": {
+                        "median": 9.0,
+                        "lowerQuantile": 3.0,
+                        "upperQuantile": 23.0
+                    },
+                    "histogram": {
+                        "type": "number",
+                        "items": [
+                            {
+                                "occurrences": 3711,
+                                "range": {
+                                    "min": 0.0,
+                                    "max": 20.0
+                                }
+                            },
+                            {
+                                "occurrences": 863,
+                                "range": {
+                                    "min": 20.0,
+                                    "max": 40.0
+                                }
+                            },
+                            {
+                                "occurrences": 287,
+                                "range": {
+                                    "min": 40.0,
+                                    "max": 60.0
+                                }
+                            },
+                            {
+                                "occurrences": 128,
+                                "range": {
+                                    "min": 60.0,
+                                    "max": 80.0
+                                }
+                            },
+                            {
+                                "occurrences": 90,
+                                "range": {
+                                    "min": 80.0,
+                                    "max": 100.0
+                                }
+                            },
+                            {
+                                "occurrences": 61,
+                                "range": {
+                                    "min": 100.0,
+                                    "max": 120.0
+                                }
+                            },
+                            {
+                                "occurrences": 39,
+                                "range": {
+                                    "min": 120.0,
+                                    "max": 140.0
+                                }
+                            },
+                            {
+                                "occurrences": 25,
+                                "range": {
+                                    "min": 140.0,
+                                    "max": 160.0
+                                }
+                            },
+                            {
+                                "occurrences": 16,
+                                "range": {
+                                    "min": 160.0,
+                                    "max": 180.0
+                                }
+                            },
+                            {
+                                "occurrences": 9,
+                                "range": {
+                                    "min": 180.0,
+                                    "max": 200.0
+                                }
+                            },
+                            {
+                                "occurrences": 3,
+                                "range": {
+                                    "min": 200.0,
+                                    "max": 220.0
+                                }
+                            },
+                            {
+                                "occurrences": 7,
+                                "range": {
+                                    "min": 220.0,
+                                    "max": 240.0
+                                }
+                            },
+                            {
+                                "occurrences": 4,
+                                "range": {
+                                    "min": 240.0,
+                                    "max": 260.0
+                                }
+                            },
+                            {
+                                "occurrences": 6,
+                                "range": {
+                                    "min": 260.0,
+                                    "max": 280.0
+                                }
+                            },
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": 280.0,
+                                    "max": 300.0
+                                }
+                            },
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": 300.0,
+                                    "max": 320.0
+                                }
+                            },
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": 320.0,
+                                    "max": 340.0
+                                }
+                            },
+                            {
+                                "occurrences": 2,
+                                "range": {
+                                    "min": 340.0,
+                                    "max": 360.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 360.0,
+                                    "max": 380.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 380.0,
+                                    "max": 400.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 400.0,
+                                    "max": 420.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 420.0,
+                                    "max": 440.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 440.0,
+                                    "max": 460.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 460.0,
+                                    "max": 480.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 480.0,
+                                    "max": 500.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 500.0,
+                                    "max": 520.0
+                                }
+                            },
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": 520.0,
+                                    "max": 540.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 540.0,
+                                    "max": 560.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 560.0,
+                                    "max": 580.0
+                                }
+                            },
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": 580.0,
+                                    "max": 600.0
+                                }
+                            }
+                        ]
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": "NaN",
+                        "maximalLength": "NaN",
+                        "averageLength": "NaN"
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "2",
+                            "occurrences": 528
+                        },
+                        {
+                            "data": "3",
+                            "occurrences": 458
+                        },
+                        {
+                            "data": "1",
+                            "occurrences": 409
+                        },
+                        {
+                            "data": "4",
+                            "occurrences": 328
+                        },
+                        {
+                            "data": "5",
+                            "occurrences": 260
+                        },
+                        {
+                            "data": "6",
+                            "occurrences": 212
+                        },
+                        {
+                            "data": "10",
+                            "occurrences": 179
+                        },
+                        {
+                            "data": "7",
+                            "occurrences": 147
+                        },
+                        {
+                            "data": "8",
+                            "occurrences": 146
+                        },
+                        {
+                            "data": "9",
+                            "occurrences": 134
+                        },
+                        {
+                            "data": "13",
+                            "occurrences": 130
+                        },
+                        {
+                            "data": "11",
+                            "occurrences": 122
+                        },
+                        {
+                            "data": "14",
+                            "occurrences": 102
+                        },
+                        {
+                            "data": "12",
+                            "occurrences": 101
+                        },
+                        {
+                            "data": "20",
+                            "occurrences": 88
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "9",
+                            "occurrences": 2680
+                        },
+                        {
+                            "pattern": "99",
+                            "occurrences": 2399
+                        },
+                        {
+                            "pattern": "999",
+                            "occurrences": 177
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 12
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "integer"
+            },
+            {
+                "quality": {
+                    "empty": 22,
+                    "invalid": 0,
+                    "valid": 5246
+                },
+                "id": "0011",
+                "name": "Ground",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": 2750.0,
+                    "min": 0.0,
+                    "mean": 1.6088448341593593,
+                    "variance": 2914.6854813345435,
+                    "duplicateCount": 5217,
+                    "distinctCount": 51,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "[digit]",
+                            "occurrences": 5178
+                        },
+                        {
+                            "pattern": "[number]",
+                            "occurrences": 68
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 22
+                        }
+                    ],
+                    "quantiles": {
+                        "median": 0.0,
+                        "lowerQuantile": 0.0,
+                        "upperQuantile": 0.0
+                    },
+                    "histogram": {
+                        "type": "number",
+                        "items": [
+                            {
+                                "occurrences": 5243,
+                                "range": {
+                                    "min": 0.0,
+                                    "max": 128.0
+                                }
+                            },
+                            {
+                                "occurrences": 1,
+                                "range": {
+                                    "min": 128.0,
+                                    "max": 256.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 256.0,
+                                    "max": 384.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 384.0,
+                                    "max": 512.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 512.0,
+                                    "max": 640.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 640.0,
+                                    "max": 768.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 768.0,
+                                    "max": 896.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 896.0,
+                                    "max": 1024.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1024.0,
+                                    "max": 1152.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1152.0,
+                                    "max": 1280.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1280.0,
+                                    "max": 1408.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1408.0,
+                                    "max": 1536.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1536.0,
+                                    "max": 1664.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1664.0,
+                                    "max": 1792.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1792.0,
+                                    "max": 1920.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 1920.0,
+                                    "max": 2048.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2048.0,
+                                    "max": 2176.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2176.0,
+                                    "max": 2304.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2304.0,
+                                    "max": 2432.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2432.0,
+                                    "max": 2560.0
+                                }
+                            },
+                            {
+                                "occurrences": 0,
+                                "range": {
+                                    "min": 2560.0,
+                                    "max": 2688.0
+                                }
+                            },
+                            {
+                                "occurrences": 2,
+                                "range": {
+                                    "min": 2688.0,
+                                    "max": 2816.0
+                                }
+                            }
+                        ]
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": "NaN",
+                        "maximalLength": "NaN",
+                        "averageLength": "NaN"
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "0",
+                            "occurrences": 5027
+                        },
+                        {
+                            "data": "1",
+                            "occurrences": 53
+                        },
+                        {
+                            "data": "2",
+                            "occurrences": 27
+                        },
+                        {
+                            "data": "",
+                            "occurrences": 22
+                        },
+                        {
+                            "data": "3",
+                            "occurrences": 21
+                        },
+                        {
+                            "data": "4",
+                            "occurrences": 15
+                        },
+                        {
+                            "data": "5",
+                            "occurrences": 10
+                        },
+                        {
+                            "data": "8",
+                            "occurrences": 10
+                        },
+                        {
+                            "data": "7",
+                            "occurrences": 8
+                        },
+                        {
+                            "data": "11",
+                            "occurrences": 6
+                        },
+                        {
+                            "data": "6",
+                            "occurrences": 6
+                        },
+                        {
+                            "data": "22",
+                            "occurrences": 5
+                        },
+                        {
+                            "data": "13",
+                            "occurrences": 4
+                        },
+                        {
+                            "data": "44",
+                            "occurrences": 3
+                        },
+                        {
+                            "data": "10",
+                            "occurrences": 3
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "9",
+                            "occurrences": 5178
+                        },
+                        {
+                            "pattern": "99",
+                            "occurrences": 62
+                        },
+                        {
+                            "pattern": "",
+                            "occurrences": 22
+                        },
+                        {
+                            "pattern": "999",
+                            "occurrences": 4
+                        },
+                        {
+                            "pattern": "9999",
+                            "occurrences": 2
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "integer"
+            },
+            {
+                "quality": {
+                    "empty": 390,
+                    "invalid": 0,
+                    "valid": 4878
+                },
+                "id": "0012",
+                "name": "Summary",
+                "headerSize": 0,
+                "statistics": {
+                    "count": 5268,
+                    "valid": 0,
+                    "invalid": 0,
+                    "empty": 0,
+                    "max": "NaN",
+                    "min": "NaN",
+                    "mean": "NaN",
+                    "variance": "NaN",
+                    "duplicateCount": 594,
+                    "distinctCount": 4674,
+                    "medCouple": "NaN",
+                    "wordPatternFrequencyTable": [
+                        {
+                            "pattern": "",
+                            "occurrences": 390
+                        },
+                        {
+                            "pattern": "[Word] [word] [word].",
+                            "occurrences": 75
+                        },
+                        {
+                            "pattern": "[Word] [word] [word] [word].",
+                            "occurrences": 74
+                        },
+                        {
+                            "pattern": "[Word] [word] [word] [word] [word].",
+                            "occurrences": 58
+                        },
+                        {
+                            "pattern": "[Word] [word] [word] [word] [word] [word] [word].",
+                            "occurrences": 56
+                        },
+                        {
+                            "pattern": "[Word] [word] [word] [word] [word] [word].",
+                            "occurrences": 36
+                        },
+                        {
+                            "pattern": "[Word] [word] [word] [word] [word] [word] [word] [word].",
+                            "occurrences": 33
+                        },
+                        {
+                            "pattern": "[Word] [word].",
+                            "occurrences": 33
+                        },
+                        {
+                            "pattern": "[Word] [word] [char] [word].",
+                            "occurrences": 32
+                        },
+                        {
+                            "pattern": "[Word] [word] [word] [word] [word] [word] [word] [word] [word].",
+                            "occurrences": 27
+                        },
+                        {
+                            "pattern": "[Word] [word] [word] [word] [word] [word] [word] [word] [word] [word].",
+                            "occurrences": 27
+                        },
+                        {
+                            "pattern": "[Word] [word] [char] [word] [word] [word] [word].",
+                            "occurrences": 21
+                        },
+                        {
+                            "pattern": "[Word] [word] [word] [word] [word] [word] [word] [word] [word] [word] [word] [word].",
+                            "occurrences": 19
+                        },
+                        {
+                            "pattern": "[Word] [word] [word] [word] [word] [word] [word] [word] [word] [word] [word] [word] [word].",
+                            "occurrences": 17
+                        },
+                        {
+                            "pattern": "[Word] [char] [word].",
+                            "occurrences": 13
+                        }
+                    ],
+                    "quantiles": {
+                        "median": "NaN",
+                        "lowerQuantile": "NaN",
+                        "upperQuantile": "NaN"
+                    },
+                    "textLengthSummary": {
+                        "minimalLength": 0.0,
+                        "maximalLength": 1954.0,
+                        "averageLength": 185.87490508731966
+                    },
+                    "frequencyTable": [
+                        {
+                            "data": "",
+                            "occurrences": 390
+                        },
+                        {
+                            "data": "Crashed during takeoff.",
+                            "occurrences": 15
+                        },
+                        {
+                            "data": "Crashed into a mountain.",
+                            "occurrences": 12
+                        },
+                        {
+                            "data": "Crashed into the sea.",
+                            "occurrences": 12
+                        },
+                        {
+                            "data": "Crashed while en route.",
+                            "occurrences": 12
+                        },
+                        {
+                            "data": "Struck a mountain.",
+                            "occurrences": 11
+                        },
+                        {
+                            "data": "Crashed on takeoff.",
+                            "occurrences": 11
+                        },
+                        {
+                            "data": "Crashed shortly after taking off.",
+                            "occurrences": 10
+                        },
+                        {
+                            "data": "Crashed en route.",
+                            "occurrences": 8
+                        },
+                        {
+                            "data": "Flew into a mountain.",
+                            "occurrences": 8
+                        },
+                        {
+                            "data": "Crashed into a mountain while en route.",
+                            "occurrences": 8
+                        },
+                        {
+                            "data": "Cargo plane.",
+                            "occurrences": 7
+                        },
+                        {
+                            "data": "Pilot error.",
+                            "occurrences": 7
+                        },
+                        {
+                            "data": "Engine failure.",
+                            "occurrences": 7
+                        },
+                        {
+                            "data": "Crashed on approach.",
+                            "occurrences": 7
+                        }
+                    ],
+                    "patternFrequencyTable": [
+                        {
+                            "pattern": "",
+                            "occurrences": 390
+                        },
+                        {
+                            "pattern": "Aaaaaaa aaaaaa aaaaaaa.",
+                            "occurrences": 16
+                        },
+                        {
+                            "pattern": "Aaaaa aaaaa.",
+                            "occurrences": 14
+                        },
+                        {
+                            "pattern": "Aaaaaaa aaaa aaa aaa.",
+                            "occurrences": 13
+                        },
+                        {
+                            "pattern": "Aaaaaaa aaaa a aaaaaaaa.",
+                            "occurrences": 13
+                        },
+                        {
+                            "pattern": "Aaaaaaa aaaaa aa aaaaa.",
+                            "occurrences": 12
+                        },
+                        {
+                            "pattern": "Aaaaaa a aaaaaaaa.",
+                            "occurrences": 11
+                        },
+                        {
+                            "pattern": "Aaaaaaa aa aaaaaaa.",
+                            "occurrences": 11
+                        },
+                        {
+                            "pattern": "Aaaaaaa aaaaaaa aaaaa aaaaaa aaa.",
+                            "occurrences": 10
+                        },
+                        {
+                            "pattern": "Aaaaaaa aaaa a aaaaaaaa aaaaa aa aaaaa.",
+                            "occurrences": 9
+                        },
+                        {
+                            "pattern": "Aaaa aaaa a aaaaaaaa.",
+                            "occurrences": 8
+                        },
+                        {
+                            "pattern": "Aaaaaaa aa aaaaa.",
+                            "occurrences": 8
+                        },
+                        {
+                            "pattern": "Aaaaaa aaaaaaa.",
+                            "occurrences": 7
+                        },
+                        {
+                            "pattern": "Aaaaaaa aa aaaaaaaa.",
+                            "occurrences": 7
+                        },
+                        {
+                            "pattern": "Aaaaaaa aaaaaaa.",
+                            "occurrences": 6
+                        }
+                    ]
+                },
+                "domain": "",
+                "domainLabel": "",
+                "domainFrequency": 0.0,
+                "semanticDomains": [
+                    {
+                        "id": "ADDRESS_LINE",
+                        "label": "Address Line",
+                        "frequency": 8.56
+                    },
+                    {
+                        "id": "FULL_NAME",
+                        "label": "Full Name",
+                        "frequency": 0.15
+                    }
+                ],
+                "domainForced": false,
+                "typeForced": false,
+                "type": "string"
+            }
+        ],
+        "nextId": 13
+    }
+}
